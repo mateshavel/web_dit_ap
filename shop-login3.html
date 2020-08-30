@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Dita P. - Shop login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow"/>
+    <meta name="author" content=""/>
+
+    <!--og-->
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="16x16" href="#">
+    <link rel="manifest" href="#">
+
+    <!--styles-->
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="css/slick-slider.1.9.0.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-select-1.13.0.min.css"/>
+    <link rel="stylesheet" href="css/boostrap-animated-progressbar.css"/>
+    <link rel="stylesheet" href="css/ditap-grid.css"/>
+    <link rel="stylesheet" href="css/main2.css"/>
+    <link rel="stylesheet" href="css/ditap-tiles.css"/>
+</head>
+<body>
+<div class="content-wrapper shop-login">
+    <header></header>
+
+    <div class="main-content">
+
+        <!-- Navigation -->
+        <section class="inpage-nav-eshop border-bottom-rgba bg-white mb-4-6-8">
+            <div class="container-grid">
+                <div class="row checkout-menu flex-nowrap justify-content-between align-items-center">
+                    <div class="col-4">
+                        <a class="position-relative text-ditap-paragraph-2 link-black" href="OLD/shop-cart2.html">
+                            <span class="ditap-small-arrow-sec mr-3"></span>
+                            <span class="d-md-none">Košík</span>
+                            <span class="d-none d-md-inline">Zpět do košíku</span>
+                        </a>
+                    </div>
+                    <div class="col-4 text-center p-0">
+                        <a class="navbar-brand mr-0" href="index.html">
+                            <img src="DitaP/media/DitaP/logos/logo_ditap.svg" alt="Dita P.">
+                        </a>
+                    </div>
+                    <div id="main-nav" class="col-4 d-flex justify-content-end align-items-center">
+
+                        <ul class="nav user-cart-menu justify-content-end align-items-center order-lg-1 d-none d-md-flex">
+                            <!-- Account -->
+                            <li class="nav-item dropdown">
+                                <a class="btn-account logged-in nav-link dropdown-toggle " href="#" id="userAccountDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="ditap-ico_account_mob d-block d-md-none"></span>
+                                    <span class="text-ditap-paragraph d-none d-md-inline">Marcela Králová</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userAccountDropdown">
+                                    <a class="dropdown-item" href="user2.html#orders">Moje objednávky</a>
+                                    <a class="dropdown-item" href="user2.html#account">Nastevní účtu</a>
+                                    <a class="dropdown-item" href="homepage3.html">Odhlásit</a>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="container-grid">
+                <div class="row no-gutters justify-content-between w-100">
+                    <div class="col-auto">
+                        <div class="shop-login-card text-center">
+                            <p class="text-ditap-h5 mb-0">Už se známe?</p>
+                            <!-- Facebook button -->
+                            <button class="facebookLoginBtnMain xLargeFacebookBtn ">
+                                <img src="DitaP/media/DitaP/logos/facebook.svg" alt="Login facebook">
+                                <span class="text-btn-facebook">Přihlásit se přes Facebook</span>
+                            </button>
+                            <p class="text-ditap-paragraph-2 ">Nebo použijte email</p>
+                            <div class=" position-relative mx-auto">
+                                <input type="email" name="email" class="form-control input-ditap-lg mb-3"
+                                       placeholder="Váš e-mail" required="">
+                                <div class="text-left invalid-feedback">
+                                    Chybová hláška
+                                </div>
+                            </div>
+                            <div class=" mx-auto">
+                                <input type="password" name="password" class="form-control input-ditap-lg mb-3"
+                                       placeholder="Heslo" required="">
+                                <div class="text-left invalid-feedback">
+                                    Chybová hláška
+                                </div>
+                            </div>
+                            <input type="submit"
+                                   class="btn-ditap-redirect btn btn-ditap btn-ditap-large btn-ditap-blue mt-1 mb-md-4"
+                                   value="Přihlásit" data-step="1" data-next-step="-1" data-modal="#modalLogin"
+                                   data-redirect="homepage_logged-in.html" style="">
+                            <p class="mt-3"><a class="text-ditap-paragraph-2 link-grey" href="#">Zapomenuté heslo</a></p>
+                        </div>
+                    </div>
+
+                    <hr class="border-top mb-30 mt-20 w-100 d-md-none" />
+
+                    <div class="col-auto">
+                        <div class="shop-login-card clone text-center">
+                            <p class="text-center text-ditap-h5 mb-md-0">Chcete nakoupit<br> bez registrace?</p>
+                            <p class="text-ditap-paragraph-2 mt-md-30">Zanechte mi svůj e-mail, abych Vás mohla<br/>informovat o průběhu objednávky</p>
+                            <div class=" position-relative mx-auto">
+                                <input type="email" name="email" class="form-control input-ditap-lg mb-3"
+                                       placeholder="Váš e-mail" required="">
+                                <div class="text-left invalid-feedback">
+                                    Chybová hláška
+                                </div>
+                            </div>
+                            <input type="submit"
+                                   class="btn-ditap-redirect btn-modal-next-step btn btn-ditap btn-ditap-large btn-ditap-blue mt-1 mb-md-4"
+                                   value="Přihlásit" data-redirect="#" style="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="border-top m-0 w-100" />
+    </div>
+    <footer>
+        <!-- Footer -->
+        <div data-include="partials/components/footer-main.html"></div>
+    </footer>
+    <!-- Backdrop overlay -->
+    <div data-include="partials/components/modal-backdrop-overlay.html"></div>
+</div>
+<!-- Search Modal -->
+<div data-include="partials/components/modal-search.html"></div>
+<!-- Newsletter Multistep Modal -->
+<div data-include="partials/modal-newsletter-steps2.html"></div>
+<!-- Login Modal -->
+<div data-include="partials/modal-login2.html"></div>
+<!-- Registration Modal -->
+<div data-include="partials/modal-registration-steps2.html"></div>
+<!--javascripts-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-main.js IN KENTICO -->
+<script src="https://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+<script src="js/typeahead.bundle.min.js"></script>
+<script src="js/jquery.mmenu.all.js"></script>
+<script src="js/jquery.mmenu.bootstrap4.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap-select-1.13.0.min.js"></script>
+<script src="js/bootstrap-multistep-modals.js"></script>
+<script src="js/slick-slider-1.9.0.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

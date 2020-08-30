@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Dita P. - Newsletter</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow"/>
+    <meta name="author" content=""/>
+
+    <!--og-->
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="16x16" href="#">
+    <link rel="manifest" href="#">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&amp;subset=latin-ext"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond:400,500,700&amp;subset=latin-ext"/>
+
+    <!--styles-->
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="css/ken.burns.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.0/css/bootstrap-select.min.css"/>
+    <link rel="stylesheet" href="css/icomoon-icons-ditap.css"/>
+    <link rel="stylesheet" href="css/boostrap-animated-progressbar.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <link rel="stylesheet" href="css/second-styles.css"/>
+
+</head>
+<body class="bg-white">
+<div class="content-wrapper">
+
+    <header>
+        <!-- Top Brand and Claim -->
+        <div data-include="partials/top-claim.html"></div>
+
+        <!-- Main Navigation -->
+        <div data-include="partials/main-nav.html"></div>
+
+
+    </header>
+
+    <div class="main-content">
+
+        <!--  -->
+        <section class="">
+            <div class="container">
+                <ul>
+                    <li class="pb-2">
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#modalNewsletter">Newsletter</a>
+                    </li>
+                    <li class="pb-2">
+                        <a href="javascript:void(0)" data-toggle="modal" data-target="#modalNewsletterSteps">Newsletter steps</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!--end main content-->
+    </div>
+
+
+    <footer>
+
+    </footer>
+    <!-- Backdrop overlay -->
+    <div data-include="partials/backdrop-overlay.html"></div>
+</div>
+
+<!-- Modal Newsletter -->
+<div data-include="partials/modal-newsletter.html"></div>
+
+<!--Modal Newsletter Steps-->
+<div class="modal multi-step fade2" id="modalNewsletterSteps">
+    <div class="modal-dialog modal-dialog-centered modal-lg modal-xl">
+        <div class="modal-content border-0 rounded-0 shadow">
+
+            <button type="button" class="close pt-2 pr-2" data-dismiss="modal" aria-label="Close">
+                <span class="ditap-ico_close_mob" aria-hidden="true"></span>
+            </button>
+
+            <!--BODY STEP 1-->
+            <div class="modal-body p-0 step-1" data-step="1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 p-5">
+                            <h3 class="mb-4">Ať Vám nic neuteče</h3>
+                            <p class="quotation mb-4 fw-500">V mém eshopu se pořád něco děje. Stačí si objednat novinky
+                                a já
+                                vám je ráda budu posílat mailem.</p>
+                            <ul class="list-unstyled bullet-list text-left fw-600 mb-4">
+                                <li class="mb-2">
+                                <span class="ditap-ico_ok_green fs-14 mr-2">
+                                    <span class="path1"></span><span class="path2"></span>
+                                    </span>
+                                    <span class="fs-14"> Informace o slevách, receptech a nových produktech</span>
+                                </li>
+                                <li class="mb-2">
+                                <span class="ditap-ico_ok_green fs-14 mr-2">
+                                    <span class="path1"></span><span class="path2"></span>
+                                    </span>
+                                    <span class="fs-14"> Vždy budete vědět všechno podstatné jako první</span>
+                                </li>
+                                <li>
+                                <span class="ditap-ico_ok_green fs-14 mr-2">
+                                    <span class="path1"></span><span class="path2"></span>
+                                    </span>
+                                    <span class="fs-14"> Získáte tajné recepty z mého Deníku</span>
+                                </li>
+                            </ul>
+                            <div class="form-group">
+                                <input type="email" class="form-control input-ditap-lg mb-3" placeholder="Váš e-mail">
+                            </div>
+                            <input type="button" class="btn-ditap btn-ditap-lg btn-ditap-blue mt-2 step step-1"
+                                   data-step="1"
+                                   onclick="sendEvent('#modalNewsletterSteps', 2)" value="Odeslat"/>
+
+                        </div>
+                        <div class="col-md-12 col-lg-6 p-0 d-none d-lg-block o-h">
+                            <img src="DitaP/media/DitaP/images/500x510-newsletter.jpg" alt=""/>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--BODY STEP 2-->
+            <div class="modal-body p-0 step-2" data-step="2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 p-5">
+                            <h3 class="mb-4">Tak a je to!</h3>
+                            <p class="quotation mb-4 fw-500">E-mail jsem si poznačila a nikomu cizímu ho nedám.</p>
+                            <ul class="list-unstyled  bullet-list text-left fw-600 mb-4">
+                                <li>
+                                    <span class="paragraph-serif font-weight-bold">Mrkněte na můj Deník</span>
+                                </li>
+                                <li>
+                                    <span class="paragraph-serif font-weight-bold">Vyberte si něco hezkého z e-shopu</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 col-lg-6 p-0 d-none d-lg-block o-h">
+                            <img src="DitaP/media/DitaP/images/500x510-newsletter.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Search Modal -->
+<div data-include="partials/modal-search.html"></div>
+
+<!--javascripts-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-main.js IN KENTICO -->
+<script src="https://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+<script src="js/typeahead.bundle.min.js"></script>
+<script src="js/jquery.mmenu.all.js"></script>
+<script src="js/jquery.mmenu.bootstrap4.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.0/js/bootstrap-select.min.js"></script>
+<!--<script src="js/instafeed.min.js"></script>-->
+<script src="js/bootstrap-multistep-modals.js"></script>
+<script src="js/main.js"></script>
+<!--<script src="js/custom-second.js"></script>-->
+<script>
+    sendEvent = function (sel, step) {
+        $(sel).trigger('next.m.' + step);
+    }
+</script>
+
+</body>
+</html>

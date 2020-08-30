@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Dita P. - Masonry Grid</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow"/>
+    <meta name="author" content=""/>
+
+    <!--og-->
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="16x16" href="#">
+    <link rel="manifest" href="#">
+
+    <!--styles-->
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="css/slick-slider.1.9.0.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-select-1.13.0.min.css"/>
+    <link rel="stylesheet" href="css/boostrap-animated-progressbar.css"/>
+    <link rel="stylesheet" href="css/ditap-grid.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <style>
+        .section-space {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="content-wrapper homepage">
+    <header>
+        <!-- Top Brand and Claim -->
+        <div data-include="partials/top-claim.html"></div>
+        <!-- Main Navigation -->
+        <div data-include="partials/main-nav2.html"></div>
+        <!-- Homepage carousel -->
+        <div data-include="partials/carousel3.html"></div>
+        <!-- Page scroll down arrow -->
+        <a href="#" class="nav-link icon-link arrow-scroll-down d-none d-lg-block" data-offset="-13" data-id="#scroll-down">
+            <span class="icon-ditap-arrow arrow-down"></span>
+        </a>
+    </header>
+    <div class="main-content">
+        <!-- Welcome -->
+        <section id="scroll-down" class="welcome section-space">
+            <div class="container pt-lg-5 pb-lg-4 text-center">
+                <img class="img-ditap-face-responsive" src="DitaP/media/DitaP/images/img_dita_face.png" alt="Dita P."/>
+                <p class="text-ditap-salutation mt-3">Vítejte,</p>
+                <h6 class="text-ditap-h6">připravila jsem pro Vás svěží inspiraci<br/>pro krásné léto. Užijte si ho.</h6>
+            </div>
+        </section>
+        <!-- Tiles with cards for homepage -->
+        <div data-include="partials/tiles-homepage.html"></div>
+        <!-- Tips for presents -->
+        <section class="section-space">
+            <div class="container container-1180 text-center">
+                <p class="text-ditap-h4">Masonry grid</p>
+            </div>
+        </section>
+        <!-- Masonry grid -->
+        <div data-include="partials/masonry-grid.html"></div>
+        <!-- Show more simulation -->
+        <section class="section-space pt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <button class="btn btn-ditap btn-ditap-blue btn-ditap-show-more">Načíst další</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <!-- Footer -->
+        <div data-include="partials/footer2.html"></div>
+    </footer>
+    <!-- Backdrop overlay -->
+    <div data-include="partials/backdrop-overlay.html"></div>
+</div>
+<!-- Search Modal -->
+<div data-include="partials/modal-search2.html"></div>
+<!-- Newsletter Multistep Modal -->
+<div data-include="partials/modal-newsletter-steps2.html"></div>
+<!-- Login Modal -->
+<div data-include="partials/modal-login2.html"></div>
+<!-- Registration Modal -->
+<div data-include="partials/modal-registration-steps2.html"></div>
+<!--javascripts-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-main.js IN KENTICO -->
+<script src="https://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+<script src="js/typeahead.bundle.min.js"></script>
+<script src="js/jquery.mmenu.all.js"></script>
+<script src="js/jquery.mmenu.bootstrap4.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap-select-1.13.0.min.js"></script>
+<script src="js/bootstrap-multistep-modals.js"></script>
+<script src="js/slick-slider-1.9.0.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    $(function() {
+
+        initProductSlider($('.product-card-slider'));
+
+        var cardItem    = $('.small-card').not('.tip-card'),
+            columnWidth = cardItem.outerWidth(),
+            gutter      = parseInt(cardItem.css('marginBottom'))-1;
+
+        var $grid = $('.masonry-grid').imagesLoaded( function() {
+            // init Masonry after all images have loaded
+            initMasonry('.col-auto', columnWidth);
+        });
+
+        // EVENTS ------------------------------------------------------------------------------------------------------
+
+        // Recalculate tile size on orientation change
+        $(window).on('resize', function() {
+            cardItem    = $('.small-card').not('.tip-card');
+            columnWidth = cardItem.outerWidth();
+            gutter      = parseInt(cardItem.css('marginBottom'))-1;
+
+            // Reinit masonry after resize
+            initMasonry('.col-auto', columnWidth);
+        });
+
+        // Simulate appending tiles via Ajax
+        $('.btn-ditap-show-more').on( 'click', function() {
+            // create new item elements
+            loadItems('slider');
+            loadItems('medium');
+            loadItems('slider');
+            loadItems('small');
+        });
+
+        // FUNCTIONS ---------------------------------------------------------------------------------------------------
+
+        function initProductSlider(elem) {
+            $(elem).slick({
+                prevArrow: '<button class="nav-link icon-link slick-prev"><span class="ditap-ico_arrow_tiny_left"></span></button>',
+                nextArrow: '<button class="nav-link icon-link slick-next"><span class="ditap-ico_arrow_tiny_right"></span></button>',
+                variableWidth: false,
+                mobileFirst: true,
+                slidesToShow: 1,
+                dots: false,
+                arrows: true,
+                infinite: false
+            });
+        }
+
+        function loadItems(type) {
+            $.get('partials/tiles/tile-product-' + type + '.html', function( elem ) {
+                // elem contains whatever that request returned
+                var $item = $(elem);
+                // append items to grid
+                $grid.append( $item )
+                // add and lay out newly prepended items
+                    .masonry( 'appended', $item );
+                var item = $item.find('.tile');
+                // Init slick product slider after element has been appended
+                if( $(item).hasClass('product-card-slider')) {
+                    initProductSlider(item);
+                }
+            }, 'html');
+        }
+
+        function initMasonry(itemSelector, columnWidth) {
+            $grid.masonry({
+                // options.
+                itemSelector: itemSelector,
+                columnWidth: columnWidth,
+                percentPosition: false,
+                gutter: gutter,
+                fitWidth: true
+            });
+        }
+    });
+</script>
+</body>
+</html>

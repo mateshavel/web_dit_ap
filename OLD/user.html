@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Dita P. - User</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow"/>
+    <meta name="author" content=""/>
+
+    <!--og-->
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="16x16" href="#">
+    <link rel="manifest" href="#">
+
+    <!--styles-->
+    <link rel="stylesheet" href="../css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap-select-1.13.0.min.css"/>
+    <link rel="stylesheet" href="../css/boostrap-animated-progressbar.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+    <style>
+        /*OLD STYLES TO BE REMOVED - new page user2.html */
+
+        /*order list*/
+        .order-list > div:first-of-type {
+            border-top: 1px solid #dee2e6 !important;
+        }
+
+        .row-order {
+            padding: 30px 10px 15px 10px;
+        }
+
+        a .row-order:hover {
+            background-color: #F9F9F9;
+            color: rgba(34, 34, 34, 1);
+        }
+
+        /*other*/
+        .row-order-head {
+            padding: 15px 10px 0 10px;
+        }
+    </style>
+
+</head>
+<body class="bg-white">
+<div class="content-wrapper">
+    <header>
+        <!-- Top Brand and Claim -->
+        <div data-include="partials/top-claim.html"></div>
+        <!-- Main Navigation -->
+        <div data-include="partials/main-nav-logged-in2.html"></div>
+    </header>
+    <div class="main-content">
+        <!--Content Tabs-->
+        <section>
+            <div class="container container-920">
+                <ul class="nav tabs-nav justify-content-center mb-5 mt-4" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link text-ditap-label active" id="orders-tab" data-toggle="pill"
+                           href="#orders-tab-pane"
+                           role="tab" aria-controls="orders" aria-selected="true">Moje objednávky</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-ditap-label" id="account-tab" data-toggle="pill"
+                           href="#account-tab-pane"
+                           role="tab" aria-controls="account" aria-selected="false">Nastavení účtu</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="orders-tab-pane" role="tabpanel"
+                         aria-labelledby="pills-home-tab">
+                        <!-- MOJE OBJEDNÁVKY -->
+                        <!--orders-->
+                        <div class="mt-5 mb-5 p-0 p-sm-2 p-md-4">
+                            <p class="text-ditap-h4 text-center mb-5">Posledních 30 dnů</p>
+                            <div class="row pl-3 pr-3 p-sm-0">
+                                <div class="col-12">
+                                    <!--row-->
+                                    <div class="row row-order-head border-bottom border-top">
+                                        <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                            <p class="text-ditap-label">Číslo <span class="d-none d-md-inline">objednávky</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-2 d-none d-lg-block ">
+                                            <p class="text-ditap-label">Datum vytvoření</p>
+                                        </div>
+                                        <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                            <p class="text-ditap-label">Stav <span
+                                                    class="d-none d-md-inline">objednávky</span></p>
+                                        </div>
+                                        <div class="col-md-3 col-lg-4 d-none d-md-block">
+                                            <p class="text-ditap-label">Předpokládané datum doručení</p>
+                                        </div>
+                                        <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                            <p class="text-ditap-label">Cena</p>
+                                        </div>
+                                    </div>
+                                    <!--order-->
+                                    <a href="#">
+                                        <div class="row row-order border-bottom">
+                                            <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                                <p>7081431</p>
+                                            </div>
+                                            <div class="col-lg-2 d-none d-lg-block">
+                                                <p>17. 11. 2017</p>
+                                            </div>
+                                            <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                                <p class="font-weight-bold">Přijatá</p>
+                                            </div>
+                                            <div class="col-md-3 col-lg-4 d-none d-md-block">
+                                                <p>23. 11. 2017</p>
+                                            </div>
+                                            <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                                <p class="font-weight-bold">15 480 Kč</p>
+                                                <i class="ditap-small-arrow"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--old orders-->
+                        <div class="mt-5 mb-5 p-0 p-sm-2 p-md-4">
+                            <p class="text-ditap-h4 text-center mb-5">Starší objednávky</p>
+                            <div class="row pl-3 pr-3 p-sm-0">
+                                <div class="col-12">
+                                    <!--row-->
+                                    <div class="row row-order-head border-top border-bottom">
+                                        <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                            <p class="text-ditap-label">Číslo <span
+                                                    class="d-none d-md-inline">objednávky</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-2 d-none d-lg-block ">
+                                            <p class="text-ditap-label">Datum vytvoření</p>
+                                        </div>
+                                        <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                            <p class="text-ditap-label">Stav <span
+                                                    class="d-none d-md-inline">objednávky</span></p>
+                                        </div>
+                                        <div class="col-md-3 col-lg-4 d-none d-md-block">
+                                            <p class="text-ditap-label">Předpokládané datum doručení</p>
+                                        </div>
+                                        <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                            <p class="text-ditap-label">Cena</p>
+                                        </div>
+                                    </div>
+                                    <!--order-->
+                                    <a href="#">
+                                        <div class="row row-order border-bottom">
+                                            <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                                <p>7081431</p>
+                                            </div>
+                                            <div class="col-lg-2 d-none d-lg-block">
+                                                <p>17. 11. 2016</p>
+                                            </div>
+                                            <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                                <p class="font-weight-bold ico-ok-green">Odeslaná</p>
+                                            </div>
+                                            <div class="col-md-3 col-lg-4 d-none d-md-block">
+                                                <p>23. 11. 2016</p>
+                                            </div>
+                                            <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                                <p class="font-weight-bold">1 480 Kč</p>
+                                                <i class="ditap-small-arrow"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <!--order-->
+                                    <a href="#">
+                                        <div class="row row-order border-bottom">
+                                            <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                                <p>7081431</p>
+                                            </div>
+                                            <div class="col-lg-2 d-none d-lg-block">
+                                                <p>17. 10. 2016</p>
+                                            </div>
+                                            <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                                <p class="font-weight-bold ico-ok-green">Odeslaná</p>
+                                            </div>
+                                            <div class="col-md-3 col-lg-4 d-none d-md-block">
+                                                <p>23. 10. 2016</p>
+                                            </div>
+                                            <div class="col-4 col-sm-4 col-md-3 col-lg-2">
+                                                <p class="font-weight-bold">1 480 Kč</p>
+                                                <i class="ditap-small-arrow"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- END - moje objednávky -->
+                    </div>
+                    <div class="tab-pane fade" id="account-tab-pane" role="tabpanel"
+                         aria-labelledby="pills-profile-tab">
+                        <!-- NASTAVENÍ ÚČTU -->
+                        <div class="text-center mt-5 mb-5">
+                            <p class="text-ditap-label">Majitel účtu</p>
+                            <p class="text-ditap-h5">Marcela Králová</p>
+                            <br>
+                            <p class="text-ditap-label">Přihlašovací jméno</p>
+                            <p class="text-ditap-paragraph-3-serif">marcela.kralova@seznam.cz</p>
+                        </div>
+                        <hr>
+                        <!--contact information-->
+                        <div class="mt-5 mb-5 p-0 p-sm-2 p-md-4">
+                            <p class="text-ditap-h4 text-center">Kontaktní údaje</p>
+                            <div class="form-row">
+                                <div class="form-group mx-auto col-md-6 is-invalid">
+                                    <label class="text-ditap-label">Předvolba</label>
+                                    <input type="text" class="form-control input-ditap-lg mb-3 is-invalid" value="+420"
+                                           required>
+                                    <div class="text-left invalid-feedback">
+                                        Chybová hláška
+                                    </div>
+                                </div>
+                                <div class="form-group mx-auto col-md-6">
+                                    <label class="text-ditap-label">Telefon</label>
+                                    <input type="text" class="form-control input-ditap-lg mb-3" value="602 112 777"
+                                           required>
+                                    <div class="text-left invalid-feedback">
+                                        Chybová hláška
+                                    </div>
+                                    <span class="text-ditap-tip info-span">Než Vám kurýr doručí zboží, na toto číslo dá vědět.</span>
+                                </div>
+                                <div class="form-group mx-auto col-md-12">
+                                    <label class="text-ditap-label">Váš e-mail</label>
+                                    <input type="email" class="form-control input-ditap-lg mb-3"
+                                           value="marcela.kralova@seznam.cz" required>
+                                    <div class="text-left invalid-feedback">
+                                        Chybová hláška
+                                    </div>
+                                    <span class="text-ditap-tip info-span">Sem Vám pošlu informace, kdykoliv se něco šustne kolem objednávky. Nemáte zač.</span>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-ditap btn-ditap-blue mt-5">ULOŽIT</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--Changing the password-->
+                        <div class="mt-5 mb-5 p-0 p-sm-2 p-md-4">
+                            <p class="text-ditap-h4 text-center">Změna hesla</p>
+                            <div class="form-row">
+                                <div class="form-group mx-auto col-md-12">
+                                    <label class="text-ditap-label">Staré heslo</label>
+                                    <input type="password" class="form-control input-ditap-lg mb-3" required>
+                                    <div class="text-left invalid-feedback">
+                                        Chybová hláška
+                                    </div>
+                                </div>
+                                <div class="form-group mx-auto col-md-12">
+                                    <label class="text-ditap-label">Nové heslo</label>
+                                    <input type="password" class="form-control input-ditap-lg mb-3" required>
+                                    <div class="text-left invalid-feedback">
+                                        Chybová hláška
+                                    </div>
+                                </div>
+                                <div class="form-group mx-auto col-md-12">
+                                    <label class="text-ditap-label">Nové heslo ještě jednou</label>
+                                    <input type="password" class="form-control input-ditap-lg mb-3" required>
+                                    <div class="text-left invalid-feedback">
+                                        Chybová hláška
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-ditap btn-ditap-blue mt-5">ZMĚNIT HESLO</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--delivery address-->
+                        <div class="mt-5 mb-5 p-0 p-sm-2 p-md-4">
+                            <p class="text-ditap-h4 text-center">Doručovací adresa</p>
+                            <div class="form-row">
+                                <div class="form-group mx-auto col-sm-12 col-md-6">
+                                    <label class="text-ditap-label">Jméno</label>
+                                    <input type="text" class="form-control input-ditap-lg mb-3" value="Marcela"
+                                           required>
+                                    <div class="text-left invalid-feedback">
+                                        Chybová hláška
+                                    </div>
+                                </div>
+                                <div class="form-group mx-auto col-sm-12 col-md-6">
+                                    <label class="text-ditap-label">Příjmení</label>
+                                    <input type="text" class="form-control input-ditap-lg mb-3" value="Králová"
+                                           required>
+                                    <div class="text-left invalid-feedback">
+                                        Chybová hláška
+                                    </div>
+                                </div>
+                                <div class="form-group mx-auto col-md-12">
+                                    <label class="text-ditap-label">Firma</label>
+                                    <input type="text" class="form-control input-ditap-lg mb-3"
+                                           placeholder="Když si necháváte poslat balík do práce" required>
+                                    <div class="text-left invalid-feedback">
+                                        Chybová hláška
+                                    </div>
+                                </div>
+                                <div class="form-group mx-auto col-md-12">
+                                    <label class="text-ditap-label">Ulice a číslo</label>
+                                    <input type="text" class="form-control input-ditap-lg mb-3" value="Na dvorečku 17"
+                                           required>
+                                    <div class="text-left invalid-feedback">
+                                        Chybová hláška
+                                    </div>
+                                </div>
+                                <div class="form-group mx-auto col-sm-12 col-md-8">
+                                    <label class="text-ditap-label">Město</label>
+                                    <input type="text" class="form-control input-ditap-lg mb-3"
+                                           value="Hradec nad Moravicí"
+                                           required>
+                                    <div class="text-left invalid-feedback">
+                                        Chybová hláška
+                                    </div>
+                                </div>
+                                <div class="form-group mx-auto col-sm-12 col-md-4">
+                                    <label class="text-ditap-label">PSČ</label>
+                                    <input type="text" class="form-control input-ditap-lg mb-3" value="276 01" required>
+                                    <div class="text-left invalid-feedback">
+                                        Chybová hláška
+                                    </div>
+                                </div>
+                                <div class="form-group mx-auto col-md-12">
+                                    <label class="text-ditap-label">Stát</label>
+                                    <input type="text" class="form-control input-ditap-lg mb-3"
+                                           placeholder="Česká Republika" required>
+                                    <div class="text-left invalid-feedback">
+                                        Chybová hláška
+                                    </div>
+                                    <span class="text-ditap-tip info-span mt">Potřebujete to jinam? <a href="#">Přepněte se do jiného státu</a> v mém eshopu.</span>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-ditap btn-ditap-blue mt-5">ULOŽIT</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--billing address-->
+                        <div class="text-center mt-5 mb-5">
+                            <p class="text-ditap-h4 mb-5">Doručovací adresa</p>
+                            <p>Zatím je tady prázdno, ale můžete si ji zadat.</p>
+                            <a href="#" class="btn btn-ditap btn-ditap-blue mt-3">PŘIDAT ADRESU</a>
+                        </div>
+                        <hr>
+                        <!--newsletter-->
+                        <div class="mt-5 mb-5 p-0 p-sm-2 p-md-4">
+                            <p class="text-ditap-h4 text-center mb-5">Newsletter</p>
+                            <div class="form-row dropdown-newsletter">
+                                <div class="form-group mx-auto col-md-6">
+                                    <label class="text-ditap-label">Jak často chcete posílat novinky?</label>
+
+                                    <div class="form-control input-ditap-xl select-ditap-rating mb-3 p-0">
+                                        <label class="pl-0 w-100">
+                                            <select class="selectpicker" name="rating-select" data-width="auto">
+                                                <option data-content='
+                                            <span class="text-ditap-price-small">Jednou za týden a mimořádné akce</span><br/>
+                                            <p class="d-inline-block">
+                                            <span class="icon-ditap-rating-5 d-inline align-middle"></span>
+                                            <span class="text-ditap-tip d-inline align-text-top">Mají to skoro všichni</span>
+                                            </p>
+                                        ' value="5">
+                                                </option>
+
+                                                <option data-content='
+                                            <span class="text-ditap-price-small">Jednou za týden a mimořádné akce</span><br/>
+                                            <p class="d-inline-block">
+                                            <span class="icon-ditap-rating-4 d-inline align-middle"></span>
+                                            <span class="text-ditap-tip d-inline align-text-top">Mají to skoro všichni</span>
+                                            </p>
+                                        ' value="4" selected>
+                                                </option>
+
+                                                <option data-content='
+                                            <span class="text-ditap-price-small">Jednou za týden a mimořádné akce</span><br/>
+                                            <p class="d-inline-block">
+                                            <span class="icon-ditap-rating-3 d-inline align-middle"></span>
+                                            <span class="text-ditap-tip d-inline align-text-top">Mají to skoro všichni</span>
+                                            </p>
+                                        ' value="3">
+                                                </option>
+
+                                                <option data-content='
+                                            <span class="text-ditap-price-small">Jednou za týden a mimořádné akce</span><br/>
+                                            <p class="d-inline-block">
+                                            <span class="icon-ditap-rating-2 d-inline align-middle"></span>
+                                            <span class="text-ditap-tip d-inline align-text-top">Mají to skoro všichni</span>
+                                            </p>
+                                        ' value="2">
+                                                </option>
+
+                                                <option data-content='
+                                            <span class="text-ditap-price-small">Jednou za týden a mimořádné akce</span><br/>
+                                            <p class="d-inline-block">
+                                            <span class="icon-ditap-rating-1 d-inline align-middle"></span>
+                                            <span class="text-ditap-tip d-inline align-text-top">Mají to skoro všichni</span>
+                                            </p>
+                                        ' value="1">
+                                                </option>
+                                            </select>
+                                            <span class="select-icon"></span>
+                                        </label>
+                                    </div>
+
+                                    <span class="text-ditap-tip info-span">Nemusíte se bát, toto nastavení nemá vliv na e-maily se stavem objednávek. O ty nepřijdete.
+Než se nastavení projeví, může to chvilku trvat. Tak, prosím, omluvte, pokud Vám přijde ještě pár mailů navíc.</span>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-ditap btn-ditap-blue mt-3">ULOŽIT</a>
+                            </div>
+                        </div>
+                        <hr>
+                        <!--logout-->
+                        <div class="text-center mt-5 mb-5">
+                            <p class="text-ditap-h4 mb-5">Odhlášení</p>
+                            <p>Skoro nikdo to nedělá, ale klidně můžete.</p>
+                            <a href="#" class="btn btn-ditap btn-ditap-blue mt-3">ODHLÁSIT Z ÚČTU</a>
+                        </div>
+                        <!-- END - moje objednávky -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <footer>
+        <!-- Footer -->
+        <div data-include="partials/footer-user.html"></div>
+    </footer>
+    <!-- Backdrop overlay -->
+    <div data-include="partials/backdrop-overlay.html"></div>
+</div>
+<!-- Search Modal -->
+<div data-include="partials/modal-search2.html"></div>
+<!-- Newsletter Multistep Modal -->
+<div data-include="partials/modal-newsletter-steps2.html"></div>
+<!-- Login Modal -->
+<div data-include="partials/modal-login2.html"></div>
+<!--javascripts-->
+<script src="../js/jquery-3.3.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-main.js IN KENTICO -->
+<script src="https://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+<script src="../js/typeahead.bundle.min.js"></script>
+<script src="../js/jquery.mmenu.all.js"></script>
+<script src="../js/jquery.mmenu.bootstrap4.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap-select-1.13.0.min.js"></script>
+<script src="../js/bootstrap-multistep-modals.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    $(function() {
+        // Set menu item to active, do not use in KENTICO!!!
+        $('.user-cart-menu').find('li.nav-item').eq(0).addClass('active');
+
+        // Show active tab depending on url hash
+        var hash = window.location.hash;
+        changeUserPageTab(hash);
+        // Listen to hashchange
+        $(window).on('hashchange', function() {
+            hash = window.location.hash;
+            changeUserPageTab(hash);
+        });
+
+        function changeUserPageTab(tab) {
+            if(tab.length !== 0 && (tab === '#orders' || tab === '#account') ) {
+                $(tab + '-tab').tab('show');
+            }
+        }
+    });
+</script>
+</body>
+</html>

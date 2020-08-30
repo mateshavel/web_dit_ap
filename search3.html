@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Dita P. - Search results</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow"/>
+    <meta name="author" content=""/>
+
+    <!--og-->
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="16x16" href="#">
+    <link rel="manifest" href="#">
+
+    <!--styles-->
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="css/slick-slider.1.9.0.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-select-1.13.0.min.css"/>
+    <link rel="stylesheet" href="css/boostrap-animated-progressbar.css"/>
+    <link rel="stylesheet" href="css/simplebar.css"/>
+    <link rel="stylesheet" href="css/ditap-grid.css"/>
+    <link rel="stylesheet" href="css/main2.css"/>
+    <link rel="stylesheet" href="css/ditap-tiles.css"/>
+</head>
+<body>
+<div class="content-wrapper search-results">
+    <header>
+        <!-- Top Brand and Claim -->
+        <div data-include="partials/components/header-top-claim.html"></div>
+        <!-- Main Navigation -->
+        <div data-include="partials/components/nav-main-logged-in.html"></div>
+    </header>
+    <div class="main-content">
+        <section class="search-results-intro pt-5">
+            <div class="container pt-lg-4 pb-5">
+                <p class="text-center text-ditap-tip">Hledané slovo</p>
+                <h2 class="text-ditap-h2 text-center">králík</h2>
+            </div>
+        </section>
+        <!-- Search results -->
+        <div data-include="partials/search-results3.html"></div>
+        <!-- Stories promo -->
+        <div data-include="partials/sections/section-promo-story-ditap-two.html"></div>
+    </div>
+
+    <footer>
+        <!-- Footer -->
+        <div data-include="partials/components/footer-main.html"></div>
+    </footer>
+    <!-- Backdrop overlay -->
+    <div data-include="partials/components/modal-backdrop-overlay.html"></div>
+</div>
+<!-- Search Modal -->
+<div data-include="partials/components/modal-search.html"></div>
+<!-- Newsletter Multistep Modal -->
+<div data-include="partials/modal-newsletter-steps2.html"></div>
+<!-- Login Modal -->
+<div data-include="partials/modal-login2.html"></div>
+<!-- Registration Modal -->
+<div data-include="partials/modal-registration-steps2.html"></div>
+<!-- Cart Modal -->
+<div data-include="partials/components/modal-cart.html"></div>
+<!--javascripts-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-main.js IN KENTICO -->
+<script src="https://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+<script src="js/typeahead.bundle.min.js"></script>
+<script src="js/jquery.mmenu.all.js"></script>
+<script src="js/jquery.mmenu.bootstrap4.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap-select-1.13.0.min.js"></script>
+<script src="js/bootstrap-multistep-modals.js"></script>
+<script src="js/slick-slider-1.9.0.min.js"></script>
+<script src="js/simplebar.js"></script>
+<script src="js/main.js"></script>
+<script>
+    // This script is for template purposes only, do not use in KENTICO!!!
+    $(function() {
+        // Set search menu item to active
+        $('#main-nav').find('.btn-search').parent().addClass('active');
+        $('.text-search').text('králík');
+    });
+</script>
+</body>
+</html>

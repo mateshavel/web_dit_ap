@@ -1,0 +1,53 @@
+[
+  {
+    "quickResults": [
+      {
+        "resultId": 1,
+        "category": "Recept",
+        "title": "Králík na smetaně",
+        "imgUrl": "DitaP/media/DitaP/images/recipes/Po_babicce.jpg",
+        "link": "http://google.com",
+        "tokens": ["recept", "králík", "smetana"]
+      },{
+        "resultId": 2,
+        "category": "Recept",
+        "title": "Králík pečený na česneku se špenátem a bramborovými knedlíky",
+        "imgUrl": "DitaP/media/DitaP/images/recipes/kralik_na_cesneku.jpg",
+        "link": "#",
+        "tokens": ["recept", "králík", "česnek", "knedlíky", "špenát"]
+      },
+      {
+        "resultId": 3,
+        "category": "Kategorie",
+        "title": "Porcelán",
+        "imgUrl": "DitaP/media/DitaP/images/products/porcelain/Sada_snidane_mak.jpg",
+        "link": "http://google.com",
+        "tokens": ["porcelán", "kráva", "selva", "králík"]
+      },{
+        "resultId": 4,
+        "category": "Deník",
+        "title": "Moje čokoládové narozeniny. V růžové!",
+        "imgUrl": "DitaP/media/DitaP/images/promo/promo_21.jpg",
+        "link": "#",
+        "tokens": ["recept", "čokoládova", "králík"]
+      },
+      {
+        "resultId": 5,
+        "category": "Kategorie",
+        "title": "Sada Snídaně",
+        "imgUrl": "//placehold.it/50/50",
+        "link": "#",
+        "tokens": ["sleva", "porcelán", "snídaně"]
+      },
+      {
+        "resultId": 6,
+        "category": "Recept",
+        "title": "Topinky s tuňákovou pomazánkou a vejcem",
+        "imgUrl": "//placehold.it/50/50",
+        "link": "#",
+        "tokens": ["recept", "tuňák", "vejce", "pomazánka"]
+      }
+    ],
+    "totalResults": 25
+  }
+]

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST - banner</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow"/>
+    <meta name="author" content=""/>
+
+    <!--og-->
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="16x16" href="#">
+    <link rel="manifest" href="#">
+
+    <!--styles-->
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="css/slick-slider.1.9.0.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-select-1.13.0.min.css"/>
+    <link rel="stylesheet" href="css/boostrap-animated-progressbar.css"/>
+    <link rel="stylesheet" href="css/simplebar.css"/>
+    <link rel="stylesheet" href="css/ditap-grid.css"/>
+    <link rel="stylesheet" href="css/main2.css"/>
+    <link rel="stylesheet" href="css/ditap-tiles.css"/>
+</head>
+<body>
+<div class="content-wrapper about-me bg-white">
+    <header>
+        <!-- Top Brand and Claim -->
+        <div data-include="partials/components/header-top-claim.html"></div>
+        <!-- Main Navigation -->
+        <div data-include="partials/components/nav-main-logged-in.html"></div>
+    </header>
+
+    <div class="under-header position-relative">
+        <!-- About banner -->
+
+        <!--TEST-->
+        <style>
+            /*delete*/
+            .banner-ditap .carousel-item > img {
+                max-height: none;
+                /*height: none;*/
+                /*width: none;*/
+                transform: none;
+            }
+            /*delete*/
+
+
+            .jumbotron {
+                height: calc(100vh - 160px);
+            }
+
+            /* Declare heights because of positioning of img element */
+            .jumbotron .item {
+                height: calc(100vh - 147px);
+                background-color: #777;
+                max-height: none;
+            }
+
+            .carousel-inner > .item > img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%; /*makes image take up full width on bigger*/
+                /*min-width: 830px;*/ /*image does not shrink on small*/
+                min-height: 500px; /*no shrink on small*/
+            }
+
+            .carousel-slide {
+                width: 100%;
+                height: calc(100vh - 160px);
+                background-size: cover; /*image takes full dimentions*/
+                background-position: center; /*image stays center on resize*/
+            }
+
+            .jumbotron .item img {
+                width: 100%;
+                height: 100% !important;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+
+            @media screen and (max-width: 991px) {
+                .jumbotron {
+                    height: calc(100vh - 130px);
+                }
+
+                .jumbotron .item {
+                    height: calc(100vh - 130px);
+                }
+            }
+
+            @media screen and (max-width: 766px) {
+                .jumbotron {
+                    height: calc(100vh - 70px);
+                }
+
+                .jumbotron .item {
+                    height: calc(100vh - 70px);
+                }
+            }
+
+
+            .object-fit-container .object-fit-image {
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+
+            .js-object-fit {
+                position: relative;
+                background-size: cover;
+                background-position: center center;
+            }
+            .js-object-fit .object-fit-image {
+                opacity: 0;
+            }
+
+        </style>
+        <div class="banner-ditap jumbotron jumbotron-fluid p-0">
+            <div class="position-relative o-h">
+                <div class="card-panel position-absolute d-flex justify-content-start align-items-center w-100 h-100">
+                    <div class="container-grid text-left pt-xl-6">
+                        <div class="row no-gutters justify-content-start w-100">
+                            <div class="col-auto">
+                                <div class="card-align-position">
+                                    <img class="d-block mb-4" src="DitaP/media/DitaP/logos/logo_ditap.svg"
+                                         alt="Dita P."/>
+                                    <h1 class="text-ditap-h2">Já prostě vařím<br/>každý den</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item item active image-wrap object-fit-container">
+                        <img class="carousel-slide  d-block mx-auto object-fit-image"
+                             src="DitaP/media/DitaP/images/banner/about-banner.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var userAgent, ieReg, ie;
+            userAgent = window.navigator.userAgent;
+            ieReg = /msie|Trident.*rv[ :]*11\./gi;
+            ie = ieReg.test(userAgent);
+
+            if(ie) {
+                $(".object-fit-container").each(function () {
+                    var $container = $(this),
+                        imgUrl = $container.find("img").prop("src");
+                    if (imgUrl) {
+                        $container.css("backgroundImage", 'url(' + imgUrl + ')').addClass("js-object-fit");
+                    }
+                });
+            }
+        </script>
+        <!--TEST end-->
+
+        <!-- Page scroll down arrow -->
+        <a href="#" class="nav-link icon-link arrow-scroll-down d-none d-lg-block" data-offset="60"
+           data-id="#scroll-down">
+            <span class="icon-ditap-arrow arrow-down"></span>
+        </a>
+    </div>
+
+    <div class="main-content">
+
+        <section id="scroll-down" class="">
+            <div class="container-grid ">
+                <div class="row no-gutters justify-content-between w-100">
+                    <div class="col-auto">
+                        <div class="about-content">
+                            <p class="text-ditap-perex mb-5">Strašně ráda, vždycky s chutí, klidně sama pro sebe.
+                                Zahalím se
+                                do takové zvláštní bubliny, ze které se nenechám vyrušovat a myslím
+                                – no na sebe taky, ale hlavně na ostatní, kteří si pak se mnou sednou ke stolu. Vždycky
+                                to tak
+                                nebylo.</p>
+                            <p class="text-ditap-serif mb-4">Vyprávějí mi, že jsem se narodila bez chuti k jídlu. Nic
+                                takového si nepamatuju, zato dobře vím, že
+                                už v pěti letech jsem začala vařit. Jen v kuchyni mě ovšem nenechali.</p>
+
+                            <p class="text-ditap-serif mb-4"> Vystudovala jsem gymnázium, maturovala v americké Jižní
+                                Karolíně a pak – nevím proč – jsem podlehla
+                                touze stát se soudkyní a čtyři roky jsem se na to připravovala na pražské právnické
+                                fakultě. Pak
+                                jsem normálně odešla, abych chvíli pracovala v produkci amerických filmů.</p>
+
+                            <p class="text-ditap-serif mb-4"> Brzy potom mě dostihla rodinná anamnéza: žurnalistika.</p>
+
+                            <p class="text-ditap-serif mb-4"> Krátce jsem psala pro iDnes, než jsem konečně vstoupila
+                                tam, kam patřím: do novinářského světa o
+                                jídle. Do měsíčníku Apetit, jako food directorka. Za půl roku jsem časopis řídila;
+                                vydrželo mi to
+                                pět let, během kterých Apetit několikrát ocenili jako Časopis roku. Pak přišly další
+                                časopisy o
+                                jídle: Albert v kuchyni, S Penny u stolu.</p>
+
+                            <p class="text-ditap-serif mb-4"> Mezitím už začalo moje osobní „podnikání.“ V roce 2011
+                                jsem si sama vydala vlastní Kuchařku Deník
+                                Dity P., za čtyři roky další a obě mé vymazlené Kuchařky adaptoval režisér David
+                                Ondříček do
+                                šestnáctidílných sérií pro Českou televizi. I v nich jsem vařila. Co jiného! A
+                                servírovala na
+                                vlastním Vyšívaném porcelánu.</p>
+
+                            <p class="text-ditap-serif mb-4"> Taky jsem se se vdala za Marka a narodil se nám syn
+                                Davídek.</p>
+
+                            <p class="text-ditap-serif mb-4">Žiju v Praze. Miluju Humpolec. Svoji novou rodinu – Marka a
+                                Davídka. Jídlo. A sním o bílém domě na
+                                venkově s obrovskou, ale obrovskou kuchyní a zahradou.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram feed -->
+        <div data-include="partials/instagram-feed.html"></div>
+        <!-- Small cards variant 4x with slick slider on tablets -->
+        <div data-include="partials/components/slider-teaser-about3.html"></div>
+        <!-- Story porcelain promo -->
+        <div data-include="partials/sections/section-promo-story-porcelain.html"></div>
+    </div>
+    <footer>
+        <!-- Footer -->
+        <div data-include="partials/components/footer-main.html"></div>
+    </footer>
+    <!-- Backdrop overlay -->
+    <div data-include="partials/components/modal-backdrop-overlay.html"></div>
+</div>
+<!-- Search Modal -->
+<div data-include="partials/components/modal-search.html"></div>
+<!-- Newsletter Multistep Modal -->
+<div data-include="partials/modal-newsletter-steps2.html"></div>
+<!-- Login Modal -->
+<div data-include="partials/modal-login2.html"></div>
+<!-- Registration Modal -->
+<div data-include="partials/modal-registration-steps2.html"></div>
+<!-- Cart Modal -->
+<div data-include="partials/components/modal-cart.html"></div>
+<!--javascripts-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-main.js IN KENTICO -->
+<script src="http://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+<script src="js/typeahead.bundle.min.js"></script>
+<script src="js/jquery.mmenu.all.js"></script>
+<script src="js/jquery.mmenu.bootstrap4.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap-select-1.13.0.min.js"></script>
+<script src="js/bootstrap-multistep-modals.js"></script>
+<script src="js/slick-slider-1.9.0.min.js"></script>
+<script src="js/simplebar.js"></script>
+<script src="js/instafeed.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+    // This script is for template purposes only, do not use in KENTICO!!!
+    $(function () {
+        // Set menu item to active
+        $('.top-nav').find('li.nav-item').eq(3).addClass('active');
+
+
+        // Instagram feed
+        // This has to be inside KENTICO webpart and be more secure
+        (function () {
+            // var USER_ID = 295382313; //ditap
+            //var ACCESS_TOKEN = '?'; // ditap
+            var USER_ID = 8226047327; //anonym
+            var ACCESS_TOKEN = '8226047327.1677ed0.48182ba6070f47c9957c278f5140fc07'; // anonym
+            var TAGNAME = 'ditap';
+            var LIMIT = 8;
+            var imagesCnt = 0;
+            var feed = new Instafeed({
+                target: 'instagram-gallery',
+                get: "user",
+                // get: "tagged",
+                tagName: TAGNAME,
+                limit: 100,
+                userId: USER_ID,
+                sortBy: 'most-recent',
+                resolution: 'standard_resolution',
+                accessToken: ACCESS_TOKEN,
+                template: '<a class="instagramm-item" target="_blank" href="{{link}}">' +
+                    '<span class="instagramm-item-inner" style="background-image: url({{image}});>' +
+                    '<div class="img-backdrop">' +
+                    '</div>' +
+                    '<div class="description-container">' +
+                    //'<p class="caption">{{caption}}</p>' +
+                    '<span class="likes"><i class="ditap-ico_inst_like"></i> {{likes}}</span>' +
+                    '<span class="comments"><i class="ditap-ico_inst_comment"></i> {{comments}}</span>' +
+                    '</div>' +
+                    '</span>' +
+                    '</a>',
+                filter: function (image) {
+
+                    // uncomment to use the tag filtering
+                    var result = true;
+                    // var result = (image.tags.indexOf(TAGNAME) >= 0);
+                    if (result === true) {
+                        imagesCnt++;
+                    }
+
+                    return (imagesCnt <= LIMIT) ? result : false;
+                },
+                after: function () {
+                    if (imagesCnt < LIMIT) {
+                        feed.next();
+                    }
+                }
+            });
+
+            feed.run();
+        })();
+    });
+</script>
+</body>
+</html>

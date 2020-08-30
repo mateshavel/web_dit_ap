@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Dita P. - Diary Detail</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow"/>
+    <meta name="author" content=""/>
+
+    <!--og-->
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="16x16" href="#">
+    <link rel="manifest" href="#">
+
+    <!--styles-->
+    <link rel="stylesheet" href="../css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="../css/slick-slider.1.9.0.css"/>
+    <link rel="stylesheet" href="../css/uikit.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap-select-1.13.0.min.css"/>
+    <link rel="stylesheet" href="../css/boostrap-animated-progressbar.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body data-spy="scroll" data-target="#inpage-nav-diary" data-offset="55">
+<div class="content-wrapper diary-detail bg-white">
+    <header>
+        <!-- Top Brand and Claim -->
+        <div data-include="../partials/top-claim.html"></div>
+        <!-- Main Navigation -->
+        <div data-include="../partials/main-nav2.html"></div>
+        <!-- Diary detail banner -->
+        <div data-include="../partials/banner-diary-detail2.html"></div>
+        <!-- Page scroll down arrow -->
+        <a href="#" class="nav-link icon-link arrow-scroll-down d-none d-lg-block" data-offset="60" data-id="#scroll-down">
+            <span class="icon-ditap-arrow arrow-down"></span>
+        </a>
+    </header>
+    <div class="main-content">
+        <!-- Diary in-page navigation with scrollspy  -->
+        <div data-include="../partials/OLD/inpage-nav-diary-scrollspy.html"></div>
+        <!-- Diary detail intro -->
+        <div data-include="../partials/OLD/diary-detail-intro.html"></div>
+        <!-- Diary detail recipe 1 -->
+        <div data-include="../partials/OLD/diary-detail-recipe-bruschetty.html"></div>
+        <!-- Diary detail recipe 2 -->
+        <div data-include="../partials/OLD/diary-detail-recipe-bazalkove-pesto.html"></div>
+        <!-- Diary detail recipe 3 -->
+        <div data-include="../partials/OLD/diary-detail-recipe-salat-s-jahodami.html"></div>
+        <!-- Diary detail recipe 4 -->
+        <div data-include="../partials/OLD/diary-detail-recipe-pistaciovy-dort.html"></div>
+        <!-- Diary detail recipe 5 width Email form -->
+        <div data-include="../partials/OLD/diary-detail-recipe-with-email.html"></div>
+        <!-- Slider with variable product teasers -->
+        <div data-include="../partials/slider-product-teasers-variable.html"></div>
+        <!-- Other story -->
+        <section class="mt-5 mb-5 pt-lg-2 pb-lg-2">
+            <h2 class="text-center text-ditap-h4">můj další příběh</h2>
+        </section>
+        <div data-include="../partials/redirect-diary-card-pancake2.html"></div>
+    </div>
+    <footer>
+        <!-- Footer -->
+        <div data-include="../partials/footer2.html"></div>
+    </footer>
+    <!-- Backdrop overlay -->
+    <div data-include="../partials/backdrop-overlay.html"></div>
+</div>
+<!-- Search Modal -->
+<div data-include="partials/modal-search2.html"></div>
+<!-- Newsletter Multistep Modal -->
+<div data-include="partials/modal-newsletter-steps2.html"></div>
+<!-- Login Modal -->
+<div data-include="partials/modal-login2.html"></div>
+<!-- Registration Modal -->
+<div data-include="partials/modal-registration-steps2.html"></div>
+<!--javascripts-->
+<script src="../js/jquery-3.3.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-main.js IN KENTICO -->
+<script src="https://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+<script src="../js/typeahead.bundle.min.js"></script>
+<script src="../js/jquery.mmenu.all.js"></script>
+<script src="../js/jquery.mmenu.bootstrap4.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap-select-1.13.0.min.js"></script>
+<script src="../js/bootstrap-multistep-modals.js"></script>
+<script src="../js/slick-slider-1.9.0.min.js"></script>
+<script src="../js/uikit.min.js"></script>
+<script src="../js/stickyfill.min.js"></script>
+<script src="../js/printThis.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    $(function() {
+        // Set menu item to active, do not use in KENTICO!!!
+        $('.top-nav').find('li.nav-item').eq(1).addClass('active');
+
+        // Sticky polyfill
+        var stickyElements = $('.sticky-top');
+        Stickyfill.add(stickyElements);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Dita P. - Shop checkout</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow"/>
+    <meta name="author" content=""/>
+
+    <!--og-->
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="16x16" href="#">
+    <link rel="manifest" href="#">
+
+    <!--styles-->
+    <link rel="stylesheet" href="../css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="../css/slick-slider.1.9.0.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap-select-1.13.0.min.css"/>
+    <link rel="stylesheet" href="../css/boostrap-animated-progressbar.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+<div class="content-wrapper shop-checkout bg-white">
+    <header>
+        <!-- Top Brand and Claim -->
+        <!--<div data-include="partials/top-claim.html"></div>-->
+        <!-- Main Navigation -->
+        <!--<div data-include="partials/main-nav2.html"></div>-->
+    </header>
+    <div class="main-content">
+
+        <!-- Navigation -->
+        <section class="inpage-nav-eshop border-bottom-rgba sticky-top">
+            <div class="container container-1400">
+                <div class="row checkout-menu flex-nowrap justify-content-between align-items-center">
+                    <div class="col-4 pl-md-2">
+                        <a class="position-relative text-ditap-paragraph-2 link-black" href="shop-cart2.html">
+                            <span class="ditap-small-arrow-sec mr-3"></span>
+                            <span class="d-md-none">Košík</span>
+                            <span class="d-none d-md-inline">Zpět do košíku</span>
+                        </a>
+                    </div>
+                    <div class="col-4 text-center p-0">
+                        <a class="navbar-brand mr-0" href="../index.html">
+                            <img src="../DitaP/media/DitaP/logos/logo_ditap.svg" alt="Dita P.">
+                        </a>
+                    </div>
+                    <div class="col-4 pr-md-2 d-flex justify-content-end align-items-center">
+                        <ul class="nav user-cart-menu right-menu justify-content-end align-items-center order-lg-1 d-none d-md-flex">
+                            <!-- Account -->
+                            <li class="nav-item dropdown">
+                                <a class="btn-account logged-in nav-link dropdown-toggle" href="#" id="userAccountDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="ditap-ico_account_mob d-block d-md-none"></span>
+                                    <span class="text-ditap-paragraph d-none d-md-inline">Marcela Králová</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userAccountDropdown">
+                                    <a class="dropdown-item" href="user2.html#orders">Moje objednávky</a>
+                                    <a class="dropdown-item" href="user2.html#account">Nastevní účtu</a>
+                                    <a class="dropdown-item" href="homepage2.html">Odhlásit</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container pl-md-4 pr-md-2 pt-lg-4 pl-lg-0 pr-lg-0 pb-md-5">
+                <div class="row">
+                    <!--Checkout-->
+                    <div class="shop-checkout-wrapper col-sm-12 col-md-8 col-lg-9 mt-md-5 mb-0 mb-md-5 pt-md-0 pl-0 pr-0 bg-gray">
+                        <div class="accordion" id="accordionCheckout" role="tablist" aria-multiselectable="true">
+                            <!--Step 1 -->
+                            <div id="shop-checkout-step-1" class="shop-checkout-step accord-checkout bg-gray">
+                                <!-- Checkout Step 1 Header -->
+                                <div  id="ch1" class="card-header active d-lg-flex d-block align-items-center align-items-lg-start align-items-xl-center justify-content-start flex-lg-column flex-xl-row w-100" role="tab">
+                                    <a href="#" class="perex text-ditap-perex position-relative pl-2 pl-xl-4" data-toggle="collapse"
+                                       data-target="#c1" data-parent="#accordionCheckout" aria-expanded="true" aria-controls="c1">
+                                        <span class="pr-2 pr-md-4">1.</span>Doprava a platba
+                                        <span class="checkout-step-info hide ico-ok-green d-flex align-self-start position-absolute">&nbsp</span>
+                                    </a>
+                                    <span id="step-1-info" class="checkout-step-info hide text-ditap-paragraph-2 d-flex d-lg-inline-block pt-xl-2 ml-xl-1"></span>
+                                    <a href="#" class="checkout-step-info hide step-change d-flex justify-content-end align-content-center text-ditap-paragraph-2 link-grey position-absolute pt-lg-2"
+                                        data-toggle="collapse" data-target="#c1" data-parent="#accordionCheckout">
+                                        Upravit
+                                    </a>
+                                </div>
+                                <!-- Checkout Step 1 Body -->
+                                <div id="c1" class="ml-0 ml-lg-4 collapse show" role="tabpanel" aria-labelledby="ch1" data-parent="#accordionCheckout">
+                                    <div class="card-body pl-3 pt-0">
+                                        <!-- Doprava -->
+                                        <div class="pl-3 pr-2 pl-lg-5 pr-lg-5 mr-lg-2 mt-lg-3">
+                                            <span class="text-ditap-h8">Doprava</span>
+                                            <div class="input-box input-border mt-3 p-3 p-md-4 pb-lg-5">
+                                                <span class="float-left ico-w-45 ditap-ico_car_ok pr-3"><span class="path1"></span><span
+                                                      class="path2"></span><span class="path3"></span><span
+                                                      class="path4"></span><span class="path5"></span><span
+                                                      class="path6"></span>
+                                                </span>
+                                                <div class="d-flex justify-content-between">
+                                                    <span class="text-ditap-serif">PPL Česká Republika</span>
+                                                    <span class="text-ditap-default text-ditap-bold">120 Kč</span>
+                                                </div>
+                                                <p id="delivery-date-info" class="text-ditap-paragraph-2 mb-1">Doručíme do 30.10.2017</p>
+                                                <p class="text-ditap-tip mt-2 mb-0 mr-lg-5">
+                                                    Náklady na dopravu zahrnují zvýšené nároky na
+                                                    balení křehkého zboží, sady porcelánu jsou baleny samostatně.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!--Radio btn platba -->
+                                        <div class="pt-4 pl-3 pr-2 pl-lg-5 pr-lg-5 mr-lg-2 mt-lg-1">
+                                            <span class="text-ditap-h8">Platba</span>
+                                            <div class="btn-group-vertical btn-group-toggle w-100 mt-3" data-toggle="buttons">
+                                                <label class="btn w-100 p-3 p-md-4 text-left radio-btn active">
+                                                    <span class="float-left ico-w-45 ditap-ico_card_ok pr-3">
+                                                        <span class="path1"></span><span class="path2"></span><span class="path3"></span>
+                                                    </span>
+                                                    <input class="form-control" type="radio" name="paymentType" value="platba-kartou" autocomplete="off" checked/>
+                                                    <span class="d-flex justify-content-between">
+                                                        <span class="payment-type-text text-ditap-serif">Platba kartou</span>
+                                                        <span class="text-ditap-default bold-active">Zdarma</span>
+                                                    </span>
+                                                </label>
+                                                <label class="btn w-100 p-3 p-md-4 pt-4 pb-4 pb-lg-5 text-left radio-btn">
+                                                    <span class="float-left ditap-ico_dobirka pr-3"></span>
+                                                    <input type="radio" name="paymentType" value="dobirka" autocomplete="off">
+                                                    <span class="d-flex justify-content-between">
+                                                        <span class="payment-type-text text-ditap-serif">Dobírka</span>
+                                                        <span class="text-ditap-default bold-active">40 Kč</span>
+                                                    </span>
+                                                    <span class="d-block text-ditap-tip mt-2">
+                                                        Objednávku zaplatíte hotově při převzetí.
+                                                        Platba kartou není možná.
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <p class="text-center pt-4 mt-2 mt-md-3 mb-md-5">
+                                            <a href="#" class="btn btn-ditap btn-ditap-large btn-ditap-blue"
+                                               data-toggle="collapse" data-target="#c2" data-parent="#accordionCheckout" data-checkout-step="1"
+                                               aria-expanded="false" aria-controls="c2">Pokračovat</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step 2 -->
+                            <div id="shop-checkout-step-2" class="shop-checkout-step accord-checkout bg-gray">
+                                <!-- Checkout Step 2 Header -->
+                                <div  id="ch2" class="card-header d-lg-flex d-block align-items-center align-items-lg-start align-content-xl-center flex-lg-column flex-xl-row justify-content-start w-100" role="tab">
+                                    <a href="#" class="perex text-ditap-perex position-relative pl-2 pl-xl-4" data-toggle="collapse"
+                                       data-target="#c2" data-parent="#accordionCheckout" aria-expanded="false" aria-controls="c2">
+                                        <span class="pr-2 pr-md-3 mr-md-1">2.</span>Doručovací údaje
+                                        <span class="checkout-step-info hide ico-ok-green d-flex align-self-start position-absolute">&nbsp</span>
+                                    </a>
+                                    <span id="step-2-info" class="checkout-step-info hide text-ditap-paragraph-2 d-flex d-lg-inline-block pt-xl-2 ml-1 ml-md-0"></span>
+                                    <a href="#" class="checkout-step-info hide step-change d-flex justify-content-end align-content-center text-ditap-paragraph-2 link-grey position-absolute pt-lg-2"
+                                       data-toggle="collapse" data-target="#c2" data-parent="#accordionCheckout">
+                                        Upravit
+                                    </a>
+                                </div>
+                                <!-- Checkout Step 2 Body -->
+                                <div id="c2" class="ml-0 ml-lg-4 collapse" role="tabpanel" aria-labelledby="ch2"
+                                     data-parent="#accordionCheckout">
+                                    <div class="card-body pl-3 pt-0">
+                                        <!--doručovací adresa-->
+                                        <div class="pl-3 pr-2 pl-lg-5 pr-lg-5 mr-lg-2 mt-lg-3">
+                                            <span class="text-ditap-h8">Doručovací adresa</span>
+                                            <hr>
+                                            <div class="form-row delivery-info-form needs-form-validation">
+                                                <div class="form-group mx-auto col-12 col-lg-6 pr-lg-3">
+                                                    <label class="text-ditap-label">Jméno</label>
+                                                    <input type="text" class="form-control input-ditap-lg mb-3"
+                                                           name="name"
+                                                           value="Marcela"
+                                                           required>
+                                                    <div class="text-left invalid-feedback">
+                                                        Chybová hláška
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mx-auto col-12 col-lg-6">
+                                                    <label class="text-ditap-label">Příjmení</label>
+                                                    <input type="text" class="form-control input-ditap-lg mb-3"
+                                                           name="surname"
+                                                           value="Králová"
+                                                           required>
+                                                    <div class="text-left invalid-feedback">
+                                                        Chybová hláška
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mx-auto col-12 col-md-12">
+                                                    <label class="text-ditap-label">Váš email</label>
+                                                    <input type="email" class="form-control input-ditap-lg mb-3"
+                                                           name="email"
+                                                           value="marcela@kralova.seznam.cz"
+                                                           required>
+                                                    <div class="text-left invalid-feedback">
+                                                        Chybová hláška
+                                                    </div>
+                                                    <span class="text-ditap-tip info-span mt">Sem Vám pošlu informace, kdykoliv se něco šustne kolem objednávky. Nemáte zač.</span>
+                                                </div>
+                                                <div class="form-group mx-auto col-4 col-sm-3 col-md-3 pr-lg-3">
+                                                    <label class="text-ditap-label">Předvolba</label>
+                                                    <input type="text" class="form-control input-ditap-lg mb-3"
+                                                           name="phone-prefix"
+                                                           value="+420"
+                                                           required>
+                                                    <div class="text-left invalid-feedback">
+                                                        Chybová hláška
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mx-auto col-8 col-sm-9 col-md-9">
+                                                    <label class="text-ditap-label">Telefon</label>
+                                                    <input type="text" class="form-control input-ditap-lg mb-3"
+                                                           name="phone"
+                                                           value="620 112 777"
+                                                           required>
+                                                    <div class="text-left invalid-feedback">
+                                                        Chybová hláška
+                                                    </div>
+                                                    <span class="text-ditap-tip info-span mt">Než Vám kurýr doručí zboží, na toto číslo dá vědět.</span>
+                                                </div>
+                                                <div class="form-group mx-auto col-12 col-md-12">
+                                                    <label class="text-ditap-label">Firma</label>
+                                                    <input type="text" class="form-control input-ditap-lg mb-3"
+                                                           placeholder="Když si necháváte poslat balík do práce"/>
+                                                    <div class="text-left invalid-feedback">
+                                                        Chybová hláška
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mx-auto col-12 col-md-12">
+                                                    <label class="text-ditap-label">Ulice a číslo</label>
+                                                    <input type="text" class="form-control input-ditap-lg mb-3"
+                                                           name="street"
+                                                           value="Na dvorečku 17"
+                                                           required>
+                                                    <div class="text-left invalid-feedback">
+                                                        Chybová hláška
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mx-auto col-12 col-sm-12 col-md-8 pr-lg-3">
+                                                    <label class="text-ditap-label">Město</label>
+                                                    <input type="text" class="form-control input-ditap-lg mb-3"
+                                                           name="city"
+                                                           value="Hradec nad Moravicí"
+                                                           required>
+                                                    <div class="text-left invalid-feedback">
+                                                        Chybová hláška
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mx-auto col-12 col-sm-12 col-md-4">
+                                                    <label class="text-ditap-label">PSČ</label>
+                                                    <input type="text" class="form-control input-ditap-lg mb-3"
+                                                           name="postcode"
+                                                           value="276 01" required>
+                                                    <div class="text-left invalid-feedback">
+                                                        Chybová hláška
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mx-auto col-12 col-md-12">
+                                                    <label class="text-ditap-label">Stát</label>
+                                                    <input type="text" class="form-control input-ditap-lg mb-3"
+                                                           name="state"
+                                                           value="Česká Republika" disabled>
+                                                    <div class="text-left invalid-feedback">
+                                                        Chybová hláška
+                                                    </div>
+                                                    <span class="text-ditap-tip info-span mt">Potřebujete to jinam?
+                                                        <a href="#" class="color-blue hover-red">Přepněte se do jiného státu</a> v mém eshopu.
+                                                    </span>
+                                                </div>
+                                                <div class="form-group mx-auto col-12 col-sm-12 col-md-12">
+                                                    <label class="text-ditap-label">Poznámka k doručení</label>
+                                                    <textarea type="text" rows="5" name="message" class="form-control textarea-ditap mb-3"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--fakturační adresa-->
+                                        <div class="pl-3 pr-2 pl-lg-5 pr-lg-5 mr-lg-2 mt-lg-3">
+                                            <span class="text-ditap-h8">Fakturační adresa</span>
+                                            <hr>
+                                            <div class="form-group custom-control custom-checkbox checkbox-ditap custom-control-inline ml-2">
+                                                <input type="checkbox" id="agreeTOS" name="agree-tos" class="custom-control-input">
+                                                <label class="custom-control-label text-ditap-default pl-lg-2" for="agreeTOS">
+                                                    Nakupuji na firmu
+                                                </label>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <!--next-->
+                                        <p class="text-center pt-4">
+                                            <input type="submit" class="btn btn-ditap btn-ditap-large btn-ditap-blue"
+                                               data-toggle="collapse" data-target="#ch3" data-parent="#accordionCheckout" data-checkout-step="2"
+                                               aria-expanded="false" aria-controls="c3" value="Pokračovat"/>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Step 3 -->
+                            <div id="shop-checkout-step-3" class="accord-checkout bg-gray">
+                                <!-- Checkout Step 3 Header -->
+                                <div  id="ch3" class="card-header d-lg-flex d-block align-items-center justify-content-start w-100" role="tab">
+                                    <a href="#" class="perex text-ditap-perex position-relative pl-2 pl-xl-4" data-toggle="collapse"
+                                       data-target="#c3" data-parent="#accordionCheckout" aria-expanded="false" aria-controls="c3">
+                                        <span class="pr-2 pr-md-3 mr-md-1">3.</span>Potvrzení
+                                    </a>
+                                </div>
+                                <!-- Checkout Step 3 Body -->
+                                <div id="c3" class="collapse" role="tabpanel" aria-labelledby="ch3"
+                                     data-parent="#accordionCheckout">
+                                    <div class="card-body pl-3 pt-0">
+                                        <!--ditap info-->
+                                        <div class="pl-3 pr-2 pl-md-5 pr-md-2 ml-md-1 pr-lg-5 mr-lg-2 mt-lg-2">
+                                            <div class="row d-md-flex align-items-md-center pb-2 pb-xl-4 pl-xl-4">
+                                                <div class="col-3 col-md-3 col-xl-2 pr-0">
+                                                    <img class="img-ditap-face-responsive img-ditap-face-big-on-tablet" src="../DitaP/media/DitaP/images/img_dita_face.png">
+                                                </div>
+                                                <div class="col-9 col-md-9 col-lg-9 pl-2 pl-md-3 pt-0 pb-md-3 pl-md-2 pl-lg-0">
+                                                    <span class="text-ditap-quotation">Tak jo, Marcelo, teď už jen mrkněte, jestli je všechno správně a pokračujte tlačítkem Objednat.</span>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                        <!--souhlas k objednání-->
+                                        <div class="pl-2 pr-2 pt-2 pl-md-5 ml-md-1 pt-md-3 pl-lg-5 pr-lg-5 mr-lg-2 mt-lg-3">
+                                            <div class="form-group custom-control custom-checkbox checkbox-ditap position-relative custom-control-inline ml-2 ml-md-0 pb-2">
+                                                <input type="checkbox" id="agreeTerms" name="agree-terms" class="custom-control-input" required>
+                                                <label class="custom-control-label text-ditap-paragraph-2" for="agreeTerms">
+                                                    <span class="ml-2 mt-md-1 d-inline-block">Stisknutím tlačítka “Objednat” potvrzuji, že jsem se seznámil/a s
+                                                        <a href="../terms-and-conditions.html" target="_blank" class="color-blue hover-red">obchodními podmínkami</a>
+                                                        obchodu Ditap.cz
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <hr class="d-block d-md-none ml-2">
+                                        </div>
+                                        <!-- Shopping cart link -->
+                                        <div class="bg-gray pt-2 d-block d-md-none">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <div class="d-inline-block text-ditap-paragraph-2 mr-3 pt-1">
+                                                    <span class="total-price">15 800</span>
+                                                    <span class="cart-item-currency">Kč</span>
+                                                </div>
+                                            </div>
+                                            <p class="text-center mt-3 mp-5">
+                                                <a href="shop-confirmation.html" class="btn btn-ditap btn-ditap-large btn-ditap-red btn-ditap-disabled" data-checkout-step="3">Objednat</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Shopping cart-->
+                    <div class="col-sm-12 col-md-4 col-lg-4 mt-5 mb-5 pr-md-0 p-lg-0 ml-lg-5 shopping-cart">
+                        <div class="shopping-cart-content sticky-top">
+
+                            <div class="border-bottom bg-gray d-flex justify-content-between align-items-center px-4 px-md-3 px-lg-4 pt-3 pb-2">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a class="btn-cart" href="#">
+                                        <span class="ditap-ico_cart_empty"></span>
+                                        <span class="badge badge-pill cart-badge">3</span>
+                                    </a>
+                                    <span class="text-ditap-h8 ml-4 d-md-none d-lg-inline">Košík</span>
+                                </div>
+                                <a href="shop-cart2.html" class="text-ditap-paragraph-2 link-grey pr-lg-2">Upravit</a>
+                            </div>
+
+                            <div class="shopping-cart-scroll mobile-no-scroll bg-white px-3">
+                                <!--variant 1-->
+                                <div class="row border-bottom py-3">
+                                    <div class="col-3">
+                                        <img class="img50x50" src="../DitaP/media/DitaP/images/50x50/Sada_snidane_mak.jpg" alt=""/>
+                                    </div>
+                                    <div class="col-9 pl-2 pl-md-4 pl-lg-3">
+                                        <p class="text-ditap-paragraph-3-serif mb-0">Sada snídaně</p>
+                                        <p class="mb-0 d-inline-block">
+                                            <span class="d-inline align-middle ditap-ico_vzor_mak_mob fs-14"></span>
+                                            <span class="align-middle text-ditap-paragraph-2">Mák</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-9 offset-3 pl-2 pl-md-4 pl-lg-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-inline-block text-ditap-paragraph-2">
+                                                <span class="cart-item-amount">10</span>
+                                                <span class="cart-item-unit">ks</span>
+                                            </div>
+                                            <div class="d-inline-block text-ditap-paragraph-2 pr-2 pr-md-0">
+                                                <span class="cart-item-price">10 598</span>
+                                                <span class="cart-item-currency">Kč</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--variant 2-->
+                                <div class="row border-bottom py-3">
+                                    <div class="col-3">
+                                        <img class="img50x50" src="../DitaP/media/DitaP/images/50x50/denik.jpg" alt=""/>
+                                    </div>
+                                    <div class="col-9 pl-2 pl-md-4 pl-lg-3">
+                                        <p class="text-ditap-paragraph-3-serif mb-0">Kuchařka Deník Dity P.</p>
+                                        <p class="mb-0 mt-0 d-inline-block">
+                                            <span class="align-middle text-ditap-paragraph-2">I. Díl</span>
+                                        </p>
+                                        <p class=" my-2 text-ditap-tip">"Pro naši Jarmilku, aby stále vyvářela jako z pohádky"</p>
+                                    </div>
+                                    <div class="col-9 offset-3 pl-2 pl-md-4 pl-lg-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-inline-block text-ditap-paragraph-2">
+                                                <span class="cart-item-amount">1</span>
+                                                <span class="cart-item-unit">ks</span>
+                                            </div>
+                                            <div class="d-inline-block text-ditap-paragraph-2 pr-2 pr-md-0">
+                                                <span class="cart-item-price">425</span>
+                                                <span class="cart-item-currency">Kč</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--variant 3-->
+                                <div class="row border-bottom py-3">
+                                    <div class="col-3">
+                                        <img class="img50x50" src="../DitaP/media/DitaP/images/ico_cupon500_mob.png" alt=""/>
+                                    </div>
+                                    <div class="col-9 pl-2 pl-md-4 pl-lg-3">
+                                        <p class="text-ditap-paragraph-3-serif mb-0">Dárková poukázka</p>
+                                        <p class="text-ditap-paragraph-2">98U DPP 459</p>
+                                    </div>
+                                    <div class="col-9 offset-3 pl-2 pl-md-4 pl-lg-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-inline-block text-ditap-paragraph-2">
+                                                <span class="cart-item-amount">1</span>
+                                                <span class="cart-item-unit">ks</span>
+                                            </div>
+                                            <div class="d-inline-block text-ditap-paragraph-2 pr-2 pr-md-0 color-red">
+                                                <span class="cart-item-price">-500</span>
+                                                <span class="cart-item-currency">Kč</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-gray border-top pt-3 pt-md-4 pb-0 px-2 px-md-0 px-lg-3">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="text-ditap-paragraph-2 pl-3">Váš nákup</span>
+                                            <div class="d-inline-block text-ditap-paragraph-2 pr-3">
+                                                <span class="price-total">15 860</span>
+                                                <span class="price-total-currency">Kč</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="text-ditap-paragraph-2 pl-3">Slevový kupón</span>
+                                            <div class="d-inline-block text-ditap-paragraph-2 pr-3">
+                                                <span class="price-voucher">-500</span>
+                                                <span class="price-voucher-currency">Kč</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 mt-2">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="text-ditap-paragraph-2 pl-3">Doprava PPL ČR</span>
+                                            <div class="d-inline-block text-ditap-paragraph-2 pr-3">
+                                                <span class="price-delivery">120</span>
+                                                <span class="price-delivery-currency">Kč</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-gray px-4 px-md-3 px-lg-0 pl-lg-4 pr-lg-4 pt-1 pb-5 pb-md-3">
+                                <hr class="mt-2 mb-3 mb-md-4 mb-lg-3 mx-lg-2"/>
+                                <div class="d-flex justify-content-between align-items-end">
+                                    <span class="text-ditap-paragraph-2 pl-lg-2 pb-1">Celkem s DPH</span>
+                                    <div class="d-inline-block text-ditap-price-big pr-lg-2 pb-0">
+                                        <span class="total-price">15 800</span>
+                                        <span class="cart-item-currency">Kč</span>
+                                    </div>
+
+                                </div>
+                                <p class="text-ditap-tip mt-3 d-none">Cena je platná při platbě kartou online. Pokud se
+                                    rozhodnete objednat zboží na dobírku, může být účtován dodatečný poplatek.</p>
+                                <p class="text-center mt-3">
+                                    <a href="shop-confirmation.html" class="btn btn-ditap btn-ditap-large btn-ditap-red btn-ditap-disabled mt-1" data-checkout-step="3">Objednat</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <footer>
+        <!-- Footer -->
+        <div data-include="partials/footer-user.html"></div>
+    </footer>
+    <!-- Backdrop overlay -->
+    <div data-include="partials/backdrop-overlay.html"></div>
+</div>
+<!-- Search Modal -->
+<div data-include="partials/modal-search2.html"></div>
+<!-- Newsletter Multistep Modal -->
+<div data-include="partials/modal-newsletter-steps2.html"></div>
+<!-- Login Modal -->
+<div data-include="partials/modal-login2.html"></div>
+<!-- Registration Modal -->
+<div data-include="partials/modal-registration-steps2.html"></div>
+<!--javascripts-->
+<script src="../js/jquery-3.3.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-main.js IN KENTICO -->
+<script src="https://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+<script src="../js/typeahead.bundle.min.js"></script>
+<script src="../js/jquery.mmenu.all.js"></script>
+<script src="../js/jquery.mmenu.bootstrap4.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap-select-1.13.0.min.js"></script>
+<script src="../js/bootstrap-multistep-modals.js"></script>
+<script src="../js/slick-slider-1.9.0.min.js"></script>
+<script src="../js/stickyfill.min.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    // Checkout steps behaviour
+    $(function() {
+
+        // Sticky polyfill for older browser (IE11)
+        var stickyElements = $('.sticky-top');
+        Stickyfill.add(stickyElements);
+
+        /* EVENTS */
+        $('#accordionCheckout .collapse').on('hide.bs.collapse',function(e) {
+            // Actions when a checkout step is hidden (completed)
+            var checkoutStepComplete = $(this).closest('.shop-checkout-step').hasClass('step-complete');
+            if(checkoutStepComplete) {
+                $(this).prev('.card-header').find('.checkout-step-info').removeClass('hide');
+            }
+
+            // If all steps complete and has no error, allow order
+            var checkoutStepsComplete = $('#accordionCheckout').find('.shop-checkout-step.step-complete');
+            if(checkoutStepsComplete.length === 2 && $('.delivery-info-form').find('.is-invalid').length === 0) {
+                $('[data-checkout-step="3"]').removeClass('btn-ditap-disabled');
+            }
+
+            $(this).prev('.card-header').removeClass('active');
+
+        }).on('show.bs.collapse', function () {
+            // Actions when a checkout step is shown (edited)
+            $(this).prev('.card-header').addClass('active');
+            $(this).prev('.card-header').find('.checkout-step-info').addClass('hide');
+        });
+
+        $('.step-change').on('click', function() {
+            // Show shopping cart again on mobile when editing
+            $('.shopping-cart').removeClass('hide-cart-on-checkout');
+            // Do not allow click on order when editing a step
+            $('[data-checkout-step="3"]').addClass('btn-ditap-disabled');
+            // Step is not complete if clicked on edit
+            $(this).closest('.shop-checkout-step').removeClass('step-complete');
+        });
+
+        $('[data-checkout-step]').on('click', function(e) {
+            var checkoutStep = $(this).data('checkout-step');
+            switch(checkoutStep) {
+                // Shop checkout step 1
+                case 1:
+                    var stepOne = $('#shop-checkout-step-1'),
+                        deliveryInfo = $('#delivery-date-info').text(),
+                        paymentInfo  = $("input[name='paymentType']:checked").closest('label').find('.payment-type-text').text();
+                    $('#step-1-info').text(deliveryInfo + ', ' + paymentInfo);
+                    stepOne.addClass('step-complete').find('.card-header').removeClass('active');
+                    // Do not open step 2 again if already complete
+                    if($('#shop-checkout-step-2').hasClass('step-complete')) {
+                        $('#c3').collapse('show');
+                    }
+                    window.scrollTo(0,0);
+                    break;
+
+                // Shop checkout step 2
+                case 2:
+                    // Clientside form validation of input fields
+                    var fieldsToValidate = $('.delivery-info-form').find('input');
+                    $(fieldsToValidate).each(function() {
+                        if($(this)[0].validity.valid === false) {
+                            $(this).addClass('is-invalid');
+                            $(this).parent().addClass('is-invalid');
+                            $('[data-checkout-step="3"]').addClass('btn-ditap-disabled');
+                            e.preventDefault();
+                            e.stopPropagation();
+                            return false;
+                        } else {
+                            $(this).removeClass('is-invalid');
+                            $(this).parent().removeClass('is-invalid');
+                            var name    = $('#shop-checkout-step-2 input[name="name"]').val() + ' ' + $('#shop-checkout-step-2 input[name="surname"]').val(),
+                                address = $('#shop-checkout-step-2 input[name="street"]').val() + ', '
+                                    + $('#shop-checkout-step-2 input[name="city"]').val() + ', ' + $('#shop-checkout-step-2 input[name="postcode"]').val();
+                            $('#step-2-info').html(name + '<br/>' + address);
+                            $('#shop-checkout-step-2').addClass('step-complete').find('.card-header').removeClass('active');
+                            $('#shop-checkout-step-3').addClass('step-complete');
+                            $('#c3').collapse('show');
+                            $('[data-checkout-step="3"]').removeClass('btn-ditap-disabled');
+                            // Hide cart on mobile
+                            $('.shopping-cart').addClass('hide-cart-on-checkout');
+                            return true;
+                        }
+                    });
+                    window.scrollTo(0,0);
+                    break;
+
+                // Shop checkout step 3 (Click order button)
+                case 3:
+                    // Validate terms & conditions checkbox
+                    var termsCheckbox = $('input[name="agree-terms"]');
+                    if ($(termsCheckbox)[0].validity.valid === false) {
+                        $(termsCheckbox).addClass('is-invalid');
+                        $(termsCheckbox).parent().addClass('is-invalid');
+                        e.preventDefault();
+                        e.stopPropagation();
+                        return false;
+                    }
+                    break;
+
+                default:
+                    checkoutStep = 1;
+            }
+        });
+    });
+</script>
+</body>
+</html>

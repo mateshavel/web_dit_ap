@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Dita P. - Product detail voucher</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow"/>
+    <meta name="author" content=""/>
+
+    <!--og-->
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="16x16" href="#">
+    <link rel="manifest" href="#">
+
+    <!--styles-->
+    <link rel="stylesheet" href="../css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="../css/slick-slider.1.9.0.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap-select-1.13.0.min.css"/>
+    <link rel="stylesheet" href="../css/boostrap-animated-progressbar.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+</head>
+<body>
+
+<div class="content-wrapper bg-white">
+    <header>
+        <!-- Top Brand and Claim -->
+        <div data-include="partials/top-claim.html"></div>
+        <!-- Main Navigation -->
+        <div data-include="partials/main-nav2.html"></div>
+    </header>
+    <div class="main-content">
+
+        <div class="nav breadcrumb-ditap border-bottom d-flex justify-content-start align-items-center m-b-5vh">
+            <!--<a class="nav-item text-ditap-label link-grey pl-4" href="#">Vyšívaný porcelán</a>-->
+            <span class="nav-item text-ditap-h8 pl-4">Poukázky</span>
+        </div>
+
+        <section class="" id="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-7">
+                        <div class="row">
+                            <div class="col">
+                                <img class="img-fluid" src="../DitaP/media/DitaP/images/no-img-product-detail.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <p class="text-ditap-h5 mt-4">Dárkový poukaz</p>
+                        <div class="row mt-2">
+                            <div class="col">
+                                <span class="text-ditap-label">Vzor</span>
+                                <div class="form-control input-ditap-lg select-ditap-vzor mb-3 mt-1">
+                                    <label class="w-100">
+                                        <select class="selectpicker" name="rating-select" data-width="auto">
+                                            <option data-content='
+                                                <span class="ditap-ico_vzor_steh_mob fs-14"></span>
+                                                <span class="text-ditap-paragraph">Steh</span>
+                                                ' value="5" selected>
+                                            </option>
+
+                                            <option data-content='
+                                                <span class="ditap-ico_vzor_mak_mob fs-14"></span>
+                                                <span class="text-ditap-paragraph">Mák</span>
+                                                ' value="4">
+                                            </option>
+
+                                            <option data-content='
+                                                <span class="ditap-ico_vzor_lodicky_mob fs-14"></span>
+                                                <span class="text-ditap-paragraph">Lodičky</span>
+                                                ' value="3">
+                                            </option>
+
+                                            <option data-content='
+                                                <span class="ditap-ico_vzor_len_mob fs-14"></span>
+                                                <span class="text-ditap-paragraph">Len</span>
+                                                ' value="2">
+                                            </option>
+
+                                            <option data-content='
+                                                <span class="ditap-ico_vzor_pruh_mob fs-14"></span>
+                                                <span class="text-ditap-paragraph">Pruh</span>
+                                                ' value="1">
+                                            </option>
+                                        </select>
+                                        <span class="select-icon"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2 mb-3">
+                            <span class="text-ditap-label">Hodnota</span>
+                            <div class="btn-group btn-group-toggle w-100 mt-1" data-toggle="buttons">
+                                <label class="btn text-ditap-paragraph w-100 p-2 radio-btn active">
+                                    <input type="radio" id="value1" autocomplete="off" checked> 1000 Kč
+                                </label>
+                                <label class="btn text-ditap-paragraph w-100 p-2 radio-btn">
+                                    <input type="radio" id="value2" autocomplete="off"> 2000 Kč
+                                </label>
+                                <label class="btn text-ditap-paragraph w-100 p-2 radio-btn">
+                                    <input type="radio" id="value3" autocomplete="off"> 3000 Kč
+                                </label>
+                                <label class="btn text-ditap-paragraph w-100 p-2 radio-btn">
+                                    <input type="radio" id="value4" autocomplete="off"> 4000 Kč
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mt-2 mb-3">
+                            <span class="text-ditap-label">Typ poukazu</span>
+                            <div class="btn-group btn-group-toggle w-100 mt-1" data-toggle="buttons">
+                                <label class="btn text-ditap-paragraph w-100 p-2 radio-btn active">
+                                    <input class="form-control" type="radio" id="typeEletric" autocomplete="off"
+                                           checked>
+                                    Eletronický<span class="badge eshop-badge">Nové</span>
+                                </label>
+                                <label class="btn text-ditap-paragraph w-100 p-2 radio-btn">
+                                    <input type="radio" id="typePaper" autocomplete="off"> Papírový
+                                </label>
+                            </div>
+                            <p class="text-ditap-tip">Tento poukaz si můžete nechat poslat e-mailem nebo rovnou
+                                naplánovat
+                                kdy se má obdarovanému doručit.</p>
+                        </div>
+                        <div class="mt-2 mb-3">
+                            <span class="text-ditap-label">Věnování</span>
+                            <a class="input-ditap-lg input-tablet-size-50 input-btn btn-block w-100 mt-1" href="javascript:void(0)"
+                               data-toggle="modal"
+                               data-target="#modalDedication">
+                                <span class="text-ditap-paragraph font-weight-bold float-left pl-3">+</span>
+                                <span class="text-ditap-paragraph pl-2">Přidat věnování</span>
+                                <span class="text-ditap-paragraph float-right pr-3">0 Kč</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="container-fluid p-0">
+                <style>
+                    .fs-1-7em {
+                        font-size: 1.7em;
+                    }
+
+                    .plus-icon:after {
+                        position: relative;
+                        content: '\eae5';
+                    }
+
+                    .minus-icon:after {
+                        position: relative;
+                        content: '\eadc';
+                    }
+                </style>
+                <hr>
+                <div class="d-flex flex-wrap justify-content-around align-items-center pt-2 pb-4 pl-3 pr-3">
+                    <div>
+                        <span class="ico-ok-green pl-3 pb-3 mt-3">SKLADEM</span>
+                        <span class="text-ditap-paragraph-2 pl-3 pb-3 mt-3">Ihned nebo plánovaně</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a href="#" class="nav-link icon-link">
+                            <span class="icon-ditap-arrow fs-1-7em plus-icon"></span>
+                        </a>
+                        <span class="ml-2 mr-2">1 ks</span>
+                        <a href="#" class="nav-link icon-link">
+                            <span class="icon-ditap-arrow fs-1-7em minus-icon"></span>
+                        </a>
+                        <span class="text-ditap-price-big ml-3 mr-3 pb-3 mt-3 pl-md-5 pr-md-5">1 000 Kč</span>
+                        <a href="#" class="btn btn-ditap btn-ditap-red">Do košíku</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+    <footer>
+        <!-- Footer -->
+        <div data-include="partials/footer-user.html"></div>
+    </footer>
+    <!-- Backdrop overlay -->
+    <div data-include="partials/backdrop-overlay.html"></div>
+</div>
+<!-- Modal Dedication -->
+<div data-include="partials/modal-dedication.html"></div>
+<!-- Search Modal -->
+<div data-include="partials/modal-search2.html"></div>
+<!-- Newsletter Multistep Modal -->
+<div data-include="partials/modal-newsletter-steps2.html"></div>
+<!-- Login Modal -->
+<div data-include="partials/modal-login2.html"></div>
+<!-- Registration Modal -->
+<div data-include="partials/modal-registration-steps2.html"></div>
+<!--javascripts-->
+<script src="../js/jquery-3.3.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-main.js IN KENTICO -->
+<script src="https://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+<script src="../js/typeahead.bundle.min.js"></script>
+<script src="../js/jquery.mmenu.all.js"></script>
+<script src="../js/jquery.mmenu.bootstrap4.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap-select-1.13.0.min.js"></script>
+<script src="../js/bootstrap-multistep-modals.js"></script>
+<script src="../js/slick-slider-1.9.0.min.js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

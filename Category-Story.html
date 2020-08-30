@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Dita P. - Category story</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow"/>
+    <meta name="author" content=""/>
+
+    <!--og-->
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="16x16" href="#">
+    <link rel="manifest" href="#">
+
+    <!--styles-->
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css"/>
+
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+
+    <link rel="stylesheet" href="css/slick-slider.1.9.0.css"/>
+    <link rel="stylesheet" href="css/uikit.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-select-1.13.0.min.css"/>
+    <link rel="stylesheet" href="css/boostrap-animated-progressbar.css"/>
+    <link rel="stylesheet" href="css/simplebar.css"/>
+    <link rel="stylesheet" href="css/ditap-grid.css"/>
+    <link rel="stylesheet" href="css/main2.css"/>
+    <link rel="stylesheet" href="css/ditap-tiles.css"/>
+</head>
+<body data-spy="scroll" data-target="#inpage-nav-diary" data-offset="55">
+<div class="content-wrapper diary-detail bg-white category-story-wrapper homepage">
+    <header>
+        <!-- Top Brand and Claim -->
+        <div data-include="partials/components/header-top-claim.html"></div>
+        <!-- Main Navigation -->
+        <div data-include="partials/components/nav-main-logged-in.html"></div>
+    </header>
+
+    <!--BANNER-->
+    <div class="under-header position-relative">
+        <style>
+            /*delete*/
+            .banner-ditap .carousel-item > img {
+                max-height: none;
+                /*height: none;*/
+                /*width: none;*/
+                transform: none;
+            }
+
+            /*delete*/
+
+
+            .jumbotron {
+                height: calc(100vh - 160px);
+            }
+
+            /* Declare heights because of positioning of img element */
+            .jumbotron .item {
+                height: calc(100vh - 147px);
+                background-color: #777;
+                max-height: none;
+            }
+
+            .carousel-inner > .item > img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%; /*makes image take up full width on bigger*/
+                /*min-width: 830px;*/ /*image does not shrink on small*/
+                min-height: 500px; /*no shrink on small*/
+            }
+
+            .carousel-slide {
+                width: 100%;
+                height: calc(100vh - 160px);
+                background-size: cover; /*image takes full dimentions*/
+                background-position: center; /*image stays center on resize*/
+            }
+
+            .jumbotron .item img {
+                width: 100%;
+                height: 100% !important;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+
+            @media screen and (max-width: 991px) {
+                .jumbotron {
+                    height: calc(100vh - 130px);
+                }
+
+                .jumbotron .item {
+                    height: calc(100vh - 130px);
+                }
+            }
+
+            @media screen and (max-width: 766px) {
+                .jumbotron {
+                    height: calc(100vh - 70px);
+                }
+
+                .jumbotron .item {
+                    height: calc(100vh - 70px);
+                }
+            }
+
+
+            .object-fit-container .object-fit-image {
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+
+            .js-object-fit {
+                /*position: relative;*/
+                background-size: cover;
+                background-position: center center;
+            }
+
+            .js-object-fit .object-fit-image {
+                opacity: 0;
+            }
+
+        </style>
+        <div class="banner-ditap jumbotron jumbotron-fluid p-0">
+            <div class="position-relative o-h">
+                <div class="card-panel position-absolute d-flex justify-content-start align-items-center w-100 h-100">
+                    <div class="container-grid text-left pt-xl-6">
+                        <div class="row no-gutters justify-content-start w-100">
+                            <div class="col-auto">
+                                <div class="card-align-position">
+                                    <p class="carousel-headline-sm text-ditap-h8">Pyžama</p>
+                                    <h1 class="text-ditap-h2">Když chcete spát<br/>jako v bavlnce</h1>
+                                    <p class="pt-lg-2">
+                                        <a href="#" class="btn btn-ditap btn-ditap-large btn-ditap-red">Prohlédnout</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item item active image-wrap object-fit-container">
+                        <img class="carousel-slide  d-block mx-auto object-fit-image"
+                             src="DitaP/media/DitaP/images/carousel/slide_01.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var userAgent, ieReg, ie;
+            userAgent = window.navigator.userAgent;
+            ieReg = /msie|Trident.*rv[ :]*11\./gi;
+            ie = ieReg.test(userAgent);
+
+            if (ie) {
+                $(".object-fit-container").each(function () {
+                    var $container = $(this),
+                        imgUrl = $container.find("img").prop("src");
+                    if (imgUrl) {
+                        $container.css("backgroundImage", 'url(' + imgUrl + ')').addClass("js-object-fit");
+                    }
+                });
+            }
+        </script>
+        <!-- Page scroll down arrow -->
+        <a href="#" class="nav-link icon-link arrow-scroll-down d-none d-lg-block" data-offset="60"
+           data-id="#scroll-down">
+            <span class="icon-ditap-arrow arrow-down"></span>
+        </a>
+    </div>
+    <!--BANNER END-->
+
+
+    <div class="main-content">
+
+        <!-- Diary in-page navigation with scrollspy  -->
+        <!-- Documentation of sticky component: https://getuikit.com/docs/sticky -->
+        <nav id="inpage-nav-diary"
+             class="navbar navbar-light navbar-expand-lg inpage-nav bg-white border-bottom-rgba w-100"
+             data-uk-sticky="animation: uk-animation-slide-top; offset: 0; top: #scroll-on; bottom: #scroll-off;">
+            <div class="container px-0">
+                <!-- Back link -->
+                <div class="inpage-back-btn-wrapper position-absolute d-none d-lg-block">
+                    <a class="nav-item nav-link text-ditap-btn-mini link-black pl-2" href="diary-list2.html">
+                        <!--<span class="ditap-ico_arrow_tiny_left fs-9"></span>-->
+                        <span class="text-ditap-h8">Pyžama</span>
+                    </a>
+                </div>
+                <!-- Dropdown menu (only visible on tablet and mobile) -->
+                <!-- Options are filled dynamically from #inpage-nav-links !!! See function initInpageNav() in main.js -->
+                <div class="inpage-nav-select position-absolute d-lg-none pr-2">
+                    <label>
+                        <select class="selectpicker border-0" name="language-selector" data-show-subtext="false"
+                                data-width="200">
+                            <!-- Example - do NOT use !!!
+                                <option data-content='<a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-1" data-offset="52" data-id="#recipe-1">Bruschetty s rajčaty</a>' selected></option>
+                                <option data-content='<a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-2" data-offset="52" data-id="#recipe-2">Bazalkové pesto</a>'></option>
+                                <option data-content='<a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-3" data-offset="52" data-id="#recipe-3">Salát s jahodami a karamelizovanými ořechy</a>'></option>
+                                <option data-content='<a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-4" data-offset="52" data-id="#recipe-4">Pistáciový dort s jahodami</a>'></option>
+                                <option data-content='<a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-5" data-offset="52" data-id="#recipe-5">Třešňová bublanina</a>'></option>
+                                -->
+                        </select>
+                        <span class="select-icon"></span>
+                    </label>
+                </div>
+                <!-- Scrollspy nav (only visible on desktop) -->
+                <div id="inpage-nav-links" class="d-none d-lg-flex justify-content-lg-center w-100">
+                    <a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-1"
+                       data-offset="0" data-offset-mobile="50" data-id="#recipe-1">Category story 1</a>
+                    <a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-2"
+                       data-offset="0" data-offset-mobile="50" data-id="#recipe-2">Category story 2</a>
+                    <a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-3"
+                       data-offset="0" data-offset-mobile="50" data-id="#recipe-3">Category story 3</a>
+                    <a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-4"
+                       data-offset="0" data-offset-mobile="50" data-id="#recipe-4">Category story 4</a>
+                </div>
+
+                <a href="#" class="btn btn-ditap btn-ditap-small btn-ditap-red">koupit</a>
+
+            </div>
+        </nav>
+        <!-- Diary detail intro -->
+        <div id="scroll-on"></div>
+
+
+        <style>
+            .category-story-wrapper .section-eshop-services {
+                margin-top: 80px;
+                border-top: 1px solid #E8E8E8;
+                padding-top: 80px;
+            }
+
+            .category-story .carousel-wrapper {
+                margin-top: 0 !important;
+            }
+
+            .category-story .carousel .item {
+                height: 100vh;
+                background-color: transparent;
+                max-height: none;
+            }
+
+            .category-story .carousel {
+                height: 100vh;
+            }
+
+            .carousel .carousel-item > img {
+                max-height: none;
+                /*height: none;*/
+                /*width: none;*/
+                transform: none;
+            }
+
+            .transition-timer-carousel-progress-bar {
+                height: 2px;
+                background-color: #ED1C24;
+                width: 0%;
+                margin: 0px 0px 0px 0px;
+                border: none;
+                z-index: 1;
+                position: relative;
+                top: 0;
+            }
+
+            .carousel {
+                height: calc(100vh - 160px);
+            }
+
+            /* Declare heights because of positioning of img element */
+            .carousel .item {
+                height: calc(100vh - 147px);
+                background-color: #777;
+                max-height: none;
+            }
+
+            .carousel-inner > .item > img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%; /*makes image take up full width on bigger*/
+                /* min-width: 830px;*/ /*image does not shrink on small*/
+                min-height: 500px; /*no shrink on small*/
+            }
+
+            .carousel-slide {
+                width: 100%;
+                height: calc(100vh - 160px);
+                background-size: cover; /*image takes full dimentions*/
+                background-position: center; /*image stays center on resize*/
+            }
+
+            .carousel img {
+                width: 100%;
+                height: 100% !important;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+
+            .lh-30 {
+                line-height: 30px;
+            }
+
+            .pl-6-10 {
+                padding-left: 6px;
+            }
+
+            .pr-6-10 {
+                padding-right: 6px;
+            }
+
+            .mr-30-40 {
+                margin-right: 30px;
+            }
+
+            .mt-20-30 {
+                margin-top: 20px;
+            }
+
+            .mt-35-50 {
+                margin-top: 35px;
+            }
+
+            .mt-50-60 {
+                margin-top: 50px;
+            }
+
+            .mt-50-75 {
+                margin-top: 50px;
+            }
+
+            @media screen and (max-width: 991px) {
+                .carousel {
+                    height: calc(100vh - 130px);
+                }
+
+                .carousel .item {
+                    height: calc(100vh - 130px);
+                }
+            }
+
+            @media screen and (max-width: 766px) {
+                .carousel {
+                    height: calc(100vh - 70px);
+                }
+
+                .carousel .item {
+                    height: calc(100vh - 70px);
+                }
+
+            }
+
+            @media screen and (min-width: 375px) {
+                .category-story-info {
+                    max-width: 306px;
+                    margin: 0 auto;
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-top: 60px;
+                }
+            }
+
+            @media screen and (min-width: 484px) {
+                .category-story-info {
+                    max-width: 430px;
+                }
+            }
+
+            @media screen and (min-width: 767px) {
+                .category-story-wrapper .section-eshop-services {
+                    margin-top: 120px;
+                }
+
+                .category-story-info {
+                    max-width: 550px;
+                    margin-top: 90px;
+                }
+
+                .pl-6-10 {
+                    padding-left: 10px;
+                }
+
+                .pr-6-10 {
+                    padding-right: 10px;
+                }
+
+                .mr-30-40 {
+                    margin-right: 40px;
+                }
+
+                .mt-20-30 {
+                    margin-top: 30px;
+                }
+
+                .mt-35-50 {
+                    margin-top: 50px;
+                }
+
+                .mt-50-60 {
+                    margin-top: 60px;
+                }
+
+                .mt-50-75 {
+                    margin-top: 75px;
+                }
+            }
+
+            @media screen and (min-width: 1024px) {
+                .category-story-wrapper .section-eshop-services {
+                    margin-top: 135px;
+                }
+            }
+
+            .object-fit-container .object-fit-image {
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+
+            .js-object-fit {
+                /*position: relative;*/
+                background-size: cover;
+                background-position: center center;
+            }
+
+            .js-object-fit .object-fit-image {
+                opacity: 0;
+            }
+        </style>
+
+        <section class="category-story-info">
+            <div class="welcome-intro container container-1180 text-center">
+                <img class="img-ditap-face-responsive" src="DitaP/media/DitaP/images/img_dita_face.png" alt="Dita P."/>
+                <h6 class="text-ditap-h6 mt-1">Pyžamo mého dětství, na které nedám dopustit. Vždycky když v něm spím,
+                    zdá se
+                    mi, že jsem zase malá holka.</h6>
+            </div>
+        </section>
+
+        <!-- Story -->
+        <section id="scroll-down" class="category-story m-t-10vh">
+            <div class="container-fluid mb-5">
+                <div class="row">
+                    <div id="recipe-1" class="recipe-img-wrapper col-md-12 col-lg-6 p-0 m-b-4vh position-relative">
+                        <div class="teaser-card-big sticky-top-0">
+                            <!--CAROUSEL-->
+                            <section class="carousel-wrapper hpcar position-relative">
+                                <div id="AAAditap-carousel-story"
+                                     class="ditap-carousel-story carousel slide Xcarousel-fade transition-timer-carousel"
+                                     data-ride="carousel">
+                                    <!--<ol class="carousel-indicators carousel-indicators-numbers justify-content-start d-flex">-->
+                                        <!--<li data-target="#ditap-carousel-story" data-slide-to="0" class="active">1</li>-->
+                                        <!--<li data-target="#ditap-carousel-story" data-slide-to="1">2</li>-->
+                                        <!--<li data-target="#ditap-carousel-story" data-slide-to="2">3</li>-->
+                                    <!--</ol>-->
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item item active image-wrap object-fit-container">
+                                            <img class="d-block img-recipe-teaser img-fluid object-fit-image"
+                                                 src="DitaP/media/DitaP/images/recipes/teaser/Krémová%20česnečka.jpg"
+                                                 alt="">
+                                            <div class="carousel-caption d-block">
+                                            </div>
+                                        </div>
+                                        <!--<div class="carousel-item item image-wrap object-fit-container">-->
+                                            <!--<img class="d-block img-recipe-teaser img-fluid object-fit-image"-->
+                                                 <!--src="DitaP/media/DitaP/images/recipes/teaser/pistaciovy-dort-s-jahodami.jpg"-->
+                                                 <!--alt="">-->
+                                            <!--<div class="carousel-caption d-block">-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                        <!--<div class="carousel-item item image-wrap object-fit-container">-->
+                                            <!--<img class="d-block img-recipe-teaser img-fluid object-fit-image "-->
+                                                 <!--src="DitaP/media/DitaP/images/recipes/teaser/tresnova-bublanina.jpg"-->
+                                                 <!--alt="">-->
+                                            <!--<div class="carousel-caption d-block">-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    </div>
+                                    <!--<hr class="transition-timer-carousel-progress-bar "/>-->
+                                </div>
+                            </section>
+                            <!--CAROUSEL end-->
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------- -->
+                    <div class="recipe-detail-text recipe-print recipe-text col-md-12 col-lg-6 col-xl-5 col-640 mt-lg-5 mb-4vh">
+                        <h3 class="text-ditap-h3 mt-20-30">Pyžamo pro mámu</h3>
+
+                        <p class="text-ditap-serif pt-md-3 mb-0 ">Morbi volutpat ligula ut commodo rutrum. Phasellus
+                            vitae
+                            diam ac tortor gravida fringilla. Nunc ut ex a purus varius facilisis commodo erat sit amet
+                            erat.</p>
+
+                        <div class="row m-0 fancy-box-start">
+                            <div class="col-6 p-0 fancybox-item mt-35-50">
+                                <a data-fancybox="gallery1" href="https://satyr.io/1024x960">
+                                    <img class="img-fluid pr-6-10" src="https://satyr.io/460x640" alt=""/>
+                                </a>
+                            </div>
+                            <div class="col-6 p-0 fancybox-item mt-35-50">
+                                <a data-fancybox="gallery2" href="https://satyr.io/1024x960">
+                                    <img class="img-fluid pl-6-10" src="https://satyr.io/460x640" alt=""/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <p class="text-ditap-tip mt-1 mb-0 lh-30">Mám ho pro vás ve dvou vzorech</p>
+
+                        <p class="text-ditap-default mt-35-50 mb-0 lh-30">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Etiam
+                            tincidunt at dolor at lacinia. Maecenas interdum eu elit nec suscipit. Donec auctor
+                            sollicitudin sollicitudin. Nulla ornare finibus lorem pulvinar ornare.</p>
+
+                        <div class="d-flex justify-content-around justify-content-sm-center justify-content-lg-around mt-50-60">
+                            <div class="text-center pr-svg">
+                                <svg width="66px" height="67px" viewBox="0 0 61 62" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+                                    <title>Group 15</title>
+                                    <desc>Created with Sketch.</desc>
+                                    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="DitaP_D_Category_Story_Pyzama_01"
+                                           transform="translate(-240.000000, -3013.000000)" stroke="#231F20"
+                                           stroke-width="1.96261682">
+                                            <g id="Recepty" transform="translate(0.000000, 1309.000000)">
+                                                <g id="Produkt-L" transform="translate(130.000000, 1247.000000)">
+                                                    <g id="Icon" transform="translate(76.000000, 453.000000)">
+                                                        <g id="Group-15" transform="translate(35.000000, 5.000000)">
+                                                            <path d="M11.2979991,48.5417383 L0.131970755,59.7908972"
+                                                                  id="Stroke-1"></path>
+                                                            <path d="M28.0156491,55.3791589 C33.9579509,59.3593458 42.0526396,58.7094393 47.2919509,53.4311215 C50.0309981,50.6716822 51.5098943,47.1266355 51.7381019,43.5171028 C52.9125358,42.9316822 54.0162811,42.15 54.994234,41.1642056 C59.8083,36.3142991 59.8083,28.4514953 54.994234,23.6015888 C54.5021962,23.1053271 53.9778755,22.6634579 53.4296208,22.2692523 C55.2268943,17.787757 54.3224132,12.4634579 50.7156208,8.83037383 C47.0782151,5.16588785 41.7337057,4.27205607 37.2613943,6.14551402 C36.7910642,5.4064486 36.2372434,4.70495327 35.5954792,4.05841121 C30.7814132,-0.791495327 22.9761585,-0.792056075 18.1620925,4.05841121 C17.0410925,5.18719626 16.1844792,6.48140187 15.5861302,7.86140187 C12.2465075,8.23037383 9.00484717,9.70065421 6.44446981,12.2800935 C1.21740377,17.5460748 0.563950943,25.6757944 4.48466792,31.6584112"
+                                                                  id="Stroke-3"></path>
+                                                            <path d="M47.5935189,20.0345047 C50.2963868,20.3255327 52.9224434,21.5143178 54.9941226,23.6014206"
+                                                                  id="Stroke-5"></path>
+                                                            <path d="M39.1363142,11.5143364 C38.8474368,8.79134579 37.6674368,6.14573832 35.5957575,4.05807477"
+                                                                  id="Stroke-7"></path>
+                                                            <path d="M50.9712132,37.598972 C52.7690434,42.9737383 51.5422887,49.1492523 47.2920623,53.4311215"
+                                                                  id="Stroke-9"></path>
+                                                            <path d="M22.1598991,8.57259813 C16.8248519,6.76194393 10.6949745,7.99783178 6.44474811,12.2797009"
+                                                                  id="Stroke-11"></path>
+                                                            <path d="M11.0077302,48.8987664 C11.0077302,48.8987664 6.57104151,48.0340935 4.68359811,42.5269907 C2.79504151,37.0193271 3.70453208,30.432785 3.70453208,30.432785 C3.70453208,30.432785 9.85277736,34.4466168 12.1905132,42.2101682 C16.3043717,39.1137196 20.2874283,39.5494206 20.2874283,39.5494206 C20.2874283,39.5494206 20.7199094,43.5626916 17.6463434,47.7066168 C25.3530792,50.061757 29.3366925,56.2557757 29.3366925,56.2557757 C29.3366925,56.2557757 22.7988245,57.1720374 17.3318623,55.2699813 C11.8654566,53.3679252 11.0077302,48.8987664 11.0077302,48.8987664 Z"
+                                                                  id="Stroke-13"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p class="text-ditap-default mb-0 mt-3">Vyrobeno ze 100%<br> bavlny</p>
+                            </div>
+                            <div class="text-center pr-svg">
+                                <svg width="65px" height="67px" viewBox="0 0 60 62" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+                                    <title>Group 43</title>
+                                    <desc>Created with Sketch.</desc>
+                                    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="DitaP_D_Category_Story_Pyzama_01"
+                                           transform="translate(-439.000000, -3014.000000)" stroke="#231F20"
+                                           stroke-width="1.96261682">
+                                            <g id="Recepty" transform="translate(0.000000, 1309.000000)">
+                                                <g id="Produkt-L" transform="translate(130.000000, 1247.000000)">
+                                                    <g id="Icon-Copy" transform="translate(270.000000, 453.000000)">
+                                                        <g id="Group-43" transform="translate(40.000000, 6.000000)">
+                                                            <path d="M36.0200835,21.0386916 C36.0200835,12.8478505 29.3517728,6.20803738 21.127035,6.20803738 C12.901734,6.20803738 6.23398641,12.8478505 6.23398641,21.0386916 C6.23398641,29.228972 12.901734,35.868785 21.127035,35.868785 C29.3517728,35.868785 36.0200835,29.228972 36.0200835,21.0386916 Z"
+                                                                  id="Stroke-1"></path>
+                                                            <path d="M20.7375903,21.0386916 L21.3389883,6.20803738"
+                                                                  id="Stroke-3"></path>
+                                                            <path d="M20.7612408,20.9056262 L26.4204641,7.17459813"
+                                                                  id="Stroke-5"></path>
+                                                            <path d="M20.8288699,20.7889907 L30.8623068,9.81347664"
+                                                                  id="Stroke-7"></path>
+                                                            <path d="M20.9322563,20.7024673 L34.1303534,13.8063925"
+                                                                  id="Stroke-9"></path>
+                                                            <path d="M21.0592932,20.6564299 L35.8301476,18.6713832"
+                                                                  id="Stroke-11"></path>
+                                                            <path d="M21.1945515,20.6564299 L35.7564932,23.8224112"
+                                                                  id="Stroke-13"></path>
+                                                            <path d="M21.3215883,20.7024673 L33.9182874,28.636486"
+                                                                  id="Stroke-15"></path>
+                                                            <path d="M21.4255379,20.7889907 L30.537732,32.534972"
+                                                                  id="Stroke-17"></path>
+                                                            <path d="M21.493167,20.9056262 L26.0211087,35.0471215"
+                                                                  id="Stroke-19"></path>
+                                                            <path d="M21.5162544,21.0386916 L20.9148563,35.868785"
+                                                                  id="Stroke-21"></path>
+                                                            <path d="M21.493167,21.1711963 L15.8339437,34.9022243"
+                                                                  id="Stroke-23"></path>
+                                                            <path d="M21.4255379,21.2878318 L11.3915379,32.2633458"
+                                                                  id="Stroke-25"></path>
+                                                            <path d="M21.3215883,21.3743551 L8.12349126,28.2709907"
+                                                                  id="Stroke-27"></path>
+                                                            <path d="M21.1945515,21.4203364 L6.42369709,23.4053832"
+                                                                  id="Stroke-29"></path>
+                                                            <path d="M21.0592932,21.4203364 L6.49735146,18.2549159"
+                                                                  id="Stroke-31"></path>
+                                                            <path d="M20.9322563,21.3743551 L8.33555728,13.4403364"
+                                                                  id="Stroke-33"></path>
+                                                            <path d="M20.8288699,21.2878318 L11.7166757,9.54185047"
+                                                                  id="Stroke-35"></path>
+                                                            <path d="M20.7612408,21.1711963 L16.2327359,7.02970093"
+                                                                  id="Stroke-37"></path>
+                                                            <path d="M30.8624757,9.81330841 L34.6116408,6.32209346 C39.8457184,1.10994393 48.3311748,1.10994393 53.5652524,6.32209346 C58.798767,11.534243 58.798767,19.9847103 53.5652524,25.1968598 L32.577699,46.0959252 C29.3967087,49.2635888 29.3967087,54.3989159 32.577699,57.5660187 L32.5782621,57.5660187 C35.7586893,60.7336822 40.9156214,60.7336822 44.0960485,57.5660187 L46.9960485,54.6781682"
+                                                                  id="Stroke-39"></path>
+                                                            <path d="M41.8315146,21.0386916 C41.8315146,9.65158879 32.5616505,0.420560748 21.1266408,0.420560748 C9.69219417,0.420560748 0.422330097,9.65158879 0.422330097,21.0386916 C0.422330097,32.4257944 9.69219417,41.6568224 21.1266408,41.6568224 C32.5616505,41.6568224 41.8315146,32.4257944 41.8315146,21.0386916 Z"
+                                                                  id="Stroke-41"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p class="text-ditap-default mb-0 mt-3">Světle modré nítěné<br> knolfíky</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center mt-50-75">
+                            <span class="text-ditap-price-big mr-30-40">7 019 Kč</span>
+                            <a href="#" class="btn btn-ditap btn-ditap-large btn-ditap-red">koupit</a>
+                        </div>
+
+                        <style>
+                            @media (min-width: 576px) and (max-width: 767.98px) {
+                                .pr-svg:nth-of-type(1){
+                                    padding-right: 45px;
+                                }
+                            }
+
+                            @media (min-width: 768px) and (max-width: 991.98px) {
+                                .pr-svg:nth-of-type(1){
+                                    padding-right: 45px;
+                                }
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Story 2-->
+        <section class="category-story m-t-10vh">
+            <!-- Recipe -->
+            <div class="container-fluid mb-5">
+                <div class="row">
+                    <div class="recipe-detail-text-l recipe-print col-md-12 col-lg-6 col-xl-5 col-640 mt-lg-5 order-last order-lg-first m-b-4vh">
+                        <h3 class="text-ditap-h3 mt-20-30">Pyžamo pro tátu</h3>
+
+                        <p class="text-ditap-serif pt-md-3 mb-0">Phasellus vitae diam ac tortor gravida fringilla. Nunc
+                            ut ex
+                            a purus varius facilisis. Aenean commodo erat sit amet erat auctor, et consequat dolor
+                            pellentesque.</p>
+
+                        <p class="text-ditap-default mt-35-50 mb-0 lh-30">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Etiam tincidunt at dolor at lacinia. Maecenas interdum eu elit nec suscipit. Donec
+                            auctor sollicitudin sollicitudin. Nulla ornare finibus lorem pulvinar ornare.</p>
+
+                        <div class="d-flex justify-content-around mt-50-60">
+                            <div class="text-center">
+                                <svg width="66px" height="67px" viewBox="0 0 61 62" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+                                    <title>Group 15</title>
+                                    <desc>Created with Sketch.</desc>
+                                    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="DitaP_D_Category_Story_Pyzama_01"
+                                           transform="translate(-240.000000, -3013.000000)" stroke="#231F20"
+                                           stroke-width="1.96261682">
+                                            <g id="Recepty" transform="translate(0.000000, 1309.000000)">
+                                                <g id="Produkt-L" transform="translate(130.000000, 1247.000000)">
+                                                    <g id="Icon" transform="translate(76.000000, 453.000000)">
+                                                        <g id="Group-15" transform="translate(35.000000, 5.000000)">
+                                                            <path d="M11.2979991,48.5417383 L0.131970755,59.7908972"
+                                                                  id="Stroke-1"></path>
+                                                            <path d="M28.0156491,55.3791589 C33.9579509,59.3593458 42.0526396,58.7094393 47.2919509,53.4311215 C50.0309981,50.6716822 51.5098943,47.1266355 51.7381019,43.5171028 C52.9125358,42.9316822 54.0162811,42.15 54.994234,41.1642056 C59.8083,36.3142991 59.8083,28.4514953 54.994234,23.6015888 C54.5021962,23.1053271 53.9778755,22.6634579 53.4296208,22.2692523 C55.2268943,17.787757 54.3224132,12.4634579 50.7156208,8.83037383 C47.0782151,5.16588785 41.7337057,4.27205607 37.2613943,6.14551402 C36.7910642,5.4064486 36.2372434,4.70495327 35.5954792,4.05841121 C30.7814132,-0.791495327 22.9761585,-0.792056075 18.1620925,4.05841121 C17.0410925,5.18719626 16.1844792,6.48140187 15.5861302,7.86140187 C12.2465075,8.23037383 9.00484717,9.70065421 6.44446981,12.2800935 C1.21740377,17.5460748 0.563950943,25.6757944 4.48466792,31.6584112"
+                                                                  id="Stroke-3"></path>
+                                                            <path d="M47.5935189,20.0345047 C50.2963868,20.3255327 52.9224434,21.5143178 54.9941226,23.6014206"
+                                                                  id="Stroke-5"></path>
+                                                            <path d="M39.1363142,11.5143364 C38.8474368,8.79134579 37.6674368,6.14573832 35.5957575,4.05807477"
+                                                                  id="Stroke-7"></path>
+                                                            <path d="M50.9712132,37.598972 C52.7690434,42.9737383 51.5422887,49.1492523 47.2920623,53.4311215"
+                                                                  id="Stroke-9"></path>
+                                                            <path d="M22.1598991,8.57259813 C16.8248519,6.76194393 10.6949745,7.99783178 6.44474811,12.2797009"
+                                                                  id="Stroke-11"></path>
+                                                            <path d="M11.0077302,48.8987664 C11.0077302,48.8987664 6.57104151,48.0340935 4.68359811,42.5269907 C2.79504151,37.0193271 3.70453208,30.432785 3.70453208,30.432785 C3.70453208,30.432785 9.85277736,34.4466168 12.1905132,42.2101682 C16.3043717,39.1137196 20.2874283,39.5494206 20.2874283,39.5494206 C20.2874283,39.5494206 20.7199094,43.5626916 17.6463434,47.7066168 C25.3530792,50.061757 29.3366925,56.2557757 29.3366925,56.2557757 C29.3366925,56.2557757 22.7988245,57.1720374 17.3318623,55.2699813 C11.8654566,53.3679252 11.0077302,48.8987664 11.0077302,48.8987664 Z"
+                                                                  id="Stroke-13"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p class="text-ditap-default mb-0 mt-3">Vyrobeno ze 100%<br> bavlny</p>
+                            </div>
+                            <div class="text-center">
+                                <svg width="65px" height="67px" viewBox="0 0 60 62" version="1.1"
+                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+                                    <title>Group 43</title>
+                                    <desc>Created with Sketch.</desc>
+                                    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="DitaP_D_Category_Story_Pyzama_01"
+                                           transform="translate(-439.000000, -3014.000000)" stroke="#231F20"
+                                           stroke-width="1.96261682">
+                                            <g id="Recepty" transform="translate(0.000000, 1309.000000)">
+                                                <g id="Produkt-L" transform="translate(130.000000, 1247.000000)">
+                                                    <g id="Icon-Copy" transform="translate(270.000000, 453.000000)">
+                                                        <g id="Group-43" transform="translate(40.000000, 6.000000)">
+                                                            <path d="M36.0200835,21.0386916 C36.0200835,12.8478505 29.3517728,6.20803738 21.127035,6.20803738 C12.901734,6.20803738 6.23398641,12.8478505 6.23398641,21.0386916 C6.23398641,29.228972 12.901734,35.868785 21.127035,35.868785 C29.3517728,35.868785 36.0200835,29.228972 36.0200835,21.0386916 Z"
+                                                                  id="Stroke-1"></path>
+                                                            <path d="M20.7375903,21.0386916 L21.3389883,6.20803738"
+                                                                  id="Stroke-3"></path>
+                                                            <path d="M20.7612408,20.9056262 L26.4204641,7.17459813"
+                                                                  id="Stroke-5"></path>
+                                                            <path d="M20.8288699,20.7889907 L30.8623068,9.81347664"
+                                                                  id="Stroke-7"></path>
+                                                            <path d="M20.9322563,20.7024673 L34.1303534,13.8063925"
+                                                                  id="Stroke-9"></path>
+                                                            <path d="M21.0592932,20.6564299 L35.8301476,18.6713832"
+                                                                  id="Stroke-11"></path>
+                                                            <path d="M21.1945515,20.6564299 L35.7564932,23.8224112"
+                                                                  id="Stroke-13"></path>
+                                                            <path d="M21.3215883,20.7024673 L33.9182874,28.636486"
+                                                                  id="Stroke-15"></path>
+                                                            <path d="M21.4255379,20.7889907 L30.537732,32.534972"
+                                                                  id="Stroke-17"></path>
+                                                            <path d="M21.493167,20.9056262 L26.0211087,35.0471215"
+                                                                  id="Stroke-19"></path>
+                                                            <path d="M21.5162544,21.0386916 L20.9148563,35.868785"
+                                                                  id="Stroke-21"></path>
+                                                            <path d="M21.493167,21.1711963 L15.8339437,34.9022243"
+                                                                  id="Stroke-23"></path>
+                                                            <path d="M21.4255379,21.2878318 L11.3915379,32.2633458"
+                                                                  id="Stroke-25"></path>
+                                                            <path d="M21.3215883,21.3743551 L8.12349126,28.2709907"
+                                                                  id="Stroke-27"></path>
+                                                            <path d="M21.1945515,21.4203364 L6.42369709,23.4053832"
+                                                                  id="Stroke-29"></path>
+                                                            <path d="M21.0592932,21.4203364 L6.49735146,18.2549159"
+                                                                  id="Stroke-31"></path>
+                                                            <path d="M20.9322563,21.3743551 L8.33555728,13.4403364"
+                                                                  id="Stroke-33"></path>
+                                                            <path d="M20.8288699,21.2878318 L11.7166757,9.54185047"
+                                                                  id="Stroke-35"></path>
+                                                            <path d="M20.7612408,21.1711963 L16.2327359,7.02970093"
+                                                                  id="Stroke-37"></path>
+                                                            <path d="M30.8624757,9.81330841 L34.6116408,6.32209346 C39.8457184,1.10994393 48.3311748,1.10994393 53.5652524,6.32209346 C58.798767,11.534243 58.798767,19.9847103 53.5652524,25.1968598 L32.577699,46.0959252 C29.3967087,49.2635888 29.3967087,54.3989159 32.577699,57.5660187 L32.5782621,57.5660187 C35.7586893,60.7336822 40.9156214,60.7336822 44.0960485,57.5660187 L46.9960485,54.6781682"
+                                                                  id="Stroke-39"></path>
+                                                            <path d="M41.8315146,21.0386916 C41.8315146,9.65158879 32.5616505,0.420560748 21.1266408,0.420560748 C9.69219417,0.420560748 0.422330097,9.65158879 0.422330097,21.0386916 C0.422330097,32.4257944 9.69219417,41.6568224 21.1266408,41.6568224 C32.5616505,41.6568224 41.8315146,32.4257944 41.8315146,21.0386916 Z"
+                                                                  id="Stroke-41"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                                <p class="text-ditap-default mb-0 mt-3">Světle modré nítěné<br> knolfíky</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center mt-50-75">
+                            <span class="text-ditap-price-big mr-30-40">7 019 Kč</span>
+                            <a href="#" class="btn btn-ditap btn-ditap-large btn-ditap-red">koupit</a>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------- -->
+                    <div id="recipe-2" class="recipe-img-wrapper col-md-12 col-lg-6 p-0 m-b-4vh position-relative">
+                        <div class="teaser-card-big sticky-top-0">
+                            <!--CAROUSEL-->
+                            <section class="carousel-wrapper hpcar position-relative">
+                                <div id="ditap-carousel-story-2"
+                                     class="ditap-carousel-story carousel slide Xcarousel-fade transition-timer-carousel"
+                                     data-ride="carousel">
+                                    <ol class="carousel-indicators carousel-indicators-numbers justify-content-start d-flex">
+                                        <li data-target="#ditap-carousel-story-2" data-slide-to="0" class="active">1
+                                        </li>
+                                        <li data-target="#ditap-carousel-story-2" data-slide-to="1">2</li>
+                                        <li data-target="#ditap-carousel-story-2" data-slide-to="2">3</li>
+                                    </ol>
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item item active image-wrap object-fit-container">
+                                            <img class="d-block img-recipe-teaser img-fluid object-fit-image"
+                                                 src="DitaP/media/DitaP/images/recipes/teaser/Krémová%20česnečka.jpg"
+                                                 alt="">
+                                            <div class="carousel-caption d-block">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item item image-wrap object-fit-container">
+                                            <img class="d-block img-recipe-teaser img-fluid object-fit-image"
+                                                 src="DitaP/media/DitaP/images/recipes/teaser/Krémová%20česnečka.jpg"
+                                                 alt="">
+                                            <div class="carousel-caption d-block">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item item image-wrap object-fit-container">
+                                            <img class="d-block img-recipe-teaser img-fluid object-fit-image "
+                                                 src="DitaP/media/DitaP/images/recipes/teaser/tresnova-bublanina.jpg"
+                                                 alt="">
+                                            <div class="carousel-caption d-block">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="transition-timer-carousel-progress-bar "/>
+                                </div>
+                            </section>
+                            <!--CAROUSEL end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Story 3-->
+        <section class="category-story m-t-10vh">
+            <div class="container-fluid mb-5">
+                <div class="row">
+                    <div id="recipe-3" class="recipe-img-wrapper col-md-12 col-lg-6 p-0 m-b-4vh position-relative">
+                        <div class="teaser-card-big sticky-top-0">
+                            <!--CAROUSEL-->
+                            <section class="carousel-wrapper hpcar position-relative">
+                                <div id="ditap-carousel-story-3"
+                                     class="ditap-carousel-story carousel slide Xcarousel-fade transition-timer-carousel"
+                                     data-ride="carousel">
+                                    <ol class="carousel-indicators carousel-indicators-numbers justify-content-start d-flex">
+                                        <li data-target="#ditap-carousel-story-3" data-slide-to="0" class="active">1
+                                        </li>
+                                        <li data-target="#ditap-carousel-story-3" data-slide-to="1">2</li>
+                                        <li data-target="#ditap-carousel-story-3" data-slide-to="2">3</li>
+                                    </ol>
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item item active image-wrap object-fit-container">
+                                            <img class="d-block img-recipe-teaser img-fluid object-fit-image"
+                                                 src="DitaP/media/DitaP/images/recipes/teaser/bazalkove-pesto.jpg"
+                                                 alt="">
+                                            <div class="carousel-caption d-block">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item item image-wrap object-fit-container">
+                                            <img class="d-block img-recipe-teaser img-fluid object-fit-image"
+                                                 src="DitaP/media/DitaP/images/recipes/teaser/pistaciovy-dort-s-jahodami.jpg"
+                                                 alt="">
+                                            <div class="carousel-caption d-block">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item item image-wrap object-fit-container">
+                                            <img class="d-block img-recipe-teaser img-fluid object-fit-image "
+                                                 src="DitaP/media/DitaP/images/recipes/teaser/tresnova-bublanina.jpg"
+                                                 alt="">
+                                            <div class="carousel-caption d-block">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="transition-timer-carousel-progress-bar "/>
+                                </div>
+                            </section>
+                            <!--CAROUSEL end-->
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------- -->
+                    <div class="recipe-detail-text recipe-print recipe-text col-md-12 col-lg-6 col-xl-5 col-640 mt-lg-5 mb-4vh">
+                        <h3 class="text-ditap-h3 mt-20-30">Deník Dity P.2</h3>
+
+                        <p class="text-ditap-serif pt-md-3 mb-0 ">Každý příběh má své jídlo a každé jídlo má svůj
+                            příběh.
+                            Krásná jídla znovu opřádám drobnými příběhy svého života. Ten se od vydání první knihy
+                            postavil z hlavy na nohy. Ze single slečny jsem se se stala paní, narodil se mi syn David.
+                        </p>
+
+                        <p class="text-ditap-default mt-35-50 mb-0 lh-30">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Etiam
+                            tincidunt at dolor at lacinia. Maecenas interdum eu elit nec suscipit. Donec auctor
+                            sollicitudin sollicitudin. Nulla ornare finibus lorem pulvinar ornare.</p>
+
+                        <div class="row m-0 fancy-box-start">
+                            <div class="col-12 p-0 fancybox-item mt-35-50">
+                                <a data-fancybox="gallery3" href="https://satyr.io/1024x960">
+                                    <img class="img-fluid " src="https://satyr.io/960x546" alt=""/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row m-0 fancy-box-start">
+                            <div class="col-12 p-0 fancybox-item mt-20-30">
+                                <a data-fancybox="gallery4" href="https://satyr.io/1024x960">
+                                    <img class="img-fluid " src="https://satyr.io/960x546" alt=""/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <p class="text-ditap-default mt-35-50 mb-0 lh-30">Připravovala a žila jsem pokračování Deníku
+                            Dity P.
+                            svobodná, vdaná, bezdětná a se synem. Strašně vášní a všechny jsem je do toho zavařila. </p>
+
+                        <div class="row m-0 fancy-box-start">
+                            <div class="col-12 p-0 fancybox-item mt-35-50">
+                                <a data-fancybox="gallery5" href="https://satyr.io/1024x960">
+                                    <img class="img-fluid " src="https://satyr.io/960x546" alt=""/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row m-0 fancy-box-start">
+                            <div class="col-12 p-0 fancybox-item mt-20-30">
+                                <a data-fancybox="gallery6" href="https://satyr.io/1024x960">
+                                    <img class="img-fluid " src="https://satyr.io/960x546" alt=""/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <p class="text-ditap-default mt-35-50 mb-0 lh-30">
+                            Třeba do chlapských jídel, která jsem vařila pro tátu a bráchu Honzu, když u mě malovali.
+                            Tátu si pamatuju se štětcem v ruce
+                            z paneláku na Jižním Městě – čili musela vzniknout taková retro kapitola Panel story se
+                            všemi jídly, které si budete pamatovat. Boží byla kapitola Buchty na plech, pekla jsem ji
+                            asi třikrát, aby se celý štáb poměl. A pak zklidnil u Jídel pro duši, rozbláznil u grilování
+                            na Lodi bláznů.
+                        </p>
+
+                        <p class="text-ditap-default mt-35-50 mb-0 lh-30">
+                            Takhle to bylo. Vím, že vám můj Deník bude chutnat.</p>
+
+                        <div class="d-flex justify-content-center align-items-center mt-50-75">
+                            <span class="text-ditap-price-big mr-30-40">425 Kč</span>
+                            <a href="#" class="btn btn-ditap btn-ditap-large btn-ditap-red">koupit</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Story 4-->
+        <section class="category-story m-t-10vh">
+            <!-- Recipe -->
+            <div class="container-fluid mb-5">
+                <div class="row">
+                    <div class="recipe-detail-text-l recipe-print col-md-12 col-lg-6 col-xl-5 col-640 mt-lg-5 order-last order-lg-first m-b-4vh">
+                        <h3 class="text-ditap-h3 mt-20-30">Deník Dity P.2</h3>
+
+                        <p class="text-ditap-serif pt-md-3 mb-0">100 nejoblíbenějších receptů Dity P. Z její první
+                            Kuchařky nejen voní jídlo, ale také zní Ditiny skutečné příběhy.
+                        </p>
+
+                        <p class="text-ditap-default mt-35-50 mb-0 lh-30">Známá šéfredaktorka časopisu Apetit a Albert v
+                            kuchyni pojmenovala svoji první vlastní kuchařku Deník Dity P. V Kuchařce skutečně otevírá
+                            svůj deník, který má s vařením hodně společného. Jako všechno na světě.</p>
+
+                        <div class="row m-0 fancy-box-start">
+                            <div class="col-12 p-0 fancybox-item mt-35-50">
+                                <a data-fancybox="gallery7" href="https://satyr.io/1024x960">
+                                    <img class="img-fluid " src="https://satyr.io/960x392" alt=""/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row m-0 fancy-box-start">
+                            <div class="col-12 p-0 fancybox-item mt-20-30">
+                                <a data-fancybox="gallery8" href="https://satyr.io/1024x960">
+                                    <img class="img-fluid " src="https://satyr.io/960x392" alt=""/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <p class="text-ditap-default mt-35-50 mb-0 lh-30">Knihu vytvářeli ti nejlepší tvůrci v zemi:
+                            fotografoval Jiří Turek, graficky upravila Zuzana Lednická ze Studia Najbrt a u plotny
+                            s láskyplným pomyšlením na vás stála Dita P.</p>
+
+                        <div class="row m-0 fancy-box-start">
+                            <div class="col-12 p-0 fancybox-item mt-35-50">
+                                <a data-fancybox="gallery9" href="https://satyr.io/1024x960">
+                                    <img class="img-fluid " src="https://satyr.io/960x392" alt=""/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row m-0 fancy-box-start">
+                            <div class="col-12 p-0 fancybox-item mt-20-30">
+                                <a data-fancybox="gallery10" href="https://satyr.io/1024x960">
+                                    <img class="img-fluid " src="https://satyr.io/960x392" alt=""/>
+                                </a>
+                            </div>
+                        </div>
+
+                        <p class="text-ditap-default mt-35-50 mb-0 lh-30">
+                            Od Kuchařky Dity Pecháčkové čekejte nejvíc: je sexy, je absolutně originální, profesionální
+                            a bude vás strašně bavit. Nejen v ní listovat a číst, ale hlavně vařit. Okamžitě, teď hned
+                            budete chtít ochutnat jídlo z kapitoly Jídla po sexu, zahnat žízeň trefnými Vyprošťováky,
+                            romanticky vzpomínat na Dětské slasti, naplnit si košík na Piknik, projet s Ditou P. Paříží,
+                            Amerikou a posázavským pacifikem a celou cestu jíst a jíst.
+                        </p>
+
+                        <div class="d-flex justify-content-center align-items-center mt-50-75">
+                            <span class="text-ditap-price-big mr-30-40">425 Kč</span>
+                            <a href="#" class="btn btn-ditap btn-ditap-large btn-ditap-red">koupit</a>
+                        </div>
+                    </div>
+                    <!-- ---------------------------------------------------------------------------- -->
+                    <div id="recipe-4" class="recipe-img-wrapper col-md-12 col-lg-6 p-0 m-b-4vh position-relative">
+                        <div class="teaser-card-big sticky-top-0">
+                            <!--CAROUSEL-->
+                            <section class="carousel-wrapper hpcar position-relative">
+                                <div id="ditap-carousel-4"
+                                     class="ditap-carousel-story carousel slide Xcarousel-fade transition-timer-carousel"
+                                     data-ride="carousel">
+                                    <ol class="carousel-indicators carousel-indicators-numbers justify-content-start d-flex">
+                                        <li data-target="#ditap-carousel-4" data-slide-to="0" class="active">1</li>
+                                        <li data-target="#ditap-carousel-4" data-slide-to="1">2</li>
+                                        <li data-target="#ditap-carousel-4" data-slide-to="2">3</li>
+                                    </ol>
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item item active image-wrap object-fit-container">
+                                            <img class="d-block img-recipe-teaser img-fluid object-fit-image"
+                                                 src="DitaP/media/DitaP/images/recipes/teaser/bazalkove-pesto.jpg"
+                                                 alt="">
+                                            <div class="carousel-caption d-block">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item item image-wrap object-fit-container">
+                                            <img class="d-block img-recipe-teaser img-fluid object-fit-image"
+                                                 src="DitaP/media/DitaP/images/recipes/teaser/pistaciovy-dort-s-jahodami.jpg"
+                                                 alt="">
+                                            <div class="carousel-caption d-block">
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item item image-wrap object-fit-container">
+                                            <img class="d-block img-recipe-teaser img-fluid object-fit-image "
+                                                 src="DitaP/media/DitaP/images/recipes/teaser/tresnova-bublanina.jpg"
+                                                 alt="">
+                                            <div class="carousel-caption d-block">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="transition-timer-carousel-progress-bar "/>
+                                </div>
+                            </section>
+                            <script>
+                                /*function initCarousel(carousel) {
+
+                                    checkImageLightness($('.carousel-item.active img')[0].src, carousel);
+                                    $(carousel).on("slide.bs.carousel", function (e) {
+                                        // $('.teaser-cards-promo').fadeOut(750);
+                                        var currentIndex = $(e.relatedTarget).index();
+                                        checkImageLightness($('.carousel-item img')[currentIndex].src, carousel);
+                                        //The animate class gets removed so that it jumps straight back to 0%
+                                        // $(".transition-timer-carousel-progress-bar", this).removeClass("animate").css("width", "0%");
+                                    });
+
+                                        var percent = 0;
+                                        var bar = $('.transition-timer-carousel-progress-bar');
+                                        var crsl = $('#ditap-carousel');
+
+                                        function progressBarCarousel() {
+                                            bar.css({width: percent + '%'});
+                                            percent = percent + 0.5;
+                                            if (percent > 100) {
+                                                percent = 0;
+                                                crsl.carousel('next');
+                                            }
+                                        }
+
+                                        crsl.carousel({
+                                            interval: false,
+                                            pause: true
+                                        }).on('slid.bs.carousel', function () {
+                                        });
+
+                                        var barInterval = setInterval(progressBarCarousel, 40);
+                                        crsl.hover(
+                                            function () {
+                                                clearInterval(barInterval);
+                                            },
+                                            function () {
+                                                barInterval = setInterval(progressBarCarousel, 40);
+                                            })
+                                    }*/
+                            </script>
+                            <!--CAROUSEL end-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="scroll-off" class=""></div>
+
+        <!-- Section E-Shop services -->
+        <div data-include="partials/sections/section-eshop-services.html"></div>
+        <!-- Section Story Dita P. -->
+        <div data-include="partials/sections/section-promo-story-ditap.html"></div>
+
+    </div>
+    <footer>
+        <!-- Footer -->
+        <div data-include="partials/components/footer-main.html"></div>
+    </footer>
+    <!-- Backdrop overlay -->
+    <div data-include="partials/components/modal-backdrop-overlay.html"></div>
+</div>
+<!-- Search Modal -->
+<div data-include="partials/components/modal-search.html"></div>
+<!-- Newsletter Multistep Modal -->
+<div data-include="partials/modal-newsletter-steps2.html"></div>
+<!-- Login Modal -->
+<div data-include="partials/modal-login2.html"></div>
+<!-- Registration Modal -->
+<div data-include="partials/modal-registration-steps2.html"></div>
+<!-- Cart Modal -->
+<div data-include="partials/components/modal-cart.html"></div>
+<!--javascripts-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-main.js IN KENTICO -->
+<script src="http://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+
+<script src="js/jquery.fancybox.min.js"></script>
+
+<script src="js/typeahead.bundle.min.js"></script>
+<script src="js/jquery.mmenu.all.js"></script>
+<script src="js/jquery.mmenu.bootstrap4.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap-select-1.13.0.min.js"></script>
+<script src="js/bootstrap-multistep-modals.js"></script>
+<script src="js/slick-slider-1.9.0.min.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/stickyfill.min.js"></script>
+<script src="js/simplebar.js"></script>
+<script src="js/printThis.js"></script>
+<!--<script src="js/main.js"></script>-->
+<script src="js/main-test.js"></script>
+<script>
+    $(function () {
+        // Set menu item to active, do not use in KENTICO!!!
+        $('.top-nav').find('li.nav-item').eq(1).addClass('active');
+
+        // Sticky polyfill
+        var stickyElements = $('.sticky-top-0');
+        Stickyfill.add(stickyElements);
+    });
+
+    function initFancyBox() {
+        var contentWrapper = $('.content-wrapper');
+
+        if (contentWrapper.hasClass('fancy-box-start')) {
+            $('[data-fancybox]').fancybox({
+                loop: true,
+                buttons: ["zoom", "share", "slideShow", "fullScreen", "download", "thumbs", "close"],
+                animationEffect: "zoom"
+            });
+        }
+    }
+
+    //object fit
+    var userAgent, ieReg, ie;
+    userAgent = window.navigator.userAgent;
+    ieReg = /msie|Trident.*rv[ :]*11\./gi;
+    ie = ieReg.test(userAgent);
+
+    if (ie) {
+        $(".object-fit-container").each(function () {
+            var $container = $(this),
+                imgUrl = $container.find("img").prop("src");
+            if (imgUrl) {
+                $container.css("backgroundImage", 'url(' + imgUrl + ')').addClass("js-object-fit");
+            }
+        });
+    }
+
+</script>
+</body>
+</html>

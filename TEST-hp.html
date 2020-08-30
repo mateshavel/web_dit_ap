@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>TEST - hp</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow"/>
+    <meta name="author" content=""/>
+
+    <!--og-->
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="16x16" href="#">
+    <link rel="manifest" href="#">
+
+    <!--styles-->
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="css/slick-slider.1.9.0.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-select-1.13.0.min.css"/>
+    <link rel="stylesheet" href="css/boostrap-animated-progressbar.css"/>
+    <link rel="stylesheet" href="css/simplebar.css"/>
+    <link rel="stylesheet" href="css/ditap-grid.css"/>
+    <link rel="stylesheet" href="css/main2.css"/>
+    <link rel="stylesheet" href="css/ditap-tiles.css"/>
+</head>
+<body>
+<div class="content-wrapper homepage">
+    <header>
+        <!-- Top Brand and Claim -->
+        <div data-include="partials/components/header-top-claim.html"></div>
+        <!-- Main Navigation -->
+        <div data-include="partials/components/nav-main-logged-in.html"></div>
+    </header>
+
+    <div class="main-content">
+        <!-- Carousel -->
+
+        <!--TEST-->
+        <style>
+            /*delete*/
+            .carousel .carousel-item > img {
+                max-height: none;
+                /*height: none;*/
+                /*width: none;*/
+                transform: none;
+            }
+
+            /*delete*/
+
+            .transition-timer-carousel-progress-bar {
+                height: 2px;
+                background-color: #ED1C24;
+                width: 0%;
+                margin: 0px 0px 0px 0px;
+                border: none;
+                z-index: 1;
+                position: relative;
+                top: 0;
+            }
+
+            .carousel {
+                height: calc(100vh - 160px);
+            }
+
+            /* Declare heights because of positioning of img element */
+            .carousel .item {
+                height: calc(100vh - 147px);
+                background-color: #777;
+                max-height: none;
+            }
+
+            .carousel-inner > .item > img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%; /*makes image take up full width on bigger*/
+                /* min-width: 830px;*/ /*image does not shrink on small*/
+                min-height: 500px; /*no shrink on small*/
+            }
+
+            .carousel-slide {
+                width: 100%;
+                height: calc(100vh - 160px);
+                background-size: cover; /*image takes full dimentions*/
+                background-position: center; /*image stays center on resize*/
+            }
+
+            .carousel img {
+                width: 100%;
+                height: 100% !important;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+
+            @media screen and (max-width: 991px) {
+                .carousel {
+                    height: calc(100vh - 130px);
+                }
+
+                .carousel .item {
+                    height: calc(100vh - 130px);
+                }
+            }
+
+            @media screen and (max-width: 766px) {
+                .carousel {
+                    height: calc(100vh - 70px);
+                }
+
+                .carousel .item {
+                    height: calc(100vh - 70px);
+                }
+
+            }
+
+            .object-fit-container .object-fit-image {
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+
+            .js-object-fit {
+                /*position: relative;*/
+                background-size: cover;
+                background-position: center center;
+            }
+
+            .js-object-fit .object-fit-image {
+                opacity: 0;
+            }
+
+        </style>
+
+        <section class="carousel-wrapper hpcar position-relative module">
+            <div id="ditap-carousel" class="carousel slide carousel-fade transition-timer-carousel"
+                 data-ride="carousel">
+                <ol class="carousel-indicators carousel-indicators-numbers justify-content-start d-flex">
+                    <li data-target="#ditap-carousel" data-slide-to="0" class="active">1</li>
+                    <li data-target="#ditap-carousel" data-slide-to="1">2</li>
+                    <li data-target="#ditap-carousel" data-slide-to="2">3</li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item item active image-wrap object-fit-container">
+                        <img class="carousel-slide object-fit-image"
+                             src="DitaP/media/DitaP/images/carousel/slide_01.jpg" alt="">
+                        <div class="carousel-caption d-block">
+                            <p class="carousel-headline-sm text-ditap-h8">Nový deník</p>
+                            <p class="carousel-headline text-ditap-h2">Poběžte, čekám<br/>vás u křížku!</p>
+                            <p class="pt-lg-2">
+                                <a href="#" class="btn btn-ditap btn-ditap-large btn-ditap-blue">Přečíst</a>
+                            </p>
+                        </div>
+                        <!-- Promo cards 1 -->
+                        <div class="deck teaser-cards-promo d-none d-md-flex flex-md-column-reverse">
+                            <a href="#" class="card-promo">
+                                <div class="row">
+                                    <div class="col-8 pl-5 pt-3">
+                                        <p class="text-ditap-serif fs-15 p-0 m-0">Sada oběd</p>
+                                        <p class="text-ditap-paragraph-2 d-inline-block mb-1">
+                                            <span class="ditap-ico_vzor_len_mob fs-14 pr-1 d-inline align-middle"></span>
+                                            <span class="d-inline align-middle">Len</span>
+                                        </p>
+                                        <p class="text-ditap-price-small mt-0">
+                                            <span class="text-ditap-price-small pl-0 fs-14">4 085 Kč</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="float-right" src="DitaP/media/DitaP/images/120x120/p-promo.jpg"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="card-overlay-promo position-absolute"></div>
+                            </a>
+
+                            <a href="#" class="card-promo">
+                                <div class="row">
+                                    <div class="col-8 pl-5 pt-3">
+                                        <p class="text-ditap-serif fs-15 p-0 m-0">Sada oběd</p>
+                                        <p class="text-ditap-paragraph-2 d-inline-block mb-1">
+                                            <span class="ditap-ico_vzor_lodicky_mob fs-14 pr-1 d-inline align-middle"></span>
+                                            <span class="d-inline align-middle">Lodičky</span>
+                                        </p>
+                                        <p class="text-ditap-price-small mt-0">
+                                            <span class="text-ditap-price-small pl-0 fs-14">4 085 Kč</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="float-right" src="DitaP/media/DitaP/images/120x120/p-promo.jpg"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="card-overlay-promo position-absolute"></div>
+                            </a>
+
+                            <a href="#" class="card-promo">
+                                <div class="row">
+                                    <div class="col-8 pl-5 pt-3">
+                                        <p class="text-ditap-serif fs-15 p-0 m-0">Sada oběd</p>
+                                        <p class="text-ditap-paragraph-2 d-inline-block mb-1">
+                                            <span class="ditap-ico_vzor_pruh_mob fs-14 pr-1 d-inline align-middle"></span>
+                                            <span class="d-inline align-middle">Pruh</span>
+                                        </p>
+                                        <p class="text-ditap-price-small color-red">
+                                            <span class="text-ditap-default fs-14"><del>4 539 Kč</del></span>
+                                            <span class="text-ditap-price-small color-red pl-2 fs-14">4 085 Kč</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="float-right" src="DitaP/media/DitaP/images/120x120/p-promo.jpg"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="card-overlay-promo position-absolute"></div>
+                            </a>
+
+                            <a href="#" class="card-promo">
+                                <div class="row">
+                                    <div class="col-8 pl-5 pt-3">
+                                        <p class="text-ditap-serif fs-15 p-0 m-0">Sada oběd</p>
+                                        <p class="text-ditap-paragraph-2 d-inline-block mb-1">
+                                            <span class="ditap-ico_vzor_steh_mob fs-14 pr-1 d-inline align-middle"></span>
+                                            <span class="d-inline align-middle">Steh</span>
+                                        </p>
+                                        <p class="text-ditap-price-small color-red">
+                                            <span class="text-ditap-default fs-14"><del>4 539 Kč</del></span>
+                                            <span class="text-ditap-price-small color-red pl-2 fs-14">4 085 Kč</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="float-right" src="DitaP/media/DitaP/images/120x120/p-promo.jpg"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="card-overlay-promo position-absolute"></div>
+                            </a>
+
+                            <a href="#" class="card-promo">
+                                <div class="row">
+                                    <div class="col-8 pl-5 pt-3">
+                                        <p class="text-ditap-serif fs-15 p-0 m-0">Sada oběd</p>
+                                        <p class="text-ditap-paragraph-2 d-inline-block mb-1">
+                                            <span class="ditap-ico_vzor_mak_mob fs-14 pr-1 d-inline align-middle"></span>
+                                            <span class="d-inline align-middle">Mák</span>
+                                        </p>
+                                        <p class="text-ditap-price-small color-red">
+                                            <span class="text-ditap-default fs-14"><del>4 539 Kč</del></span>
+                                            <span class="text-ditap-price-small color-red pl-2 fs-14">4 085 Kč</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="float-right" src="DitaP/media/DitaP/images/120x120/p-promo.jpg"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="card-overlay-promo position-absolute"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item item image-wrap object-fit-container">
+                        <img class="carousel-slide object-fit-image"
+                             src="DitaP/media/DitaP/images/carousel/slide_02.jpg" alt="">
+                        <div class="carousel-caption d-block">
+                            <p class="carousel-headline-sm text-ditap-h8">5 Receptů</p>
+                            <p class="carousel-headline text-ditap-h2">Moje milované<br/>palačinky</p>
+                            <p class="pt-lg-2">
+                                <a href="#" class="btn btn-ditap btn-ditap-large btn-ditap-blue">Přečíst</a>
+                            </p>
+                        </div>
+                        <!-- Promo cards 2-->
+                        <div class="deck teaser-cards-promo d-none d-md-flex flex-md-column-reverse">
+                            <a href="#" class="card-promo">
+                                <div class="row">
+                                    <div class="col-8 pl-5 pt-3">
+                                        <p class="text-ditap-serif fs-15 p-0 m-0">Sada oběd</p>
+                                        <p class="text-ditap-paragraph-2 d-inline-block mb-1">
+                                            <span class="ditap-ico_vzor_pruh_mob fs-14 pr-1 d-inline align-middle"></span>
+                                            <span class="d-inline align-middle">Pruh</span>
+                                        </p>
+                                        <p class="text-ditap-price-small color-red">
+                                            <span class="text-ditap-default fs-14"><del>4 539 Kč</del></span>
+                                            <span class="text-ditap-price-small color-red pl-2 fs-14">4 085 Kč</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="float-right" src="DitaP/media/DitaP/images/120x120/p-promo.jpg"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="card-overlay-promo position-absolute"></div>
+                            </a>
+
+                            <a href="#" class="card-promo">
+                                <div class="row">
+                                    <div class="col-8 pl-5 pt-3">
+                                        <p class="text-ditap-serif fs-15 p-0 m-0">Sada oběd</p>
+                                        <p class="text-ditap-paragraph-2 d-inline-block mb-1">
+                                            <span class="ditap-ico_vzor_steh_mob fs-14 pr-1 d-inline align-middle"></span>
+                                            <span class="d-inline align-middle">Steh</span>
+                                        </p>
+                                        <p class="text-ditap-price-small color-red">
+                                            <span class="text-ditap-default fs-14"><del>4 539 Kč</del></span>
+                                            <span class="text-ditap-price-small color-red pl-2 fs-14">4 085 Kč</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="float-right" src="DitaP/media/DitaP/images/120x120/p-promo.jpg"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="card-overlay-promo position-absolute"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel-item item image-wrap object-fit-container">
+                        <img class="carousel-slide object-fit-image"
+                             src="DitaP/media/DitaP/images/carousel/slide_03.jpg" alt="">
+                        <div class="carousel-caption d-block">
+                            <p class="carousel-headline text-ditap-h2">Teď sleva 10 %<br/>na všechny sady Oběd.</p>
+                            <p class="pt-lg-2">
+                                <a href="#" class="btn btn-ditap btn-ditap-large btn-ditap-blue">Prohlédnout</a>
+                            </p>
+                        </div>
+                        <!-- Promo cards 3-->
+                        <div class="deck teaser-cards-promo d-none d-md-flex flex-md-column-reverse">
+                            <a href="#" class="card-promo">
+                                <div class="row">
+                                    <div class="col-8 pl-5 pt-3">
+                                        <p class="text-ditap-serif fs-15 p-0 m-0">Sada oběd</p>
+                                        <p class="text-ditap-paragraph-2 d-inline-block mb-1">
+                                            <span class="ditap-ico_vzor_lodicky_mob fs-14 pr-1 d-inline align-middle"></span>
+                                            <span class="d-inline align-middle">Lodičky</span>
+                                        </p>
+                                        <p class="text-ditap-price-small color-red">
+                                            <span class="text-ditap-default fs-14"><del>4 539 Kč</del></span>
+                                            <span class="text-ditap-price-small color-red pl-2 fs-14">4 085 Kč</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="float-right" src="DitaP/media/DitaP/images/120x120/p-promo.jpg"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="card-overlay-promo position-absolute"></div>
+                            </a>
+
+                            <a href="#" class="card-promo">
+                                <div class="row">
+                                    <div class="col-8 pl-5 pt-3">
+                                        <p class="text-ditap-serif fs-15 p-0 m-0">Sada oběd</p>
+                                        <p class="text-ditap-paragraph-2 d-inline-block mb-1">
+                                            <span class="ditap-ico_vzor_pruh_mob fs-14 pr-1 d-inline align-middle"></span>
+                                            <span class="d-inline align-middle">Pruh</span>
+                                        </p>
+                                        <p class="text-ditap-price-small color-red">
+                                            <span class="text-ditap-default fs-14"><del>4 539 Kč</del></span>
+                                            <span class="text-ditap-price-small color-red pl-2 fs-14">4 085 Kč</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="float-right" src="DitaP/media/DitaP/images/120x120/p-promo.jpg"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="card-overlay-promo position-absolute"></div>
+                            </a>
+
+                            <a href="#" class="card-promo">
+                                <div class="row">
+                                    <div class="col-8 pl-5 pt-3">
+                                        <p class="text-ditap-serif fs-15 p-0 m-0">Sada oběd</p>
+                                        <p class="text-ditap-paragraph-2 d-inline-block mb-1">
+                                            <span class="ditap-ico_vzor_steh_mob fs-14 pr-1 d-inline align-middle"></span>
+                                            <span class="d-inline align-middle">Steh</span>
+                                        </p>
+                                        <p class="text-ditap-price-small color-red">
+                                            <span class="text-ditap-default"><del>4 539 Kč</del></span>
+                                            <span class="text-ditap-price-small color-red pl-2 fs-14">4 085 Kč</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="float-right" src="DitaP/media/DitaP/images/120x120/p-promo.jpg"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="card-overlay-promo position-absolute"></div>
+                            </a>
+
+                            <a href="#" class="card-promo">
+                                <div class="row">
+                                    <div class="col-8 pl-5 pt-3">
+                                        <p class="text-ditap-serif fs-15 p-0 m-0">Sada oběd</p>
+                                        <p class="text-ditap-paragraph-2 d-inline-block mb-1">
+                                            <span class="ditap-ico_vzor_mak_mob fs-14 pr-1 d-inline align-middle"></span>
+                                            <span class="d-inline align-middle">Mák</span>
+                                        </p>
+                                        <p class="text-ditap-price-small color-red">
+                                            <span class="text-ditap-default"><del>4 539 Kč</del></span>
+                                            <span class="text-ditap-price-small color-red pl-2 fs-14">4 085 Kč</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <img class="float-right" src="DitaP/media/DitaP/images/120x120/p-promo.jpg"
+                                             alt="">
+                                    </div>
+                                </div>
+                                <div class="card-overlay-promo position-absolute"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <hr class="transition-timer-carousel-progress-bar "/>
+            </div>
+        </section>
+        <script>
+            /*function initCarousel(carousel) {
+
+                checkImageLightness($('.carousel-item.active img')[0].src, carousel);
+                $(carousel).on("slide.bs.carousel", function (e) {
+                    // $('.teaser-cards-promo').fadeOut(750);
+                    var currentIndex = $(e.relatedTarget).index();
+                    checkImageLightness($('.carousel-item img')[currentIndex].src, carousel);
+                    //The animate class gets removed so that it jumps straight back to 0%
+                    // $(".transition-timer-carousel-progress-bar", this).removeClass("animate").css("width", "0%");
+                });
+
+                    var percent = 0;
+                    var bar = $('.transition-timer-carousel-progress-bar');
+                    var crsl = $('#ditap-carousel');
+
+                    function progressBarCarousel() {
+                        bar.css({width: percent + '%'});
+                        percent = percent + 0.5;
+                        if (percent > 100) {
+                            percent = 0;
+                            crsl.carousel('next');
+                        }
+                    }
+
+                    crsl.carousel({
+                        interval: false,
+                        pause: true
+                    }).on('slid.bs.carousel', function () {
+                    });
+
+                    var barInterval = setInterval(progressBarCarousel, 40);
+                    crsl.hover(
+                        function () {
+                            clearInterval(barInterval);
+                        },
+                        function () {
+                            barInterval = setInterval(progressBarCarousel, 40);
+                        })
+                }*/
+        </script>
+        <!--TEST end-->
+
+        <!-- Page scroll down arrow -->
+        <div class="page-scroll-down">
+            <a href="#" class="nav-link icon-link arrow-scroll-down d-none d-lg-block" data-offset="80"
+               data-id="#welcome">
+                <span class="icon-ditap-arrow arrow-down"></span>
+            </a>
+        </div>
+        <!-- Section welcome -->
+        <div data-include="partials/sections/section-homepage-welcome.html"></div>
+        <!-- Section tips for presents -->
+        <div data-include="partials/sections/section-tips-for-presents.html"></div>
+        <!-- Section product category slider -->
+        <section id="product-category-slider" class="bg-white section-mt">
+            <div class="section-intro container container-1180 text-center">
+                <p class="text-ditap-h4 mt-3 mb-0 mb-lg-1 pl-2 pl-md-4 pl-lg-3">Můžete si u mě<br/>koupit</p>
+            </div>
+            <div data-include="partials/components/slider-product-categories.html"></div>
+        </section>
+        <!-- Section E-Shop services -->
+        <div data-include="partials/sections/section-eshop-services.html"></div>
+        <!-- Section Story Dita P. -->
+        <div data-include="partials/sections/section-promo-story-ditap.html"></div>
+    </div>
+
+    <footer>
+        <!-- Footer -->
+        <div data-include="partials/components/footer-main.html"></div>
+    </footer>
+    <!-- Backdrop overlay -->
+    <div data-include="partials/components/modal-backdrop-overlay.html"></div>
+</div>
+<!-- Search Modal -->
+<div data-include="partials/components/modal-search.html"></div>
+<!-- Newsletter Multistep Modal -->
+<div data-include="partials/modal-newsletter-steps3.html"></div>
+<!-- Login Modal -->
+<!--<div data-include="partials/modal-login2.html"></div>-->
+<!-- Registration Modal -->
+<!--<div data-include="partials/modal-registration-steps2.html"></div>-->
+<!-- Cart Modal -->
+
+<div data-include="partials/components/modal-cart.html"></div>
+<!--javascripts-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-main.js IN KENTICO -->
+<script src="http://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+<script src="js/typeahead.bundle.min.js"></script>
+<script src="js/jquery.mmenu.all.js"></script>
+<script src="js/jquery.mmenu.bootstrap4.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap-select-1.13.0.min.js"></script>
+<script src="js/bootstrap-multistep-modals.js"></script>
+<script src="js/slick-slider-1.9.0.min.js"></script>
+<script src="js/simplebar.js"></script>
+<!--<script src="js/main.js"></script>-->
+<script src="js/main-test.js"></script>
+<script>
+    $(function () {
+        // Recalculate simplebar in case of dynamic content
+        // Also read documentation: https://github.com/Grsmto/simplebar
+        $('#modalCart').on('shown.bs.modal', function () {
+            var simplebar = new SimpleBar($('.shopping-cart-scroll')[0]);
+            simplebar.recalculate();
+        });
+
+        // Change logged in text, do NOT use in Kentico!!!
+        $('#welcome .text-ditap-salutation').text('Milá Marcelo,');
+    });
+</script>
+</body>
+</html>

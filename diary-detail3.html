@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Dita P. - Diary Detail 3</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow"/>
+    <meta name="author" content=""/>
+
+    <!--og-->
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="16x16" href="#">
+    <link rel="manifest" href="#">
+
+    <!--styles-->
+    <link rel="stylesheet" href="css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="css/slick-slider.1.9.0.css"/>
+    <link rel="stylesheet" href="css/uikit.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap-select-1.13.0.min.css"/>
+    <link rel="stylesheet" href="css/boostrap-animated-progressbar.css"/>
+    <link rel="stylesheet" href="css/simplebar.css"/>
+    <link rel="stylesheet" href="css/ditap-grid.css"/>
+    <link rel="stylesheet" href="css/main2.css"/>
+    <link rel="stylesheet" href="css/ditap-tiles.css"/>
+</head>
+<body data-spy="scroll" data-target="#inpage-nav-diary" data-offset="55">
+<div class="content-wrapper diary-detail bg-white">
+    <header>
+        <!-- Top Brand and Claim -->
+        <div data-include="partials/components/header-top-claim.html"></div>
+        <!-- Main Navigation -->
+        <div data-include="partials/components/nav-main-logged-in.html"></div>
+    </header>
+
+    <div class="under-header position-relative">
+        <!-- Diary detail banner -->
+        <div data-include="partials/components/banner-diary-detail.html"></div>
+        <!-- Page scroll down arrow -->
+        <a href="#" class="nav-link icon-link arrow-scroll-down d-none d-lg-block" data-offset="60"
+           data-id="#scroll-down">
+            <span class="icon-ditap-arrow arrow-down"></span>
+        </a>
+    </div>
+
+    <div class="main-content">
+
+        <!-- Diary in-page navigation with scrollspy  -->
+        <div data-include="partials/inpage-nav-diary-scrollspy.html"></div>
+        <!-- Diary detail intro -->
+        <div id="scroll-on"></div>
+        <div data-include="partials/diary-detail-intro.html"></div>
+        <!-- Diary detail recipe 1 -->
+        <div data-include="partials/diary-detail-recipe-bruschetty3.html"></div>
+        <!-- Diary detail recipe 2 -->
+        <div data-include="partials/diary-detail-recipe-bazalkove-pesto3.html"></div>
+        <!-- Diary detail recipe 3 -->
+        <!--<div data-include="partials/diary-detail-recipe-salat-s-jahodami3.html"></div>-->
+        <!-- Documentation of sticky component: https://getuikit.com/docs/sticky -->
+        <section class="m-t-10vh">
+            <!-- Recipe -->
+            <div class="container-fluid mb-5">
+                <div class="row">
+                    <div id="recipe-3" class="recipe-img-wrapper col-md-12 col-lg-6 p-0 m-b-4vh position-relative">
+                        <div class="teaser-card-big sticky-top-0">
+                            <!-- the kentico printing must be way: src="DitaP/DitaP/media/DitaP/images/recipes/teaser/your-img.jpg" -->
+                            <img class="d-block img-recipe-teaser img-fluid" src="DitaP/media/DitaP/images/recipes/teaser/salat-s-jahodami.jpg" alt="Salát s jahodami"/>
+                            <!-- Popover teaser ---------------------------------------------------------------------------- -->
+                            <div class="vkpopup">
+                                <!-- Popover button -->
+                                <a href="#" class="nav-link icon-link btn-ditap-teaser-cart-big">
+                                    <span class="ditap-ico_cart_empty"></span>
+                                </a>
+                                <!-- Popover content -->
+                                <div class="popover-intro d-none d-md-block">
+                                    <div>
+                                        <button type="button" class="close pt-2 pr-2" aria-label="Close">
+                                            <span class="ditap-ico_close_mob fs-14" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                    <div class="popover-body text-center">
+                                        <div>
+                                            <img class="img60x60 ml-3 mb-2" src="DitaP/media/DitaP/images/img_dita_face.png"/>
+                                        </div>
+                                        <span class="text-ditap-quotation fs-15">Líbí se vám moje nádobí?<br/>Klikněte.</span>
+                                    </div>
+                                </div>
+                                <!-- Popover slider on click -->
+                                <div class="slider-product-popover hide">
+                                    <div class="card-wrapper-small">
+                                        <div href="#" class="card small-card p-0 m-0">
+                                            <div class="small-card-img-box">
+                                                <img src="DitaP/media/DitaP/images/280x280/hluboky_talir_280x280.jpg" alt=""/>
+                                            </div>
+                                            <div class="small-card-text-box text-center">
+                                                <p class="text-ditap-serif m-0 fs-17">Velký<br/>servírovací talíř</p>
+                                                <a href="#" class="btn btn-ditap btn-ditap-red btn-ditap-price">389 Kč</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-wrapper-small">
+                                        <div href="#" class="card small-card p-0 m-0">
+                                            <div class="small-card-img-box">
+                                                <img src="DitaP/media/DitaP/images/280x280/eshop3_280x280.jpg" alt=""/>
+                                            </div>
+                                            <div class="small-card-text-box text-center">
+                                                <p class="text-ditap-serif m-0 fs-17">Velký<br/>servírovací talíř</p>
+                                                <a href="#" class="btn btn-ditap btn-ditap-red btn-ditap-price">389 Kč</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-wrapper-small">
+                                        <div href="#" class="card small-card p-0 m-0">
+                                            <div class="small-card-img-box">
+                                                <img src="DitaP/media/DitaP/images/280x280/melky-talir-steh-280x280.jpg" alt=""/>
+                                            </div>
+                                            <div class="small-card-text-box text-center">
+                                                <p class="text-ditap-serif m-0 fs-17">Velký<br/>servírovací talíř</p>
+                                                <a href="#" class="btn btn-ditap btn-ditap-red btn-ditap-price">389 Kč</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recipe-detail-text recipe-print recipe-text col-md-12 col-lg-6 col-xl-5 col-640 mt-lg-5 mb-4vh">
+                        <p class="text-ditap-h8 pt-5 pb-md-2 not-print">recept</p>
+                        <h3 class="text-ditap-h3">Salát s jahodami a karamelizovanými ořechy</h3>
+                        <p class="text-ditap-serif pt-md-3">Čekala jsem, že moji kluci budou říkat: jé, co to je &ndash; jahody
+                            a lupení. Řekli, ale mísu se salátem vyjedli do dna.</p>
+                        <p class="text-ditap-paragraph-2 pt-md-4 pb-md-4">4&ndash;6 porcí &bull; Příprava 20 min</p>
+                        <figure class="recipe-ingredients">
+                            <span class="recipe-ingredients-headline text-ditap-default">Na karamelizované pekanové ořechy:</span>
+                            <ul class="list-unstyled pb-md-4 text-ditap-recipe-ingredients pr-md-5">
+                                <li>2 lžíce másla</li>
+                                <li>110 g pekanových ořechů, můžou být i vlašské ořechy</li>
+                                <li>2 lžíce tmavého cukru</li>
+                                <li>malá špetka soli</li>
+                            </ul>
+                            <span class="recipe-ingredients-headline text-ditap-default">Na makový dresink:</span>
+                            <ul class="list-unstyled pb-md-4 text-ditap-recipe-ingredients pr-md-5">
+                                <li>60 ml olivového nebo avokádového oleje</li>
+                                <li>3 lžíce jablečného octa</li>
+                                <li>2 lžíce medu</li>
+                                <li>1 lžíce makových semínek</li>
+                                <li>1 malá lžička dijonské hořčice</li>
+                                <li>sůl a čerstvě namletý pepř</li>
+                            </ul>
+                            <span class="recipe-ingredients-headline text-ditap-default">Na salát:</span>
+                            <ul class="list-unstyled pb-md-4 text-ditap-recipe-ingredients pr-md-5">
+                                <li>200 g baby špenátu nebo jakýchkoliv zelených salátů, skvělé je dát aspoň dvě hrsti rukoly</li>
+                                <li>500 g zralých nejlépe právě utržených jahod, omytých</li>
+                                <li>a nakrájených</li>
+                                <li>1 zralé avokádo, nakrájené na tenké plátky nebo na malé kousky</li>
+                                <li>1/2 červené cibule, nakrájené na velmi tenké plátky</li>
+                                <li>110 g čerstvého kozího sýru</li>
+                            </ul>
+                        </figure>
+                        <ol class="ol-num">
+                            <li class="text-ditap-default pb-4">
+                                Nejprve si připravím karamelizované pekanové ořechy. Na pánvi s těžkým dnem nechám na
+                                středním plameni rozpustit máslo. Přidám pekanové ořechy a pořádně promíchám. Přisypu tmavý
+                                cukr a špetku soli a míchám, až se cukr rozpustí a obalí pekanové ořechy. Nakonec je
+                                rozprostřu na pečicí papír a nechám vychladnout.
+                            </li>
+
+                            <li class="text-ditap-default pb-4">
+                                Mezitím si připravím dresink. Všechny přísady spolu pečlivě prošlehám a dám zatím stranou.
+                            </li>
+
+                            <li class="text-ditap-default pb-4">
+                                Do velké mísy dám přísady na salát kromě kozího sýru, přiliju dresink a pečlivě promíchám.
+                                Salát posypu kousky kozího sýru, karamelizovanými pekanovými ořechy a podávám.
+                            </li>
+                        </ol>
+                        <div class="text-center pb-lg-6 d-print-none not-print">
+                            <a href="#" class="btn btn-ditap-mini btn-ditap-print text-center d-inline">
+                                <span class="ditap-ico_printer_grey mr-1 fs-15 text-ditap-label"></span>
+                                <span class="text-ditap-label">Vytisknout recept</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-grid container-780 m-t-10vh">
+                <div class="row no-gutters justify-content-between w-100">
+                    <div class="col-auto">
+                        <div class="w-306-640-780">
+                            <img class="img-fluid mb-3" src="DitaP/media/DitaP/images/780x520/promo_img_00013.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Diary detail recipe 4 -->
+        <div data-include="partials/diary-detail-recipe-pistaciovy-dort3.html"></div>
+        <!-- Diary detail recipe 5 width Email form -->
+        <div data-include="partials/diary-detail-recipe-with-email3.html"></div>
+
+        <div id="scroll-off" class=""></div>
+
+        <!-- Slider with variable product teasers -->
+        <div data-include="partials/components/slider-product-teaser-variable3.html"></div>
+        <!-- Other story -->
+        <section class="">
+            <h2 class="text-center text-ditap-h4 pb-4-5-7 pt-5-7-7">můj další příběh</h2>
+        </section>
+        <div data-include="partials/redirect-diary-card-pancake3-space.html"></div>
+    </div>
+    <footer>
+        <!-- Footer -->
+        <div data-include="partials/components/footer-main.html"></div>
+    </footer>
+    <!-- Backdrop overlay -->
+    <div data-include="partials/components/modal-backdrop-overlay.html"></div>
+</div>
+<!-- Search Modal -->
+<div data-include="partials/components/modal-search.html"></div>
+<!-- Newsletter Multistep Modal -->
+<div data-include="partials/modal-newsletter-steps2.html"></div>
+<!-- Login Modal -->
+<div data-include="partials/modal-login2.html"></div>
+<!-- Registration Modal -->
+<div data-include="partials/modal-registration-steps2.html"></div>
+<!-- Cart Modal -->
+<div data-include="partials/components/modal-cart.html"></div>
+<!--javascripts-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-main.js IN KENTICO -->
+<script src="http://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+<script src="js/typeahead.bundle.min.js"></script>
+<script src="js/jquery.mmenu.all.js"></script>
+<script src="js/jquery.mmenu.bootstrap4.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap-select-1.13.0.min.js"></script>
+<script src="js/bootstrap-multistep-modals.js"></script>
+<script src="js/slick-slider-1.9.0.min.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/stickyfill.min.js"></script>
+<script src="js/simplebar.js"></script>
+<script src="js/printThis.js"></script>
+<!--<script src="js/main-test.js"></script>-->
+<script src="js/main.js"></script>
+<script>
+    $(function () {
+        // Set menu item to active, do not use in KENTICO!!!
+        $('.top-nav').find('li.nav-item').eq(1).addClass('active');
+
+        // Sticky polyfill
+        var stickyElements = $('.sticky-top-0');
+        Stickyfill.add(stickyElements);
+    });
+</script>
+</body>
+</html>

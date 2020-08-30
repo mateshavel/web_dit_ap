@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Dita P. - Product category</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow"/>
+    <meta name="author" content=""/>
+
+    <!--og-->
+    <meta property="og:url" content=""/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:description" content=""/>
+    <meta property="og:image" content=""/>
+
+    <!--favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="#">
+    <link rel="icon" type="image/png" sizes="32x32" href="#">
+    <link rel="icon" type="image/png" sizes="16x16" href="#">
+    <link rel="manifest" href="#">
+
+    <!--styles-->
+    <link rel="stylesheet" href="../css/jquery.mmenu.all.css"/>
+    <link rel="stylesheet" href="../css/slick-slider.1.9.0.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap-select-1.13.0.min.css"/>
+    <link rel="stylesheet" href="../css/boostrap-animated-progressbar.css"/>
+    <link rel="stylesheet" href="../css/main.css"/>
+
+    <style>
+        .mobile-sticky-filter {
+            z-index: 1001;
+        }
+
+        .mobile-sticky-filter.uk-sticky.uk-active.uk-sticky-fixed {
+            background-color: white !important;
+            width: 100%;
+            padding: 10px;
+            border-bottom: 1px solid #E8E8E8;
+        }
+
+        .mobile-sticky-filter.uk-sticky.uk-active.uk-sticky-fixed .text-sticky-none,
+        .mobile-sticky-tab.uk-sticky.uk-active.uk-sticky-fixed .text-sticky-none {
+            display: flex !important;
+        }
+
+        .text-sticky-none {
+            display: none !important;
+        }
+
+        .left-0 {
+            left: 0;
+        }
+
+        @media (min-width: 767px) {
+            .mobile-sticky-filter.uk-sticky.uk-active.uk-sticky-fixed,
+            .mobile-sticky-tab.uk-sticky.uk-active.uk-sticky-fixed {
+                top: 0 !important;
+            }
+
+            .uk-sticky-placeholder {
+                height: 0 !important;
+            }
+
+            .position-absolute-md {
+                position: absolute;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="content-wrapper bg-white">
+    <header>
+        <!-- Top Brand and Claim -->
+        <div data-include="partials/top-claim.html"></div>
+        <!-- Main Navigation -->
+        <div data-include="partials/main-nav2.html"></div>
+    </header>
+    <div class="main-content">
+
+        <section>
+            <div class="banner-ditap jumbotron jumbotron-fluid p-0 mb-0">
+                <div class="position-relative o-h" style="max-height: 480px;">
+                    <div class="card-panel position-absolute d-flex justify-content-start align-items-center w-100 h-100">
+                        <div class="container text-center pl-4 pl-lg-0">
+                            <h1 class="text-ditap-h1">Porcelán</h1>
+                        </div>
+                    </div>
+                    <img class="img-fluid d-block mx-auto" src="../DitaP/media/DitaP/images/promo_img_hires_00009.jpg"
+                         alt="Porcelán"/>
+                </div>
+            </div>
+        </section>
+        <!-- Filter -->
+        <div class="mobile-sticky-filter d-flex flex-wrap justify-content-around justify-content-md-around align-items-center bg-gray p-t-5vh"
+             data-uk-sticky="offset: 70;">
+            <div class="text-sticky-none d-md-block d-lg-none">
+                <div class="d-flex justify-content-start d-inline-flex ml-4 mr-4">
+                    <span class="text-ditap-h8 p-2">Porcelán</span>
+                </div>
+            </div>
+            <div class="container container-780 d-flex justify-content-between align-items-center">
+                <!--kategorie-->
+                <div class="dropdown btn-dropdown-arrow-down-filter mr-1 ml-1 mr-sm-5 ml-sm-2">
+                    <button class="text-ditap-paragraph color-gray p-2" type="button" id="dropdownKategorie"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Kategorie<span class="select-icon"></span>
+                    </button>
+                    <div class="dropdown-menu sm-center" aria-labelledby="dropdownKategorie">
+                        <a class="dropdown-item" href="#"><span class="text-ditap-paragraph">Sady</span></a>
+                        <a class="dropdown-item" href="#"><span
+                                class="text-ditap-paragraph">Zlato a platina</span></a>
+                        <a class="dropdown-item" href="#"><span
+                                class="text-ditap-paragraph">Talíře</span></a>
+                        <a class="dropdown-item" href="#"><span class="text-ditap-paragraph">Hrnečky</span></a>
+                        <a class="dropdown-item" href="#"><span class="text-ditap-paragraph">Mísy</span></a>
+                        <a class="dropdown-item" href="#"><span class="text-ditap-paragraph">Cukřenky</span></a>
+                        <a class="dropdown-item" href="#"><span class="text-ditap-paragraph">Ostatní</span></a>
+                        <a class="dropdown-item" href="#"><span class="text-ditap-paragraph">Vše</span></a>
+                    </div>
+                </div>
+                <!--vzory-->
+                <div class="dropdown btn-dropdown-arrow-down-filter mr-1 ml-1 mr-sm-5 ml-sm-2">
+                    <button class="text-ditap-paragraph color-gray p-2" type="button" id="dropdownVzor"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Vzor<span class="select-icon"></span>
+                    </button>
+                    <div class="dropdown-menu sm-center" aria-labelledby="dropdownVzor">
+                        <a class="dropdown-item" href="#">
+                            <span class="ditap-ico_vzor_steh_mob fs-14"></span>
+                            <span class="text-ditap-paragraph">Steh</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="ditap-ico_vzor_mak_mob fs-14"></span>
+                            <span class="text-ditap-paragraph">Mák</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="ditap-ico_vzor_lodicky_mob fs-14"></span>
+                            <span class="text-ditap-paragraph">Lodičky</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="ditap-ico_vzor_len_mob fs-14"></span>
+                            <span class="text-ditap-paragraph">Len</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <span class="ditap-ico_vzor_pruh_mob fs-14"></span>
+                            <span class="text-ditap-paragraph">Pruh</span>
+                        </a>
+                    </div>
+                </div>
+                <!--řazení-->
+                <div class="dropdown btn-dropdown-arrow-down-filter mr-1 ml-1 mr-sm-5 ml-sm-2">
+                    <button class="text-ditap-paragraph color-gray p-2" type="button" id="dropdownRazeni"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Řazení<span class="select-icon"></span>
+                    </button>
+                    <div class="dropdown-menu sm-center" aria-labelledby="dropdownRazeni">
+                        <a class="dropdown-item" href="#"><span
+                                class="text-ditap-paragraph">Od nejnovějšího</span></a>
+                        <a class="dropdown-item" href="#"><span class="text-ditap-paragraph">Abecedně</span></a>
+                        <a class="dropdown-item" href="#"><span
+                                class="text-ditap-paragraph">Podle typu</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="bg-gray m-b-10vh">
+            <div class="container container-1180 p-lg-0">
+                <div class="row text-center">
+                    <div class="col">
+                        <p class="text-ditap-h4"></p>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <!-- row 1 -->
+                    <!-- 1 -->
+                    <div class="card-wrapper-medium order-md-1 col-12 col-md-8 col-lg-6 pl-4 pr-4 pl-md-2 pr-md-2 pl-lg-2 pr-lg-2">
+                        <a href="#" class="card medium-card image-card p-0 d-block">
+                            <div class="medium-card-img-box">
+                                <img src="../DitaP/media/DitaP/images/580x440/eshop1_580x440.jpg" alt=""/>
+                            </div>
+                            <div class="medium-card-text-box text-left position-absolute p-4 p-lg-5">
+                                <p class="icon-font pt-lg-4"><span class="ditap-ico_top_mob2"></span></p>
+                                <h3 class="text-ditap-h5">Sváteční sady<br/>zlato a platina</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 2 -->
+                    <div class="card-wrapper-small order-md-2 col-12 col-md-4 col-lg-3 pl-4 pr-4 pl-md-2 pr-md-2 pl-lg-2 pr-lg-2">
+                        <a href="#" class="card card-ditap-tip small-card p-0 d-block">
+                            <div class="text-center pt-lg-5 px-md-3">
+                                <img class="img-ditap-face-responsive" src="../DitaP/media/DitaP/images/img_dita_face.png"
+                                     alt="Dita P."/>
+                                <p class="text-ditap-h8 pt-md-3 px-md-3">Chystáte se na svatbu?</p>
+                                <p class="text-ditap-quotation">
+                                    Vybrat správný dárek je vždycky oříšek. Proto jsem pro vás vybrala ty nejlepší,
+                                    se kterými se prostě nemůžete netrefit.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 3 -->
+                    <div class="card-wrapper-small order-md-3 col-6 col-md-4 col-lg-3 pl-4 pr-2 pl-md-2 pr-md-2 pl-lg-2 pr-lg-2">
+                        <!-- Card with slider on hover -->
+                        <div data-include="partials/teaser-cards-product-slider.html"></div>
+                    </div>
+                    <!-- row 2 -->
+                    <!-- 1 -->
+                    <div class="card-wrapper-small order-md-4 order-lg-4 col-6 col-md-4 col-lg-3 pl-2 pr-4 pl-md-2 pr-md-2 pl-lg-2 pr-lg-2">
+                        <a href="#" class="card small-card p-0 d-block">
+                            <div class="small-card-img-box">
+                                <img src="../DitaP/media/DitaP/images/280x280/eshop2_280x280.jpg" alt=""/>
+                            </div>
+                            <div class="small-card-text-box text-center">
+                                <p class="text-ditap-serif m-0">Pyžamo pro mámu</p>
+                                <hr>
+                                <p class="text-ditap-price-small m-0">2 795 <span>Kč</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 2 -->
+                    <div class="card-wrapper-medium order-md-6 col-12 col-md-8 col-lg-6 pl-4 pr-4 pl-md-2 pr-md-2 pl-lg-2 pr-lg-2">
+                        <a href="#" class="card medium-card p-0 d-block">
+                            <div class="medium-card-img-box">
+                                <img src="../DitaP/media/DitaP/images/580x280/porcelain1_580x280.jpg" alt=""/>
+                            </div>
+                            <div class="medium-card-text-box text-center">
+                                <p class="text-ditap-serif mt-3 mt-lg-0">Sada Kalíšky se slánkou</p>
+                                <hr/>
+                                <p class="text-ditap-price-small">425 <span>Kč</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 3 Not visible on mobile -->
+                    <div class="card-wrapper-small order-md-5 col-md-4 col-lg-3 pl-md-2 pr-md-0 pl-lg-2 pr-lg-2 d-none d-md-block">
+                        <a href="#" class="card small-card p-0 d-block">
+                            <div class="small-card-img-box">
+                                <img src="../DitaP/media/DitaP/images/280x280/eshop3_280x280.jpg" alt=""/>
+                            </div>
+                            <div class="small-card-text-box text-center">
+                                <p class="text-ditap-serif m-0">Sada<br/>Jen dva hrnečky</p>
+                                <hr>
+                                <p class="text-ditap-price-small m-0">589 <span>Kč</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- row 3 -->
+                    <!-- 1 -->
+                    <div class="card-wrapper-small order-md-7  col-6 col-md-4 col-lg-3 pl-4 pr-2 pl-md-2 pr-md-2 pl-lg-2 pr-lg-2">
+                        <a href="#" class="card small-card p-0 d-block">
+                            <div class="small-card-img-box">
+                                <img src="../DitaP/media/DitaP/images/280x280/eshop2_280x280.jpg" alt=""/>
+                            </div>
+                            <div class="small-card-text-box text-center">
+                                <p class="text-ditap-serif m-0">Pyžamo pro mámu</p>
+                                <hr>
+                                <p class="text-ditap-price-small m-0">2 795 <span>Kč</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 2 -->
+                    <div class="card-wrapper-small order-md-8 col-6 col-md-4 col-lg-3 pl-2 pr-4 pl-md-2 pr-md-2 pl-lg-2 pr-lg-2">
+                        <a href="#" class="card small-card p-0 d-block">
+                            <div class="small-card-img-box">
+                                <img src="../DitaP/media/DitaP/images/280x280/eshop2_280x280.jpg" alt=""/>
+                            </div>
+                            <div class="small-card-text-box text-center">
+                                <p class="text-ditap-serif m-0">Pyžamo pro mámu</p>
+                                <hr>
+                                <p class="text-ditap-price-small m-0">2 795 <span>Kč</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 3 -->
+                    <div class="card-wrapper-small order-md-9 col-6 col-md-4 col-lg-3 pl-4 pr-2 pl-md-2 pr-md-2 pl-lg-2 pr-lg-2">
+                        <a href="#" class="card small-card p-0 d-block">
+                            <div class="small-card-img-box">
+                                <img src="../DitaP/media/DitaP/images/280x280/eshop2_280x280.jpg" alt=""/>
+                            </div>
+                            <div class="small-card-text-box text-center">
+                                <p class="text-ditap-serif m-0">Pyžamo pro mámu</p>
+                                <hr>
+                                <p class="text-ditap-price-small m-0">2 795 <span>Kč</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 4 -->
+                    <div class="card-wrapper-small order-md-10 col-6 col-md-4 col-lg-3 pl-2 pr-4 pl-md-2 pr-md-2 pl-lg-2 pr-lg-2">
+                        <a href="#" class="card small-card p-0 d-block">
+                            <div class="small-card-img-box">
+                                <img src="../DitaP/media/DitaP/images/280x280/eshop2_280x280.jpg" alt=""/>
+                            </div>
+                            <div class="small-card-text-box text-center">
+                                <p class="text-ditap-serif m-0">Pyžamo pro mámu</p>
+                                <hr>
+                                <p class="text-ditap-price-small m-0">2 795 <span>Kč</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- row 4-->
+                    <!-- 1 -->
+                    <div class="card-wrapper-small order-md-11 col-6 col-md-4 col-lg-3 pl-4 pr-2 pl-md-2 pr-md-2 pl-lg-2 pr-lg-2">
+                        <a href="#" class="card small-card p-0 d-block">
+                            <div class="small-card-img-box">
+                                <img src="../DitaP/media/DitaP/images/280x280/eshop2_280x280.jpg" alt=""/>
+                            </div>
+                            <div class="small-card-text-box text-center">
+                                <p class="text-ditap-serif m-0">Pyžamo pro mámu</p>
+                                <hr>
+                                <p class="text-ditap-price-small m-0">2 795 <span>Kč</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 2 -->
+                    <div class="card-wrapper-small order-md-last d-md-none d-lg-block col-6 col-md-4 col-lg-3 pl-2 pr-4 pl-md-2 pr-md-2 pl-lg-2 pr-lg-2">
+                        <a href="#" class="card small-card p-0 d-block">
+                            <div class="small-card-img-box">
+                                <img src="../DitaP/media/DitaP/images/280x280/eshop2_280x280.jpg" alt=""/>
+                            </div>
+                            <div class="small-card-text-box text-center">
+                                <p class="text-ditap-serif m-0">Pyžamo pro mámu</p>
+                                <hr>
+                                <p class="text-ditap-price-small m-0">2 795 <span>Kč</span></p>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 3 -->
+                    <div class="card-wrapper-medium order-md-12 col-12 col-md-8 col-lg-6 pl-4 pr-4 pl-md-2 pr-md-2 pl-lg-2 pr-lg-2">
+                        <a href="#" class="card medium-card p-0 d-block">
+                            <div class="medium-card-img-box">
+                                <img src="../DitaP/media/DitaP/images/580x280/porcelain1_580x280.jpg" alt=""/>
+                            </div>
+                            <div class="medium-card-text-box text-center">
+                                <p class="text-ditap-serif mt-3 mt-lg-0">Sada Kalíšky se slánkou</p>
+                                <hr/>
+                                <p class="text-ditap-price-small">425 <span>Kč</span></p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col text-center">
+                        <a href="#" class="btn btn-ditap btn-ditap-large btn-ditap-blue mt-5 mb-5">Načíst další</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Stories promo -->
+        <div data-include="partials/stories-promo2.html"></div>
+    </div>
+    <footer>
+        <!-- Footer -->
+        <div data-include="partials/footer2.html"></div>
+    </footer>
+    <!-- Backdrop overlay -->
+    <div data-include="partials/backdrop-overlay.html"></div>
+</div>
+<!-- Search Modal -->
+<div data-include="partials/modal-search2.html"></div>
+<!-- Newsletter Multistep Modal -->
+<div data-include="partials/modal-newsletter-steps2.html"></div>
+<!-- Login Modal -->
+<div data-include="partials/modal-login2.html"></div>
+<!-- Registration Modal -->
+<div data-include="partials/modal-registration-steps2.html"></div>
+<!--javascripts-->
+<script src="../js/jquery-3.3.1.min.js"></script>
+<!-- FOR TEMPLATE DEV ONLY - DO NOT USE csi-main.js IN KENTICO -->
+<script src="https://templates.hedr.cz/_internal/js/csi-custom.js"></script>
+<script src="../js/typeahead.bundle.min.js"></script>
+<script src="../js/jquery.mmenu.all.js"></script>
+<script src="../js/jquery.mmenu.bootstrap4.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/bootstrap-select-1.13.0.min.js"></script>
+<script src="../js/bootstrap-multistep-modals.js"></script>
+<script src="../js/slick-slider-1.9.0.min.js"></script>
+<script src="../js/uikit.min.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    $(function() {
+        // Product teaser card with slider
+        $('.product-card-slider').slick({
+            prevArrow: '<a href="#" class="nav-link icon-link slick-prev"><span class="ditap-ico_arrow_tiny_left"></span></a>',
+            nextArrow: '<a href="#" class="nav-link icon-link slick-next"><span class="ditap-ico_arrow_tiny_right"></span></a>',
+            variableWidth: false,
+            mobileFirst: true,
+            slidesToShow: 1,
+            dots: false,
+            arrows: true,
+            infinite: true
+        });
+    });
+</script>
+</body>
+</html>
