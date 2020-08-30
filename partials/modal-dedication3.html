@@ -1,0 +1,58 @@
+<div class="modal fade2 variant-2" id="modalDedication">
+    <div class="modal-dialog dedication-dialog modal-dialog-centered modal-lg modal-xl">
+        <div class="modal-content border-0 rounded-0 shadow">
+            <button type="button" class="close pt-2 pr-2" data-dismiss="modal" aria-label="Close">
+                <span class="ditap-ico_close_mob" aria-hidden="true"></span>
+            </button>
+            <div class="modal-body p-0">
+                <div class="container-grid">
+                    <div class="row no-gutters justify-content-between w-100">
+                        <div class="col-auto p-0 d-none d-lg-block o-h">
+                            <div class="dedication-img">
+                                <img src="DitaP/media/DitaP/images/500x510-dedication.jpg" alt=""/>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="dedication-text">
+                                <p class="text-ditap-h5 mb-4 mt-2">Tak komu to bude?</p>
+
+                                <div>
+                                    <label class="text-ditap-label">Text zprávy</label>
+                                    <textarea id="textarea" maxlength="500" type="text" name="message" rows="7"
+                                              class="form-control textarea-ditap text-left" placeholder=""
+                                              required>
+                                        </textarea>
+                                    <div class="text-left invalid-feedback pt-2">
+                                        Chybová hláška
+                                    </div>
+
+                                    <div class="mt-4 d-flex flex-wrap justify-content-between d-flex align-items-center">
+                                        <input type="submit" class="btn btn-ditap btn-ditap-medium btn-ditap-blue mr-3"
+                                               value="přidat věnování"/>
+                                        <span id="textarea_feedback"
+                                              class="text-ditap-tip float-right">Zbývá 500 znaků</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!--<script>-->
+    <!--$(document).ready(function() {-->
+    <!--var text_max = 500;-->
+    <!--$('#textarea_feedback').html(text_max + ' characters remaining');-->
+
+    <!--$('#textarea').keyup(function() {-->
+    <!--var text_length = $('#textarea').val().length;-->
+    <!--var text_remaining = text_max - text_length;-->
+
+    <!--$('#textarea_feedback').html(text_remaining + ' characters remaining');-->
+    <!--});-->
+    <!--});-->
+    <!--</script>-->

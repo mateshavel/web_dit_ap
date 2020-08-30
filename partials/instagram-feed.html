@@ -1,0 +1,195 @@
+<!--<section class="instagram-ditap">-->
+<!--<div class="container pl-4 pr-1 pl-xl-1 pr-xl-1">-->
+<!--<h4 class="text-ditap-h4 text-center pb-3">Co dělám právě teď</h4>-->
+<!--<div id="instagram-gallery" class="instagramm-gallery"></div>-->
+<!--</div>-->
+<!--</section>-->
+<!--&lt;!&ndash; Clear fix for Instagram feed &ndash;&gt;-->
+<!--<div class="clearfix m-b-10vh"></div>-->
+
+
+<!--&lt;!&ndash;javascripts&ndash;&gt;-->
+<!--&lt;!&ndash;instafeed.min.js&ndash;&gt;-->
+<!--&lt;!&ndash;custom-second.js -> //instagram function &ndash;&gt;-->
+
+<!--<style>-->
+    <!--.instagramm-gallery {-->
+        <!--width: 100%;-->
+        <!--display: block;-->
+        <!--margin-top: 0;-->
+        <!--padding: 0;-->
+        <!--line-height: 0;-->
+    <!--}-->
+    <!--.instagramm-item{-->
+        <!--padding-right: 0;-->
+        <!--padding-left: 0;-->
+
+        <!-- -ms-flex: 0 0 auto;-->
+        <!--flex: 0 0 auto;-->
+        <!--width: auto;-->
+        <!--max-width: none;-->
+
+        <!--position: relative;-->
+        <!--min-height: 1px;-->
+    <!--}-->
+
+
+    <!--.instagramm-item {-->
+        <!--margin: 0;-->
+        <!--display: block;-->
+        <!--position: relative;-->
+        <!--/*width: 25%;*/-->
+        <!--/* max-width: 295px; */-->
+        <!--/* max-height: 283px; */-->
+        <!--float: left;-->
+        <!--/* padding: 0; */-->
+         <!--border-right: none;-->
+         <!--border-bottom: none;-->
+        <!--overflow: hidden !important;-->
+    <!--}-->
+
+    <!--.instagramm-item-inner{-->
+        <!--width: 142px;-->
+    <!--}-->
+
+    <!--.instagramm-item{-->
+        <!--margin-bottom: 12px;-->
+    <!--}-->
+    <!--.instagramm-item:nth-of-type(1),-->
+    <!--.instagramm-item:nth-of-type(3),-->
+    <!--.instagramm-item:nth-of-type(5),-->
+    <!--.instagramm-item:nth-of-type(7){-->
+        <!--margin-right: 12px;-->
+    <!--}-->
+
+    <!--.instagramm-item-inner .description-container{-->
+        <!--padding: 0;-->
+    <!--}-->
+    <!--/*grid-336*/-->
+    <!--@media screen and (min-width: 375px) {-->
+        <!--.instagramm-item-inner{-->
+            <!--width: 162px;-->
+        <!--}-->
+
+        <!--.instagramm-item{-->
+            <!--margin-bottom: 12px;-->
+        <!--}-->
+        <!--.instagramm-item:nth-of-type(1),-->
+        <!--.instagramm-item:nth-of-type(3),-->
+        <!--.instagramm-item:nth-of-type(5),-->
+        <!--.instagramm-item:nth-of-type(7){-->
+            <!--margin-right: 12px;-->
+        <!--}-->
+
+        <!--.instagramm-item-inner .description-container{-->
+            <!--padding: 0;-->
+        <!--}-->
+    <!--}-->
+    <!--/*grid-460*/-->
+    <!--@media screen and (min-width: 484px) {-->
+        <!--.instagramm-item-inner{-->
+            <!--width: 224px;-->
+        <!--}-->
+
+        <!--.instagramm-item{-->
+            <!--margin-bottom: 12px;-->
+        <!--}-->
+        <!--.instagramm-item:nth-of-type(1),-->
+        <!--.instagramm-item:nth-of-type(3),-->
+        <!--.instagramm-item:nth-of-type(5),-->
+        <!--.instagramm-item:nth-of-type(7){-->
+            <!--margin-right: 12px;-->
+        <!--}-->
+
+        <!--.instagramm-item-inner .description-container{-->
+            <!--padding: 0;-->
+        <!--}-->
+    <!--}-->
+    <!--/*tablet*/-->
+    <!--/*grid-700*/-->
+    <!--@media screen and (min-width: 767px) {-->
+        <!--.instagramm-item-inner{-->
+            <!--width: 280px;-->
+        <!--}-->
+
+        <!--.instagramm-item{-->
+            <!--margin-bottom: 20px;-->
+        <!--}-->
+        <!--.instagramm-item:nth-of-type(1),-->
+        <!--.instagramm-item:nth-of-type(3),-->
+        <!--.instagramm-item:nth-of-type(5),-->
+        <!--.instagramm-item:nth-of-type(7){-->
+            <!--margin-right: 20px;-->
+            <!--margin-left: 60px;-->
+        <!--}-->
+
+        <!--.instagramm-item-inner .description-container{-->
+            <!--padding: 0;-->
+        <!--}-->
+    <!--}-->
+    <!--/*desktop*/-->
+    <!--/*grid-940*/-->
+    <!--@media screen and (min-width: 992px) {-->
+        <!--.instagramm-item-inner{-->
+            <!--width: 220px;-->
+        <!--}-->
+
+        <!--.instagramm-item{-->
+            <!--margin-bottom: 20px;-->
+        <!--}-->
+
+        <!--.instagramm-item:nth-of-type(1),-->
+        <!--.instagramm-item:nth-of-type(2),-->
+        <!--.instagramm-item:nth-of-type(3),-->
+        <!--.instagramm-item:nth-of-type(5),-->
+        <!--.instagramm-item:nth-of-type(6),-->
+        <!--.instagramm-item:nth-of-type(7){-->
+            <!--margin-right: 20px;-->
+            <!--margin-left: 0;-->
+        <!--}-->
+
+        <!--.instagramm-item-inner .description-container{-->
+            <!--padding: 0;-->
+        <!--}-->
+    <!--}-->
+    <!--/*grid-1180*/-->
+    <!--@media screen and (min-width: 1200px) {-->
+        <!--.instagramm-item-inner{-->
+            <!--width: 280px;-->
+        <!--}-->
+
+        <!--.instagramm-item{-->
+            <!--margin-bottom: 20px;-->
+        <!--}-->
+
+        <!--.instagramm-item:nth-of-type(1),-->
+        <!--.instagramm-item:nth-of-type(2),-->
+        <!--.instagramm-item:nth-of-type(3),-->
+        <!--.instagramm-item:nth-of-type(5),-->
+        <!--.instagramm-item:nth-of-type(6),-->
+        <!--.instagramm-item:nth-of-type(7){-->
+            <!--margin-right: 20px;-->
+            <!--margin-left: 0;-->
+        <!--}-->
+
+        <!--.instagramm-item-inner .description-container{-->
+            <!--padding: 0;-->
+        <!--}-->
+    <!--}-->
+<!--</style>-->
+<section class="instagram-ditap mb-7-10-12">
+    <div class="container-grid">
+        <div class="row no-gutters justify-content-between w-100">
+            <div class="col-auto w-100">
+                <h4 class="text-ditap-h4 text-center mb-4-5-7 mt-5-7-7">Co dělám právě teď</h4>
+            </div>
+
+            <div id="instagram-gallery" class="instagramm-gallery"></div>
+
+        </div>
+    </div>
+</section>
+<!-- Clear fix for Instagram feed -->
+<div class="clearfix m-b-10vh"></div>
+
+

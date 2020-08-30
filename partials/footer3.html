@@ -1,0 +1,292 @@
+<style>
+
+    .ml-30px {
+        margin-left: 30px;
+    }
+
+    footer .nav-footer-collapsed:after {
+        all: unset;
+    }
+
+    footer .nav-footer-collapsed .navbar-toggler:after {
+        font-family: 'ditap-icons', sans-serif;
+        font-size: 10px;
+        content: '\eab6';
+        position: absolute;
+        display: flex;
+        align-self: start;
+        right: 33px;
+        top: 30px;
+        pointer-events: none;
+        font-weight: 400;
+    }
+
+    footer .nav-footer-collapsed .navbar-toggler[aria-expanded="true"]:after {
+        transform: rotate(-180deg);
+        margin-top: -4px;
+        margin-right: 2px;
+    }
+
+    footer .container-grid {
+        max-width: 100%;
+    }
+
+    footer #footerMain a {
+        white-space: normal;
+    }
+
+    footer .footer-bottom {
+        padding-top: 8px;
+        padding-left: 22px;
+    }
+
+    footer .lang-select {
+        margin: auto;
+    }
+
+    footer .grid-block-3 {
+        width: 100%;
+        padding: 0;
+        margin: 0 !important;
+    }
+
+    footer .nav-footer-collapsed > a {
+        padding: 25px 35px;
+    }
+
+    footer .nav-footer-collapsed:after {
+        right: 35px;
+    }
+
+    footer #footerNavShoppingContacts {
+        padding-left: 20px;
+    }
+
+    footer #footerNavSocialMedia {
+        padding-top: 8px;
+    }
+
+    footer .footer-social-media-box {
+        padding-left: 35px;
+        padding-bottom: 40px;
+    }
+
+    footer .copyright-ditap {
+        padding: 10px 35px 34px 15px;
+    }
+
+    @media screen and (min-width: 767px) {
+
+        .footer {
+            padding-top: 48px;
+        }
+
+        #footerMain {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        footer .grid-block-3 {
+            width: 330px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        footer .footer-bottom {
+            padding-top: 21px;
+            padding-left: 40px;
+            padding-bottom: 37px;
+        }
+
+        footer #footerNavShoppingContacts {
+            padding-left: 0;
+            padding-top: 35px;
+        }
+
+        footer #footerNavSocialMedia {
+            padding-top: 35px;
+        }
+
+        footer .footer-social-media-box {
+            padding-left: 15px;
+            padding-bottom: 0;
+        }
+
+        footer .copyright-ditap {
+            padding: 0 55px 0 0;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+
+        footer .grid-block-3 {
+            width: 220px;
+            padding-left: 15px;
+        }
+
+        footer .footer-bottom {
+            padding-right: 30px;
+            padding-bottom: 22px;
+        }
+
+        footer #footerNavShoppingContacts {
+            padding-top: 0;
+        }
+
+        footer #footerNavSocialMedia {
+            padding-top: 0;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        .footer {
+            padding-top: 80px;
+        }
+
+        #footerMain {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        footer .container-grid {
+            max-width: 1180px;
+        }
+
+        footer .grid-block-3 {
+            width: 280px;
+            padding-left: 15px;
+        }
+
+        footer .footer-bottom {
+            padding-left: 3px;
+            padding-right: 30px;
+            padding-top: 55px;
+        }
+
+        footer .copyright-ditap {
+            padding-right: 0;
+        }
+
+    }
+</style>
+<section class="footer bg-gray">
+    <div class="container-grid px-0 pt-0">
+        <!-- Main footer -->
+        <div id="footerMain" class="row no-gutters d-flex flex-column flex-md-row justify-content-between w-100">
+            <div class="col-auto">
+                <!-- Footer navigation e-shop -->
+                <nav class="nav-footer-collapsed navbar navbar-expand-md grid-block-3">
+                    <a href="#" class="navbar-toggler text-ditap-h8" data-toggle="collapse" data-target="#footerNavEshop"
+                       aria-controls="footerNavEshop" aria-expanded="false" aria-label="Toggle navigation">
+                        E-Shop
+                    </a>
+                    <div id="footerNavEshop" class="collapse navbar-collapse">
+                        <div class="nav flex-column p-md-0">
+                            <a href="#eshop" class="nav-item nav-link text-ditap-h8 d-none d-md-block mb-md-2">E-Shop</a>
+                            <a href="#" class="nav-item nav-link text-small">Vyšívaný porcelán</a>
+                            <a href="#" class="nav-item nav-link text-small">Kuchařky</a>
+                            <a href="#" class="nav-item nav-link text-small">Zástěry</a>
+                            <a href="#" class="nav-item nav-link text-small">Brože</a>
+                            <a href="#" class="nav-item nav-link text-small">Pyžama</a>
+                            <a href="#" class="nav-item nav-link text-small">Poukázky<span class="badge eshop-badge">Nové</span></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-auto">
+                <!-- Footer navigation shopping guide -->
+                <nav class="nav-footer-collapsed navbar navbar-expand-md grid-block-3">
+                    <a href="#" class="navbar-toggler text-ditap-h8" data-toggle="collapse" data-target="#footerNavShoppingGuide"
+                       aria-controls="footerNavShoppingGuide" aria-expanded="false" aria-label="Toggle navigation">
+                        Vše o nákupu
+                    </a>
+                    <div id="footerNavShoppingGuide" class="collapse navbar-collapse">
+                        <div class="nav flex-column p-md-0">
+                            <a href="shopping-guide2.html" class="nav-item nav-link text-ditap-h8 d-none d-md-block mb-md-2">Vše o nákupu</a>
+                            <a href="shopping-guide2.html#bh1" class="nav-item nav-link text-small">Stav objednávky</a>
+                            <a href="shopping-guide2.html#bh1" class="nav-item nav-link text-small">Změna objednávky</a>
+                            <a href="#" class="nav-item nav-link text-small">Možnosti dopravy a platby</a>
+                            <a href="shopping-guide2.html#dh4" class="nav-item nav-link text-small">Jak správně převzít zboží od dopravce</a>
+                            <a href="shopping-guide2.html#eh1" class="nav-item nav-link text-small">Jak reklamovat poškozené zboží</a>
+                            <a href="#" class="nav-item nav-link text-small">Obchodní podmínky</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-auto">
+                <!-- Footer navigation contacts -->
+                <nav class="navbar navbar-expand grid-block-3 mt-md-4 mt-lg-0">
+                    <a href="#" class="navbar-toggler headline-sm" data-toggle="collapse" data-target="#footerNavShoppingContacts"
+                       aria-controls="footerNavShoppingContacts" aria-expanded="false" aria-label="Toggle navigation">
+                        Kontakty
+                    </a>
+                    <div id="footerNavShoppingContacts" class="collapse navbar-collapse">
+                        <div class="nav flex-column mt-3 mt-md-0">
+                            <a href="#contacts" class="nav-item nav-link text-ditap-h8">Kontakty</a>
+                            <div class="footer-contact-box nav-item nav-link">
+                                <span class="icon-ditap-phone-small"></span>
+                                <span class="contact-phone">+420 702 936 576</span>
+                                <p class="contact-business-hours text-ditap-label pl-4">Po&ndash;Pá: 9&ndash;14</p>
+                                <span class="icon-small ditap-ico_mail_small"></span>
+                                <span class="contact-phone">info@ditap.cz</span>
+                            </div>
+                            <a href="contact2.html#fc" class="nav-item nav-link text-small">Napište mi</a>
+                            <a href="contact2.html" class="nav-item nav-link text-small">Všechny kontakty</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-auto">
+                <!-- Footer navigation social media -->
+                <nav class="navbar navbar-expand grid-block-3 mb-4 mb-md-0 mt-md-4 mt-lg-0">
+                    <a href="#" class="navbar-toggler headline-sm" data-toggle="collapse" data-target="#footerNavSocialMedia"
+                       aria-controls="footerNavSocialMedia" aria-expanded="false" aria-label="Toggle navigation">
+                        Buďte se mnou
+                    </a>
+                    <div id="footerNavSocialMedia" class="collapse navbar-collapse">
+                        <div class="nav flex-md-column w-100">
+                            <a href="#socialMedia" class="nav-item nav-link text-ditap-h8 d-none d-md-block mb-md-2">Buďte se mnou</a>
+                            <div class="footer-social-media-box nav-item nav-link">
+                                <button type="button" class="nav-item btn btn-ditap btn-ditap-small btn-ditap-blue"
+                                   data-toggle="modal" data-target="#modalNewsletter">Přihlásit k newsletteru
+                                </button>
+                            </div>
+                            <a href="#" class="link-fb nav-item nav-link text-small mt-md-3 mb-md-2">
+                                <span class="icon-ditap-facebook"></span>
+                                <span class="ml-md-3 d-none d-md-inline">Facebook</span>
+                            </a>
+                            <a href="#" class="link-in nav-item nav-link text-small">
+                                <span class="icon-ditap-instagram"></span>
+                                <span class="ml-md-3 d-none d-md-inline">Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Footer bottom part -->
+        <div class="footer-bottom row no-gutters d-flex flex-column flex-md-row justify-content-between w-100 align-items-md-center">
+            <div class="col-auto">
+                <!-- Language selector -->
+                <div class="grid-block-3 lang-select">
+                    <label class="mb-0">
+                        <select class="selectpicker border-0" name="language-selector" data-show-subtext="true" data-width="233">
+                            <option value="cs" data-icon="ditap-ico_flag_cz" data-subtext="CZK" selected>Česká Republika</option>
+                            <option value="sk" data-icon="ditap-ico_flag_sk" data-subtext="EUR">Slovenská Republika</option>
+                            <option value="de" data-icon="ditap-ico_flag_de" data-subtext="EUR">Německo</option>
+                        </select>
+                        <span class="select-icon"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="col-auto">
+                <!-- Copyright -->
+                <div class="copyright-ditap position-relative d-inline-flex justify-content-between w-100">
+                    <span class="text-ditap-label">Zásady ochrany soukromí</span>
+                    <span class="text-ditap-label ml-30px">&copy; 2018 Dita P.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,38 @@
+<!-- Documentation of sticky component: https://getuikit.com/docs/sticky -->
+
+<nav id="inpage-nav-diary" class="navbar navbar-light navbar-expand-lg inpage-nav bg-white border-bottom-rgba w-100"
+     data-uk-sticky="animation: uk-animation-slide-top; offset: 0; top: #scroll-on; bottom: #scroll-off;">
+    <div class="container px-0">
+        <!-- Back link -->
+        <div class="inpage-back-btn-wrapper position-absolute">
+            <a class="nav-item nav-link text-ditap-btn-mini link-black pl-2" href="diary-list2.html">
+                <span class="ditap-ico_arrow_tiny_left fs-9"></span>
+                <span>Zpět</span>
+            </a>
+        </div>
+        <!-- Dropdown menu (only visible on tablet and mobile) -->
+        <!-- Options are filled dynamically from #inpage-nav-links !!! See function initInpageNav() in main.js -->
+        <div class="inpage-nav-select position-absolute d-lg-none pr-2">
+            <label>
+                <select class="selectpicker border-0" name="language-selector" data-show-subtext="false" data-width="200">
+                <!-- Example - do NOT use !!!
+                    <option data-content='<a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-1" data-offset="52" data-id="#recipe-1">Bruschetty s rajčaty</a>' selected></option>
+                    <option data-content='<a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-2" data-offset="52" data-id="#recipe-2">Bazalkové pesto</a>'></option>
+                    <option data-content='<a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-3" data-offset="52" data-id="#recipe-3">Salát s jahodami a karamelizovanými ořechy</a>'></option>
+                    <option data-content='<a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-4" data-offset="52" data-id="#recipe-4">Pistáciový dort s jahodami</a>'></option>
+                    <option data-content='<a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-5" data-offset="52" data-id="#recipe-5">Třešňová bublanina</a>'></option>
+                    -->
+                </select>
+                <span class="select-icon"></span>
+            </label>
+        </div>
+        <!-- Scrollspy nav (only visible on desktop) -->
+        <div id="inpage-nav-links" class="d-none d-lg-flex justify-content-lg-center w-100">
+            <a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-1" data-offset="0" data-offset-mobile="50" data-id="#recipe-1">Bruschetty s rajčaty</a>
+            <a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-2" data-offset="0" data-offset-mobile="50" data-id="#recipe-2">Bazalkové pesto</a>
+            <a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-3" data-offset="0" data-offset-mobile="50" data-id="#recipe-3">Salát s jahodami a karamelizovanými ořechy</a>
+            <a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-4" data-offset="0" data-offset-mobile="50" data-id="#recipe-4">Pistáciový dort s jahodami</a>
+            <a class="nav-item nav-link arrow-scroll-down text-ditap-btn-mini link-grey" href="#recipe-5" data-offset="0" data-offset-mobile="50" data-id="#recipe-5">Třešňová bublanina</a>
+        </div>
+    </div>
+</nav>

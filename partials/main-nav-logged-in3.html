@@ -1,0 +1,196 @@
+<!-- Navigation -->
+<nav id="main-nav" class="navbar navbar-expand-md navbar-light border-0 px-0 pb-0 pb-lg-0">
+    <div class="container d-md-flex flex-md-column flex-lg-row d-lg-inline-flex align-items-md-stretch align-items-lg-center">
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#ditap-mobile-menu"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="ditap-ico_mainmenu_mob"></span>
+        </button>
+        <a class="navbar-brand d-block d-lg-none pl-3" href="index.html">
+            <img src="DitaP/media/DitaP/logos/logo_ditap.svg" alt="Dita P."/>
+        </a>
+        <ul class="nav user-cart-menu right-menu justify-content-end align-items-center order-lg-1">
+            <!-- Guest -->
+            <!-- <li class="nav-item">
+                <a class="btn-account nav-link" href="#login" data-toggle="modal" data-target="#modalLogin">
+                    <span class="ditap-ico_account_mob d-block d-md-none"></span>
+                    <span class="text-ditap-paragraph d-none d-md-block">Přihlásit</span>
+                </a>
+            </li>-->
+
+            <!-- Account -->
+             <li class="nav-item dropdown">
+                 <a class="btn-account logged-in nav-link dropdown-toggle" href="#" id="userAccountDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <span class="ditap-ico_account_mob d-block d-md-none"></span>
+                     <span class="text-ditap-paragraph d-none d-md-inline">Marcela Králová</span>
+                 </a>
+                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userAccountDropdown">
+                     <a class="dropdown-item" href="user2.html#orders">Moje objednávky</a>
+                     <a class="dropdown-item" href="user2.html#account">Nastevní účtu</a>
+                     <a class="dropdown-item" href="homepage3.html">Odhlásit</a>
+                 </div>
+             </li>
+
+            <!-- Cart -->
+            <li class="nav-item">
+                <a class="btn-cart" href="#cart" data-toggle="modal" data-target="#modalCart">
+                    <span class="ditap-ico_cart_empty"></span>
+                    <span class="badge badge-pill cart-badge">4</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Mobile menu also used by mmenu plugin -->
+        <div id="ditap-mobile-menu" class="collapse navbar-collapse" data-btn-back="Zpět">
+            <!-- Search -->
+            <ul class="search-nav navbar-nav align-items-lg-center">
+                <li class="nav-item">
+                    <a class="btn-search nav-link d-md-inline-flex d-lg-inline-flex" href="#">
+                        <span class="ditap-ico_search"></span>
+                        <span class="text-ditap-default text-search pl-2">Hledat</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- Main menu content, use CSS class active on <li> element -->
+            <ul class="top-nav navbar-nav w-100 justify-content-md-center">
+                <li class="nav-item dropdown position-static dropdown-eshop-ditap">
+                    <a class="btn-eshop-submenu nav-link d-md-none" href="#mm-3">E-Shop</a>
+                    <a class="btn-eshop nav-link text-ditap-menu-item dropdown-toggle" href="#" id="eshopDropdown"
+                       role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        E-Shop
+                    </a>
+                    <!-- E-Shop category menu -->
+                    <div class="dropdown-menu pb-0 w-100" aria-labelledby="eshopDropdown">
+                        <div class="container eshop-menu d-md-flex">
+                            <ul class="navbar-nav eshop-menu w-100 justify-content-md-center">
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="#">Novinky</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="#">Vše</a>
+                                </li>
+                                <li class="dropdown-item dropdown position-static">
+                                    <a class="mm-btn_next nav-link d-md-none" href="#mm-4"><span class="mm-sronly">Porcelán</span></a>
+                                    <a class="btn-eshop-submenu nav-link d-md-none" href="#">Porcelán</a>
+                                    <a class="btn-eshop-submenu nav-link dropdown-toggle d-none d-md-block" href="#"
+                                       id="eshopDropdownCategory" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Porcelán
+                                    </a>
+                                    <!-- E-Shop Category submenu -->
+                                    <div class="dropdown-menu category-submenu pb-0 w-100" aria-labelledby="eshopDropdownCategory">
+                                        <div class="category-dropdown-panel container">
+                                            <button type="button" class="close" aria-label="Close">
+                                                <span aria-hidden="true" class="fs-14 ditap-ico_close_mob"></span>
+                                            </button>
+                                            <div id="mm-4" class="categories d-flex flex-row flex-wrap justify-content-between justify-content-md-start">
+                                                <div class="mm-navbar" aria-hidden="true">
+                                                    <a class="mm-btn mm-btn_prev mm-navbar__btn" href="#mm-3" aria-owns="mm-3" aria-haspopup="true">
+                                                        <span class="mm-sronly">Close submenu</span>
+                                                    </a><a class="mm-navbar__title" href="#mm-3">
+                                                    Porcelán
+                                                </a>
+                                                </div>
+                                                <a class="category-item" href="#">
+                                                    <div class="category-item-overlay"></div>
+                                                    <figure class="figure">
+                                                        <img class="figure-img img-fluid" src="DitaP/media/DitaP/images/products/menu/menu_sady.png" alt="Sady"/>
+                                                        <figcaption class="figure-caption position-relative text-center">Sady</figcaption>
+                                                    </figure>
+                                                </a>
+                                                <a class="category-item" href="#">
+                                                    <div class="category-item-overlay"></div>
+                                                    <figure class="figure">
+                                                        <img class="figure-img img-fluid" src="DitaP/media/DitaP/images/products/menu/menu_zlatosplatina.png" alt="Zlato a platina"/>
+                                                        <figcaption class="figure-caption position-relative text-center">Zlato a platina</figcaption>
+                                                    </figure>
+                                                </a>
+                                                <a class="category-item" href="#">
+                                                    <div class="category-item-overlay"></div>
+                                                    <figure class="figure">
+                                                        <img class="figure-img img-fluid" src="DitaP/media/DitaP/images/products/menu/menu_talire.png" alt="Talíře"/>
+                                                        <figcaption class="figure-caption position-relative text-center">Talíře</figcaption>
+                                                    </figure>
+                                                </a>
+                                                <a class="category-item" href="#">
+                                                    <div class="category-item-overlay"></div>
+                                                    <figure class="figure">
+                                                        <img class="figure-img img-fluid" src="DitaP/media/DitaP/images/products/menu/menu_hrnicky.png" alt="Hrnečky"/>
+                                                        <figcaption class="figure-caption position-relative text-center">Hrnečky</figcaption>
+                                                    </figure>
+                                                </a>
+                                                <a class="category-item" href="#">
+                                                    <div class="category-item-overlay"></div>
+                                                    <figure class="figure">
+                                                        <img class="figure-img img-fluid" src="DitaP/media/DitaP/images/products/menu/menu_misy.png" alt="Mísy"/>
+                                                        <figcaption class="figure-caption position-relative text-center">Mísy</figcaption>
+                                                    </figure>
+                                                </a>
+                                                <a class="category-item" href="#">
+                                                    <div class="category-item-overlay"></div>
+                                                    <figure class="figure">
+                                                        <img class="figure-img img-fluid" src="DitaP/media/DitaP/images/products/menu/menu_cukrenky.png" alt="Cukřenky"/>
+                                                        <figcaption class="figure-caption position-relative text-center">Cukřenky</figcaption>
+                                                    </figure>
+                                                </a>
+                                                <a class="category-item" href="#">
+                                                    <div class="category-item-overlay"></div>
+                                                    <figure class="figure">
+                                                        <img class="figure-img img-fluid" src="DitaP/media/DitaP/images/products/menu/menu_ostatni.png" alt="Ostatní"/>
+                                                        <figcaption class="figure-caption position-relative text-center">Ostatní</figcaption>
+                                                    </figure>
+                                                </a>
+                                                <a class="category-item" href="#">
+                                                    <div class="category-item-overlay"></div>
+                                                    <figure class="figure">
+                                                        <img class="figure-img img-fluid" src="DitaP/media/DitaP/images/products/menu/menu_vse.png" alt="Vše"/>
+                                                        <figcaption class="figure-caption position-relative text-center">Vše</figcaption>
+                                                    </figure>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="#">Kuchařky</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="#">Zástěry</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="#">Brože</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="#">Pyžama</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a class="nav-link" href="#">Poukázky</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-ditap-menu-item ml-1" href="diary-list2.html">Deník</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-ditap-menu-item" href="recipe2.html">Recepty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-ditap-menu-item" href="about2.html">O mně</a>
+                </li>
+            </ul>
+            <div class="d-md-none additional-links">
+                <a class="nav-link" href="#">Vše o nákupu</a>
+                <a class="nav-link" href="contact2.html">Kontakty</a>
+            </div>
+            <div class="mobile-lang-select lang-select d-md-none">
+                <label>
+                    <select class="selectpicker border-0" name="language-selector" data-show-subtext="true" data-width="240">
+                        <option value="cs" data-icon="ditap-ico_flag_cz" data-subtext="CZK" selected>Česká Republika</option>
+                        <option value="sk" data-icon="ditap-ico_flag_sk" data-subtext="EUR">Slovenská Republika</option>
+                        <option value="de" data-icon="ditap-ico_flag_de" data-subtext="EUR">Německo</option>
+                    </select>
+                    <span class="select-icon"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+</nav>

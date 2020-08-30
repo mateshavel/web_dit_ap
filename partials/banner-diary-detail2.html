@@ -1,0 +1,58 @@
+<style>
+
+    @media screen and (max-width: 375px) {
+        .img-banner-fullsize {
+            transform: translateX(-40%);
+        }
+    }
+
+    @media screen and (min-width: 767px) {
+        .img-banner-fullsize {
+            transform: translateX(-33%);
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        .img-banner-fullsize {
+            transform: translateX(-10%);
+        }
+
+        .banner-diary-detail .card-panel {
+            padding-left: 50px !important;
+            bottom: calc(100vh / 4) !important;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .img-banner-fullsize {
+            transform: translateX(0);
+        }
+    }
+
+    @media screen and (min-width: 1441px) {
+        .img-banner-fullsize {
+            max-width: 1920px;
+            width: 100%;
+            height: auto;
+            max-height: 100%;
+            margin-top: -100px;
+        }
+
+        .banner-detail {
+            max-height: calc(100vh - 160px);
+            margin-bottom: 160px;
+            overflow: hidden;
+        }
+    }
+</style>
+<section class="banner-detail banner-diary-detail jumbotron jumbotron-fluid p-0">
+    <div class="position-relative o-h">
+        <div class="card-panel position-absolute d-flex justify-content-start align-items-center w-100 h-100">
+            <div class="container container-1180 card-panel-caption card-align-position text-left pl-4 pl-lg-4">
+                <p class="text-ditap-h8 text-color-dynamic">5 Receptů</p>
+                <h1 class="text-ditap-h2 text-color-dynamic">Poběžte, čekám<br/>vás u křížku!</h1>
+            </div>
+        </div>
+        <img class="img-banner img-banner-fullsize d-block mx-auto img-translate-responsive" src="DitaP/media/DitaP/images/carousel/slide_01.jpg" alt=""/>
+    </div>
+</section>
