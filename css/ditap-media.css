@@ -1,0 +1,2281 @@
+#step-2-info{
+    display: inline-flex!important;
+}
+
+.cursor-pointer{
+    cursor: pointer!important;
+}
+
+.uk-sticky-fixed {
+    z-index: 1001;
+}
+
+#searchModal .form-control {
+    padding: .375rem .8rem;
+}
+
+#modalRegistration > div > div > div:nth-child(2) > a,
+#modalRegistration .btn-modal-next-step.step2{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.bs .lang-select .bootstrap-select.show {
+    box-shadow: none !important;
+}
+
+.bs .lang-select .bootstrap-select .dropdown-menu.show {
+    box-shadow: none !important;
+}
+
+.bs .lang-select .bootstrap-select.show {
+    /*box-shadow: 0 -4px 30px 1px rgba(0,0,0,0.07), 0 0 0 0 rgba(0,0,0,0.05) !important;*/
+    box-shadow: 0 3px 7px 2px rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.bs .lang-select .bootstrap-select .dropdown-menu.show {
+    box-shadow: 0 3px 7px 2px rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.welcome .dropdown-menu {
+    padding: 0;
+}
+
+.shopping-guide .accordion .accord .card-header {
+    padding-top: 30px;
+    padding-bottom: 29px;
+}
+
+.box-shadow-none {
+    box-shadow: none !important;
+}
+
+.truncate-ellipsis {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    white-space: nowrap;
+}
+
+/*.truncate-ellipsis > * {*/
+.truncate-ellipsis li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.w-49-p {
+    width: 49%;
+}
+
+.inpage-nav-eshop #main-nav {
+    box-shadow: none;
+}
+
+.product-small-img a.active {
+    /*border-bottom: 2px solid #ED1C24; */
+    border-bottom: unset;
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.product-small-img a.active img {
+    border: 1px solid rgba(34, 34, 34, 0.09);
+    /*border-bottom: 2px solid #ED1C24;*/
+}
+
+.product-small-img a.active .active-element{
+    border-bottom: 2px solid #ED1C24;
+    position: relative;
+    top: -2px;
+    z-index: 1;
+}
+
+.pt-3-5-7 {
+    padding-top: 30px
+}
+
+.pb-3-3-4 {
+    padding-bottom: 30px
+}
+
+.mt-4-7-4 {
+    margin-top: 30px;
+}
+
+.pt-5-7-8 {
+    padding-top: 50px;
+}
+
+.mt-5-6-7 {
+    margin-top: 50px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.pr-12 {
+    padding-right: 12px;
+}
+
+.pt-4-7-10 {
+    padding-top: 40px;
+}
+
+.mt-7-10-12 {
+    margin-top: 70px;
+}
+
+.mb-4-7-12 {
+    margin-bottom: 40px;
+}
+
+.mt-4-7 {
+    margin-top: 40px;
+}
+
+.mt-5-7-7 {
+    margin-top: 50px;
+}
+
+.pt-5-7-10,
+.pt-5-7-7 {
+    padding-top: 50px;
+}
+
+.pl-15 {
+    padding-left: 15px;
+}
+
+.pl-15-30 {
+    padding-left: 15px !important;
+}
+
+.pl-20-40{
+    padding-left: 20px !important;
+}
+
+.pr-15-30 {
+    padding-right: 15px !important;
+}
+
+.pl-19 {
+    padding-left: 19px;
+}
+
+.p-30 {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.pr-19 {
+    padding-right: 19px;
+}
+
+.mt-27 {
+    margin-top: 27px;
+}
+
+.mt-35 {
+    margin-top: 35px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.p-6-10 {
+    margin: 6px;
+}
+
+.pr-20 {
+    padding-right: 20px;
+}
+
+.pr-10-25 {
+    padding-right: 10px;
+}
+
+.h-60px {
+    height: 60px;
+}
+
+.h-100px {
+    height: 100px;
+}
+
+.h-410-810-740 {
+    height: 410px;
+    margin-top: 15px;
+}
+
+.mb-12-20 {
+    margin-bottom: 12px;
+}
+
+.mb-21 {
+    margin-bottom: 21px;
+}
+
+.mb-4-6-8 {
+    margin-bottom: 40px;
+}
+
+.mb-5-8-8 {
+    margin-bottom: 50px;
+}
+
+.mb-7-8-8 {
+    margin-bottom: 70px;
+}
+
+.mb-7-8-10 {
+    margin-bottom: 70px;
+}
+
+.mb-7-10-12,
+.mb-7-10-10 {
+    margin-bottom: 70px !important;
+}
+
+.pb-7-10-12 {
+    padding-bottom: 70px;
+}
+
+.mb-3-5-0 {
+    margin-bottom: 30px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-4-5-7 {
+    margin-bottom: 40px;
+}
+
+.pb-4-5-7 {
+    padding-bottom: 40px;
+}
+
+.mt-4-5-7,
+.mt-4-5-8 {
+    margin-top: 40px;
+}
+
+.mb-10-25 {
+    margin-bottom: 10px;
+}
+
+.mt-5-8-8 {
+    margin-top: 50px;
+}
+
+.btn-spacer {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.cart-summary.sticky-top {
+    margin-top: 40px;
+}
+
+.tiles-4-3-4 .tiles-headline {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.tiles-4-3-4 {
+    padding-bottom: 50px;
+}
+
+.promo-stories-two {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.btn-ditap-show-more {
+    margin-top: 17px;
+    margin-bottom: 70px;
+}
+
+.w-50-25-50 {
+    width: 135px;
+    margin-left: 8px;
+}
+
+.pattern-filter .nav-item a.nav-link {
+    padding: 0 22px 0 22px;
+}
+
+.redirect-diary-card {
+    margin-bottom: 12px;
+}
+
+.w-grid-640-720 .accordion > p {
+    margin-top: 70px;
+    margin-bottom: 0;
+}
+
+/*mobile*/
+/*grid-296*/
+@media screen and (max-width: 374px) {
+
+    .w-306-640-480 {
+        width: 296px;
+        margin-top: 5px;
+    }
+
+    .w-336-700-580 {
+        width: 296px !important;
+    }
+
+    .product-detail-imgs,
+    .product-detail-attributes {
+        max-width: 266px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .breadcrumb-wrapper .container,
+    .inpage-nav-breadcrumbs .container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .select-ditap-patterns {
+        width: 266px;
+        /*margin-left: 15px;*/
+        margin-right: 15px;
+    }
+
+    .w-65-160-200 {
+        width: 265px;
+    }
+
+    .w-230-400-400 {
+        width: 265px;
+    }
+
+    .w-306-580-620 {
+        width: 265px;
+    }
+
+    .w-306-280-300,
+    .w-306-280-300-r {
+        width: 265px;
+    }
+
+    .w-306-400-400 {
+        width: 265px;
+    }
+
+    .w-306-160-200 {
+        width: 265px;
+    }
+
+    .shop-checkout-wrapper,
+    .sc-in,
+    .shop-product-rows,
+    .cart-summary,
+    .product-rows,
+    .order-status-zone {
+        width: 295px;
+    }
+
+    .order-info {
+        width: 295px;
+        padding-left: 15px;
+        margin-top: 20px;
+    }
+
+    .categories .category-item {
+        width: 125px;
+    }
+
+    .w-306-640-720 {
+        margin-top: 40px;
+    }
+
+    .w-306-640-720,
+    .w-grid-640-720 {
+        width: 295px;
+        /*margin-left: 15px;*/
+    }
+
+    .form-contact {
+        width: 295px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .form-contact .form-control,
+    .form-contact-inside {
+        width: 240px;
+        margin: 0 auto;
+    }
+
+    .form-contact-inside {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .shop-login-card {
+        width: 296px;
+    }
+
+    .shop-login-card .form-control {
+        width: 296px;
+    }
+
+    .about-content {
+        width: 296px;
+    }
+
+    .w-306-640-780 {
+        width: 296px;
+    }
+
+    .recipe-detail-text-secret .text-secret {
+        max-width: 296px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .recipe-detail-text-secret {
+        width: 296px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .recipe-detail-card-frame {
+        width: 296px;
+        margin: 0 auto;
+    }
+
+    .recipe-detail-card-frame .form-control {
+        width: 236px;
+        margin: 0 auto;
+    }
+
+    .recipe-detail-card-frame .padding-inside {
+        padding: 20px;
+    }
+
+    .search-tips-item {
+        width: 296px;
+    }
+
+    .search-tips-item img {
+        height: 50px;
+        margin: 15px;
+    }
+
+    .search-tips-item > div {
+        width: 200px;
+        margin-top: 15px;
+    }
+
+    .dedication-text {
+        width: 306px;
+        padding: 30px;
+    }
+
+    .dedication-text textarea {
+        width: 236px;
+    }
+
+    #recipe-accordion .container-grid .col-auto:nth-of-type(1),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(3),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(5),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(7),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(9),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(11) {
+        margin-right: 12px;
+    }
+
+
+    .max-lines-ellipsis{
+        max-height: 5em;
+        line-height: 1.5em;
+    }
+
+    .newsletter-dialog,
+    .dedication-dialog {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .newsletter-text,
+    .dedication-text {
+        padding: 40px 15px 25px 15px;
+        margin: 0 auto;
+    }
+
+    .newsletter-text .form-control,
+    .newsletter-text p,
+    .newsletter-text ul,
+    .dedication-text textarea {
+        width: 267px;
+    }
+    .w-xxx {
+        width: 280px!important;
+        margin: 0 auto;
+    }
+
+}
+
+.shop-login-card.clone input.btn-ditap-blue {
+    margin-bottom: 70px;
+}
+
+/*grid-336*/
+@media screen and (min-width: 375px) {
+
+    #recipe-accordion .recipe-detail-card p {
+        margin: 0;
+    }
+
+    #recipe-accordion .recipe-detail-card .small-card-text-box {
+        height: 88px;
+    }
+
+    #recipe-accordion .container-grid .col-auto:nth-of-type(1),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(3),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(5),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(7),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(9),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(11) {
+        margin-right: 12px;
+    }
+
+    .box-700 {
+        /*width: 700px;*/
+    }
+
+    .w-336-500 {
+        width: 336px;
+        margin: 0 auto;
+    }
+
+    .w-336-500 .modal-body {
+        padding: 30px;
+    }
+
+    .w-336-500 .form-control {
+        width: 276px;
+        margin: 0 auto;
+        margin-bottom: 12px;
+    }
+
+    .w-336-500 .bullet-list {
+        padding-left: 43px;
+        list-style-position: outside;
+        text-indent: -29px;
+    }
+
+    .w-336-500 .step-2 .custom-control {
+        margin-left: 16px;
+    }
+
+    .set-dialog {
+        width: 346px;
+        margin: 0 auto;
+    }
+
+    .newsletter-dialog,
+    .dedication-dialog {
+        width: 336px;
+        margin: 0 auto;
+    }
+
+    .newsletter-text,
+    .dedication-text {
+        padding: 30px;
+        margin: 0 auto;
+    }
+
+    .newsletter-text .form-control,
+    .newsletter-text p,
+    .newsletter-text ul,
+    .dedication-text textarea {
+        width: 276px;
+    }
+
+    .search-tips-item {
+        width: 336px;
+    }
+
+    .search-tips-item img {
+        height: 50px;
+        margin: 15px;
+    }
+
+    .search-tips-item > div {
+        width: 240px;
+        margin-top: 15px;
+        margin-top: 10px;
+    }
+
+    .w-306-640-780 {
+        width: 306px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .recipe-detail-text-l,
+    .recipe-detail-text,
+    .recipe-detail-text-secret .text-secret {
+        max-width: 306px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .recipe-detail-text-secret {
+        width: 336px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .recipe-detail-card-frame {
+        width: 336px;
+        margin: 0 auto;
+    }
+
+    .recipe-detail-card-frame .form-control {
+        width: 275px;
+        margin: 0 auto;
+    }
+
+    .recipe-detail-card-frame .padding-inside {
+        padding: 20px;
+    }
+
+    .about-content {
+        width: 306px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .shop-login-card {
+        width: 336px;
+    }
+
+    .shop-login-card .form-control {
+        width: 306px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .pattern-filter .nav-item a.nav-link {
+        padding: 0 26px 0 26px;
+    }
+
+    .card-align-position {
+        width: 300px;
+    }
+
+    .w-306-640-480 {
+        width: 306px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .w-306-640-720 {
+        margin-top: 40px;
+    }
+
+    .w-306-640-720 {
+        width: 306px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .form-contact {
+        width: 336px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .form-contact .form-control,
+    .form-contact-inside {
+        width: 276px;
+        margin: 0 auto;
+    }
+
+    .form-contact-inside {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .w-50-25-50 {
+        width: 160px;
+        margin-left: 8px;
+    }
+
+    .w-336-700-580 {
+        width: 336px !important;
+    }
+
+    .product-detail-imgs,
+    .product-detail-attributes {
+        max-width: 306px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .breadcrumb-wrapper .container,
+    .inpage-nav-breadcrumbs .container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .select-ditap-patterns {
+        width: 306px;
+        /*margin-left: 15px;*/
+        margin-right: 15px;
+    }
+
+    .w-65-160-200 {
+        width: 65px;
+    }
+
+    .w-230-400-400 {
+        width: 230px;
+    }
+
+    .w-306-580-620 {
+        width: 306px;
+    }
+
+    .w-306-280-300,
+    .w-306-280-300-r {
+        width: 306px;
+    }
+
+    .w-306-400-400 {
+        width: 306px;
+    }
+
+    .w-306-160-200 {
+        width: 306px;
+    }
+
+    .sc-in,
+    .shop-product-rows,
+    .cart-summary,
+    .product-rows,
+    .order-list,
+    .order-status-zone {
+        width: 336px;
+    }
+
+    .order-info {
+        width: 336px;
+        padding-left: 15px;
+        margin-top: 20px;
+    }
+
+    .categories .category-item {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 483px) {
+    .shop-checkout .container-grid {
+        max-width: 100%;
+    }
+
+    .shop-checkout-wrapper {
+        width: 100%;
+    }
+
+    .d-md-contents {
+        display: contents;
+    }
+
+    .sh-check .container-grid .col-auto {
+        margin: 0 auto;
+    }
+
+    .w-xxx {
+        width: 306px;
+        margin: 0 auto;
+    }
+}
+
+/*grid-460*/
+@media screen and (min-width: 484px) {
+
+    .add-to-cart-bar {
+        display: block;
+        background: white;
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    #recipe-accordion .container-grid .col-auto:nth-of-type(1),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(3),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(5),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(7),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(9),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(11) {
+        margin-right: 20px;
+    }
+
+    .box-700 {
+        /*width: 700px;*/
+    }
+
+    .w-xxx {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .set-dialog {
+        width: 460px;
+        margin: 0 auto;
+    }
+
+    .search-tips-item {
+        width: 460px;
+    }
+
+    .search-tips-item img {
+        height: 50px;
+        margin: 15px;
+    }
+
+    .search-tips-item > div {
+        width: 300px;
+        margin-top: 15px;
+    }
+
+    .w-306-640-780 {
+        width: 430px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .recipe-detail-text-l,
+    .recipe-detail-text,
+    .recipe-detail-text-secret .text-secret {
+        max-width: 430px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .recipe-detail-text-secret {
+        width: 430px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .recipe-detail-card-frame {
+        width: 430px;
+        margin: 0 auto;
+    }
+
+    .recipe-detail-card-frame .form-control {
+        width: 370px;
+        margin: 0 auto;
+    }
+
+    .recipe-detail-card-frame .padding-inside {
+        padding: 20px;
+    }
+
+    .about-content {
+        width: 400px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .shop-login-card {
+        width: 460px;
+    }
+
+    .shop-login-card .form-control {
+        width: 306px;
+        margin: 0 auto;
+    }
+
+    .h-410-810-740 {
+        margin-left: 42px;
+    }
+
+    .w-306-640-480 {
+        width: 336px;
+        margin-left: 62px;
+        margin-right: 20px;
+    }
+
+    .w-50-25-50 {
+        width: 230px;
+        margin-left: 0;
+    }
+
+    .w-336-700-580 {
+        width: 460px !important;
+    }
+
+    .w-306-640-720 {
+        width: 430px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .form-contact {
+        width: 460px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .form-contact .form-control,
+    .form-contact-inside {
+        width: 355px;
+        margin: 0 auto;
+    }
+
+    .form-contact-inside {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .card-align-position {
+        width: 336px;
+    }
+
+    .product-detail-imgs,
+    .product-detail-attributes {
+        max-width: 430px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .select-ditap-patterns {
+        width: 430px;
+        /*margin-left: 15px;*/
+        margin-right: 15px;
+    }
+
+    .w-65-160-200 {
+        width: 80px;
+        margin-left: 15px;
+    }
+
+    .w-230-400-400 {
+        width: 300px;
+        margin-right: 15px;
+    }
+
+    .w-306-580-620 {
+        width: 400px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .w-306-280-300,
+    .w-306-280-300-r {
+        width: 400px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .w-306-400-400 {
+        width: 289px;
+        margin-left: 15px;
+    }
+
+    .w-306-160-200 {
+        width: 89px;
+        margin-right: 15px;
+    }
+
+    .shop-checkout-wrapper,
+    .sc-in,
+    .shop-product-rows,
+    .cart-summary,
+    .product-rows,
+    .order-list,
+    .order-status-zone {
+        width: 460px;
+    }
+
+    .order-info {
+        width: 460px;
+        padding-left: 15px;
+    }
+
+    .categories .category-item {
+        width: 215px;
+    }
+}
+
+/*tablet*/
+/*grid-700*/
+@media screen and (min-width: 767px) {
+
+    .pt-3-5-7 {
+        padding-top: 50px
+    }
+
+    .pb-3-3-4 {
+        padding-bottom: 35px
+    }
+
+    .ppr-t2 {
+        position: relative;
+        top: -2px;
+    }
+
+    .slick-filter-card p.text-ditap-paragraph-3-serif a {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    #recipe-accordion .container-grid .col-auto:nth-of-type(1),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(2),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(4),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(5),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(7),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(8),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(10),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(11),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(13),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(14) {
+        margin-right: 20px;
+    }
+
+    #recipe-accordion .container-grid .col-auto:nth-of-type(3),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(6),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(9),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(12),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(15),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(18),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(21) {
+        margin-right: 0;
+    }
+
+    .box-700 {
+        width: 700px;
+    }
+
+    .shopping-cart.sticky-top {
+        top: 60px;
+    }
+
+    .w-336-500 {
+        width: 500px;
+    }
+
+    .w-336-500 .modal-body {
+        padding: 60px;
+    }
+
+    #modalRegistration > div > div > div.modal-body.text-center.step-2 {
+        padding-top: 24px;
+    }
+
+    .w-336-500 .form-control {
+        width: 380px;
+        margin-bottom: 20px;
+    }
+
+    .w-336-500 .bullet-list {
+        padding-left: 32px;
+        list-style-position: outside;
+        text-indent: -39px;
+    }
+
+    .w-336-500 .bullet-list .fs-15 .text-ditap-paragraph {
+        font-size: 16px !important;
+    }
+
+    .w-336-500 .step-2 .custom-control {
+        margin-left: 16px;
+    }
+
+    .set-dialog {
+        width: 720px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .newsletter-dialog,
+    .dedication-dialog {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .newsletter-text,
+    .dedication-text {
+        padding: 60px;
+        margin: 0 auto;
+    }
+
+    .newsletter-text .form-control,
+    .newsletter-text p,
+    .newsletter-text ul,
+    .dedication-text textarea {
+        width: 380px;
+    }
+
+    .pt-5-7-8 {
+        padding-top: 70px;
+    }
+
+    .search-tips-item {
+        width: 640px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .search-tips-item img {
+        height: 100px;
+        margin: 30px;
+    }
+
+    .search-tips-item > div {
+        width: 420px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .mt-4-7-4 {
+        margin-top: 55px;
+    }
+
+    .mt-5-6-7 {
+        margin-top: 60px;
+    }
+
+    .mt-7-10-12 {
+        margin-top: 100px;
+    }
+
+    .pt-4-7-10 {
+        padding-top: 70px;
+    }
+
+    .pr-md-20 {
+        padding-right: 20px;
+    }
+
+    .w-306-640-780 {
+        width: 640px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .recipe-detail-text-l,
+    .recipe-detail-text,
+    .recipe-detail-text-secret .text-secret {
+        max-width: 640px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .recipe-detail-text-secret {
+        width: 430px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .recipe-detail-card-frame {
+        width: 640px;
+        margin: 0 auto;
+    }
+
+    .recipe-detail-card-frame .form-control {
+        width: 370px;
+        margin: 0 auto;
+    }
+
+    .recipe-detail-card-frame .padding-inside {
+        padding: 40px;
+    }
+
+    .about-content {
+        width: 640px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 27px;
+    }
+
+    .inpage-nav-eshop #main-nav {
+        box-shadow: none;
+    }
+
+    .inpage-nav-eshop #main-nav .user-cart-menu {
+        top: -4px;
+        left: 34px;
+    }
+
+    .inpage-nav-eshop .user-cart-menu .nav-item.dropdown.show a {
+        /*margin-right: -25px;*/
+    }
+
+    .shop-login-card {
+        width: 500px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .shop-login-card .form-control {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .shop-login-card .text-ditap-h5 {
+        margin-top: 70px;
+    }
+
+    .shop-login-card button.facebookLoginBtnMain {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .shop-login-card.clone {
+        margin-bottom: 100px;
+        margin-top: 20px;
+    }
+
+    .mt-5-7-7 {
+        margin-top: 70px;
+    }
+
+    .pt-5-7-10,
+    .pt-5-7-7 {
+        padding-top: 70px;
+    }
+
+    .mt-md-30 {
+        margin-top: 30px;
+    }
+
+    .redirect-diary-card {
+        margin-bottom: 40px;
+    }
+
+    .pattern-filter .nav-item a.nav-link {
+        padding: 0 30px 0 30px;
+    }
+
+    .mb-4-7-12 {
+        margin-bottom: 70px;
+    }
+
+    .w-50-25-50 {
+        width: 175px;
+    }
+
+    .w-306-640-480 {
+        width: 640px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+
+    .w-336-700-580 {
+        /*width: 700px !important;*/
+        width: 640px !important;
+    }
+
+    .w-306-640-720 {
+        margin-top: 65px;
+    }
+
+    .w-306-640-720, .w-grid-640-720 .accord {
+        width: 640px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .w-grid-640-720 .accordion > p {
+        margin-top: 80px;
+        margin-bottom: 0;
+    }
+
+    .w-grid-640-720 .accord > div > a,
+    .w-grid-640-720 .accord div.card-body {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    .form-contact {
+        width: 640px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+
+    .form-contact .form-control,
+    .form-contact-inside {
+        width: 540px;
+        margin: 0 auto;
+    }
+
+    .form-contact input.form-control {
+        width: 260px;
+    }
+
+    .form-contact-inside {
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+
+    .mr-lg-20 {
+        margin-right: 20px !important;
+    }
+
+    .mt-4-7 {
+        margin-top: 70px;
+    }
+
+    .pl-15-30 {
+        padding-left: 30px !important;
+    }
+
+    .pl-20-40{
+        padding-left: 40px !important;
+    }
+
+    .pr-15-30 {
+        padding-right: 30px !important;
+    }
+
+    .p-6-10 {
+        margin: 10px;
+    }
+
+    .mb-5-8-8 {
+        margin-bottom: 80px;
+    }
+
+    .mb-12-20 {
+        margin-bottom: 20px;
+    }
+
+    .mb-7-8-8 {
+        margin-bottom: 80px;
+    }
+
+    .mb-7-8-10 {
+        margin-bottom: 80px;
+    }
+
+    .mb-7-10-12,
+    .mb-7-10-10 {
+        margin-bottom: 100px !important;
+    }
+
+    .pb-7-10-12 {
+        padding-bottom: 100px;
+    }
+
+    .mb-3-5-0 {
+        margin-bottom: 50px;
+    }
+
+    .mb-4-5-7 {
+        margin-bottom: 50px;
+    }
+
+    .pb-4-5-7 {
+        padding-bottom: 50px;
+    }
+
+    .mb-4-6-8 {
+        margin-bottom: 60px;
+    }
+
+    .mt-5-8-8 {
+        margin-top: 80px;
+    }
+
+    .mt-4-5-7,
+    .mt-4-5-8 {
+        margin-top: 50px;
+    }
+
+    .mb-10-25 {
+        margin-bottom: 25px;
+    }
+
+    .h-410-810-740 {
+        height: 810px;
+        margin-left: 0;
+        margin-top: 42px;
+    }
+
+    .card-align-position {
+        width: 638px;
+    }
+
+    .tiles-4-3-4 .tiles-headline {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .tiles-4-3-4 {
+        padding-bottom: 80px;
+    }
+
+    .promo-stories-two {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .btn-ditap-show-more {
+        margin-bottom: 80px;
+    }
+
+    .cart-summary.sticky-top {
+        margin-top: 97px;
+    }
+
+    .btn-spacer {
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    .product-detail-imgs {
+        max-width: 640px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .product-detail-attributes {
+        max-width: 640px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .breadcrumb-wrapper .container,
+    .inpage-nav-breadcrumbs .container {
+        max-width: 1440px;
+        width: 100%;
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    .add-to-cart-bar .shopping-cart-item {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .select-ditap-patterns {
+        width: 640px;
+        /*width: 100%;*/
+        height: 55px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+
+    .w-65-160-200 {
+        width: 160px;
+        margin-left: 30px;
+    }
+
+    .w-230-400-400 {
+        width: 400px;
+        margin-right: 30px;
+    }
+
+    .w-306-580-620 {
+        width: 580px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .w-306-280-300 {
+        width: 280px;
+        margin-left: 30px;
+        margin-right: 0;
+    }
+
+    .w-306-280-300-r {
+        width: 280px;
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
+    .w-306-400-400 {
+        width: 400px;
+        margin-left: 30px;
+    }
+
+    .w-306-160-200 {
+        width: 160px;
+        margin-right: 30px;
+    }
+
+    .container-640-920 {
+        max-width: 640px;
+    }
+
+    .shop-checkout-wrapper {
+        width: 460px;
+    }
+
+    .shop-product-rows {
+        width: 400px;
+        margin-left: 30px;
+    }
+
+    .product-rows,
+    .order-list {
+        width: 400px;
+        margin-left: 15px;
+    }
+
+    .sc-in,
+    .cart-summary,
+    .order-status-zone {
+        width: 220px;
+    }
+
+    .order-info {
+        width: 400px;
+        padding-left: 0;
+        margin-left: 30px;
+        margin-top: 70px;
+    }
+
+    .categories .category-item {
+        width: 220px;
+    }
+}
+
+/*desktop*/
+/*grid-940*/
+@media screen and (min-width: 992px) {
+
+    .diary-detail .recipe-detail-wrapper .recipe-img-wrapper{
+        margin-top: -130px;
+    }
+
+    .banner-ditap .carousel-item > img {
+        max-height: 740px;
+        height: auto;
+        width: auto;
+        transform: translateX(-10%);
+    }
+
+    .teaser-slider-variable-cards .slick-arrow.slick-disabled {
+        visibility: hidden!important;
+    }
+
+    .pt-3-5-7 {
+        padding-top: 65px
+    }
+
+    .pb-3-3-4 {
+        padding-bottom: 45px
+    }
+
+    .w-xxx {
+        width: 470px;
+        margin: 0 auto;
+    }
+
+    .newsletter-dialog,
+    .dedication-dialog {
+        width: 940px;
+        margin: 0 auto;
+    }
+
+    .newsletter-text,
+    .dedication-text {
+        width: 470px;
+        padding: 45px;
+        margin: 0 auto;
+    }
+
+    .newsletter-text .form-control,
+    .newsletter-text p,
+    .newsletter-text ul,
+    .dedication-text textarea {
+        width: 380px;
+    }
+
+    .newsletter-img,
+    .dedication-img {
+        width: 470px;
+    }
+
+    .pt-5-7-10 {
+        padding-top: 100px;
+    }
+
+    .pt-5-7-8 {
+        padding-top: 80px;
+    }
+
+    .inpage-nav-recipe .text-sticky-none.left-0 {
+        left: 26px !important;
+    }
+
+    .search-tips-item {
+        width: 920px;
+        /*margin-left: 10px;*/
+        /*margin-right: 10px;*/
+        margin: 0 auto;
+    }
+
+    .search-tips-item img {
+        height: 100px;
+        margin: 30px;
+    }
+
+    .search-tips-item > div {
+        width: 680px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .mt-4-7-4 {
+        margin-top: 30px;
+    }
+
+    .mt-7-10-12 {
+        margin-top: 120px;
+    }
+
+    .pt-4-7-10 {
+        padding-top: 100px;
+    }
+
+    .mt-5-6-7 {
+        margin-top: 70px;
+    }
+
+    .w-306-640-780 {
+        width: 780px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .recipe-detail-text-l,
+    .recipe-detail-text,
+    .recipe-detail-text-secret .text-secret {
+        max-width: 380px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .recipe-detail-text-secret {
+        width: 430px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .recipe-detail-card-frame {
+        width: 380px;
+        margin: 0 auto;
+    }
+
+    .recipe-detail-card-frame .form-control {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .recipe-detail-card-frame .padding-inside {
+        padding: 40px;
+    }
+
+    .about-content {
+        width: 780px;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 47px;
+    }
+
+    .inpage-nav-eshop #main-nav .user-cart-menu {
+        top: 2px;
+    }
+
+    .shop-login-card {
+        width: 460px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .shop-login-card .form-control {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .shop-login-card.clone {
+        margin-bottom: 120px !important;
+        margin-top: 0;
+
+    }
+
+    .redirect-diary-card {
+        margin-bottom: 60px;
+    }
+
+    .mb-4-7-12 {
+        margin-bottom: 120px;
+    }
+
+    .mb-4-6-8 {
+        margin-bottom: 80px;
+    }
+
+    .w-50-25-50 {
+        width: 230px;
+    }
+
+    .w-306-640-480 {
+        width: 400px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 150px;
+    }
+
+    .w-336-700-580 {
+        width: 460px !important;
+        margin-top: 87px;
+    }
+
+    .w-306-640-720 {
+        margin-top: 75px;
+    }
+
+    .w-306-640-720,
+    .w-grid-640-720 .accord,
+    .w-grid-640-720 .accordion > p {
+        width: 490px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .w-grid-640-720 .accordion > p {
+        margin-top: 80px;
+        margin-bottom: 0;
+    }
+
+    .w-grid-640-720 .accord > div > a,
+    .w-grid-640-720 .accord div.card-body {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    .w-grid-640-720 {
+        margin-bottom: 120px;
+    }
+
+    .form-contact {
+        width: 380px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 80px;
+        margin-bottom: 0;
+    }
+
+    .form-contact .form-control,
+    .form-contact-inside {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .form-contact input.form-control {
+        width: 280px;
+    }
+
+    .form-contact-inside {
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+
+    .pr-10-25 {
+        padding-right: 25px;
+    }
+
+    .mb-7-8-8 {
+        margin-bottom: 80px;
+    }
+
+    .mb-7-8-10 {
+        margin-bottom: 100px;
+    }
+
+    .mb-3-5-0 {
+        margin-bottom: 0;
+    }
+
+    .mb-7-10-12 {
+        margin-bottom: 120px !important;
+    }
+
+    .pb-7-10-12 {
+        padding-bottom: 120px;
+    }
+
+    .mt-5-8-8 {
+        margin-top: 80px;
+    }
+
+    .mt-4-5-8 {
+        margin-top: 80px;
+    }
+
+    .mt-4-5-7 {
+        margin-top: 70px;
+    }
+
+    .mb-4-5-7 {
+        margin-bottom: 70px;
+    }
+
+    .pb-4-5-7 {
+        padding-bottom: 70px;
+    }
+
+    .h-410-810-740 {
+        height: 740px;
+        margin-top: 0;
+    }
+
+    .m-110 {
+        margin-top: 110px;
+    }
+
+    .mb-lg-50 {
+        margin-bottom: 50px !important;
+    }
+
+    .tiles-4-3-4 .tiles-headline {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    .tiles-4-3-4 {
+        padding-bottom: 100px;
+    }
+
+    .card-align-position {
+        width: 840px;
+    }
+
+    .promo-stories-two {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .btn-ditap-show-more {
+        margin-bottom: 100px;
+    }
+
+    .btn-spacer {
+        margin-top: 40px;
+        margin-bottom: 80px;
+    }
+
+    .product-detail-imgs {
+        max-width: 550px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .product-detail-attributes {
+        max-width: 290px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .breadcrumb-wrapper .container,
+    .inpage-nav-breadcrumbs .container {
+        max-width: 1440px;
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .add-to-cart-bar .shopping-cart-item {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .select-ditap-patterns {
+        width: 290px;
+        /*width: 100%;*/
+        height: 55px;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+
+    .w-65-160-200 {
+        width: 200px;
+        margin-left: 150px;
+
+    }
+
+    .w-230-400-400 {
+        width: 400px;
+        margin-right: 150px;
+    }
+
+    .w-306-580-620 {
+        width: 620px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .w-306-280-300 {
+        width: 300px;
+        margin-left: 150px;
+    }
+
+    .w-306-280-300-r {
+        width: 300px;
+        margin-left: 0;
+        margin-right: 150px;
+    }
+
+    .w-306-400-400 {
+        width: 400px;
+        margin-left: 150px;
+    }
+
+    .w-306-160-200 {
+        width: 200px;
+        margin-right: 150px;
+    }
+
+    .container-640-920 {
+        max-width: 920px;
+    }
+
+    .shop-checkout-wrapper {
+        width: 590px;
+        margin-left: 30px;
+    }
+
+    .shop-product-rows {
+        width: 580px;
+        margin-left: 30px;
+    }
+
+    .product-rows,
+    .order-list {
+        width: 580px;
+        margin-left: 15px;
+    }
+
+    .sc-in,
+    .cart-summary,
+    .order-status-zone {
+        width: 280px;
+    }
+
+    .order-info {
+        width: 580px;
+        margin-left: 30px;
+    }
+
+    .categories .category-item {
+        width: 220px;
+    }
+
+    #recipe-accordion .container-grid .col-auto:nth-of-type(1),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(2),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(4),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(5),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(7),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(8),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(10),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(11),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(13) {
+        margin-right: 20px;
+    }
+
+    .box-700 {
+        width: 720px;
+    }
+}
+
+@media screen and (min-width: 996px) {
+
+    #recipe-accordion .container-grid .col-auto:nth-of-type(1),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(2),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(4),
+    #recipe-accordion .container-grid .col-auto:nth-of-type(5) {
+        margin-right: 20px;
+    }
+
+    /*#recipe-accordion .container-grid .col-auto:nth-of-type(3),*/
+    /*#recipe-accordion .container-grid .col-auto:nth-of-type(6),*/
+    /*#recipe-accordion .container-grid .col-auto:nth-of-type(9) {*/
+    /*margin-right: 62px;*/
+    /*}*/
+    #recipe-accordion .recipe-register-header > a {
+        position: absolute;
+        left: 30px;
+        top: -22px;
+    }
+
+    .recipe-register.position-sticky-support {
+        margin-top: -16px;
+    }
+}
+
+/*grid-1180*/
+@media screen and (min-width: 1200px) {
+
+    .w-xxx {
+        width: 620px;
+        margin: 0 auto;
+    }
+
+    .w-xxx.checkout-tit {
+        width: 720px;
+        margin: 0 auto;
+    }
+
+    .set-dialog {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .newsletter-dialog,
+    .dedication-dialog {
+        width: 1000px;
+        margin: 0 auto;
+    }
+
+    .newsletter-text {
+        width: 500px;
+        padding: 52px;
+        margin: 0 auto;
+    }
+
+    .dedication-text {
+        width: 500px;
+        padding: 60px;
+        margin: 0 auto;
+    }
+
+    .newsletter-text .form-control,
+    .newsletter-text p,
+    .newsletter-text ul,
+    .dedication-text textarea {
+        width: 380px;
+    }
+
+    .newsletter-img,
+    .dedication-img {
+        width: 500px;
+    }
+
+    .box-700 {
+        width: 880px;
+    }
+
+    #recipe-accordion .recipe-register-header > a {
+        position: absolute;
+        left: 30px;
+        top: -22px;
+    }
+
+    .recipe-detail-text {
+        max-width: 480px;
+        /*margin: 0 auto;*/
+        margin-left: 110px;
+        /*margin-right: 110px;*/
+    }
+
+    .recipe-detail-text-l {
+        max-width: 480px;
+        /*margin: 0 auto;*/
+        /*margin-left: 110px;*/
+        margin-right: 110px;
+    }
+
+    .recipe-detail-text-secret .text-secret {
+        max-width: 480px;
+        margin-left: 51px;
+    }
+
+    .recipe-detail-text-secret {
+        width: 480px;
+        margin: 0 auto;
+
+    }
+
+    .recipe-detail-card-frame {
+        width: 480px;
+        margin-left: 51px;
+    }
+
+    .recipe-detail-card-frame .form-control {
+        width: 380px;
+        margin: 0 auto;
+    }
+
+    .recipe-detail-card-frame .padding-inside {
+        padding: 40px;
+    }
+
+    .about-content {
+        width: 780px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+    .shop-login-card {
+        width: 500px;
+        margin-left: 80px;
+        margin-right: 0;
+    }
+
+    .shop-login-card.clone {
+        width: 500px;
+        margin-left: 0;
+        margin-right: 80px;
+    }
+
+    .shop-login-card .form-control {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    /*.diary-list .redirect-diary-card .card-panel-caption {*/
+    .redirect-diary-card .card-panel-caption {
+        margin-left: 51px;
+    }
+
+    .w-50-25-50 {
+        width: 180px;
+    }
+
+    .w-50-25-50:nth-child(2),
+    .w-50-25-50:nth-child(4) {
+        margin-right: 100px;
+        margin-left: 20px;
+    }
+
+    .w-50-25-50:nth-child(1),
+    .w-50-25-50:nth-child(3) {
+        margin-left: 100px;
+    }
+
+    .w-336-700-580 {
+        width: 580px !important;
+        margin-top: 87px;
+    }
+
+    .w-306-640-480 {
+        width: 480px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 150px;
+    }
+
+    .w-306-640-720,
+    .w-grid-640-720 .accord,
+    .w-grid-640-720 .accordion > p {
+        width: 720px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .w-grid-640-720 .accordion > p {
+        margin-top: 80px;
+        margin-bottom: 0;
+    }
+
+    .w-grid-640-720 .accord > div > a,
+    .w-grid-640-720 .accord div.card-body {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    .card-align-position {
+        width: 1082px;
+    }
+
+    .product-detail-imgs {
+        max-width: 700px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .product-detail-attributes {
+        max-width: 380px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .select-ditap-patterns {
+        width: 380px;
+    }
+
+    .product-gallery .pl-xl-4 {
+        padding-left: 3rem !important;
+    }
+
+    .shop-checkout-wrapper,
+    .shop-product-rows {
+        width: 820px;
+        margin-left: 30px;
+    }
+
+
+    .product-rows,
+    .order-list {
+        width: 820px;
+        margin-left: 15px;
+    }
+
+    .sc-in,
+    .cart-summary,
+    .order-status-zone {
+        width: 280px;
+    }
+
+    .order-info {
+        width: 820px;
+        margin-left: 30px;
+    }
+
+    .categories .category-item {
+        width: 280px;
+    }
+}
+
+/*grid-1180*/
+@media screen and (min-width: 1440px) {
+
+    .banner-ditap .carousel-item > img {
+        width: 100%;
+        max-width: 1920px;
+        max-height: 100%;
+        height: auto;
+        transform: translateY(0);
+    }
+}

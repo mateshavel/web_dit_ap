@@ -1,0 +1,526 @@
+@import "icomoon-icons-ditap.css";
+
+/*# Icons */
+.icon-small {
+    font-size: 85%;
+    margin-right: 6px;
+}
+
+.icon-link {
+    padding: 0;
+    display: inline-block;
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+.icon-link-border:hover span:after,
+.icon-link:hover span:after {
+    color: rgba(237, 28, 36, 1);
+}
+
+.icon-link-disabled {
+    pointer-events: none;
+}
+
+.icon-link-disabled span:after {
+    color: rgba(255, 255, 255, 1);
+}
+
+.icon-link-disabled span:after {
+    color: rgba(236, 236, 236, 1);
+}
+
+.icon-ditap-arrow {
+    font-size: 4.7em;
+}
+
+.icon-ditap-arrow.arrow-down {
+    font-size: 80px;
+}
+
+.plus-icon:after {
+    position: relative;
+    content: '\eadc';
+}
+
+.minus-icon:after {
+    position: relative;
+    content: '\eae5';
+}
+
+.icon-ditap-arrow.minus-icon:before,
+.icon-ditap-arrow.plus-icon:before {
+    font-family: ditap-icons, sans-serif;
+    content: '\eb06';
+    color: rgb(255, 255, 255);
+    top: 3px;
+    left: 0;
+    position: relative;
+}
+.icon-ditap-arrow.minus-icon:after,
+.icon-ditap-arrow.plus-icon:after {
+    font-family: ditap-icons, sans-serif;
+    margin-left: -35px;
+    color: rgb(34, 34, 34);
+    display: inline-block;
+    font-size: 32px;
+}
+
+.fs-1-7em {
+    font-size: 1.7em;
+}
+
+.icon-position {
+    position: absolute;
+    top: calc(30% - 33px);
+    left: calc(50% - 40px);
+    font-size: 5em;
+    text-align: center;
+    border-radius: 50%;
+    text-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: all 350ms;
+    width: 60px;
+    height: 60px;
+}
+
+.icon-ditap-arrow:before {
+    font-family: ditap-icons, sans-serif;
+    content: '\eb06';
+    color: rgb(255, 255, 255);
+}
+
+.icon-ditap-arrow:after {
+    font-family: ditap-icons, sans-serif;
+    margin-left: -1em;
+    color: rgb(34, 34, 34);
+    display: inline-block;
+}
+
+.icon-ditap-arrow.arrow-down:after {
+    position: relative;
+    content: '\eb07';
+}
+
+.icon-ditap-arrow.arrow-up:after {
+    transform: scaleY(-1);
+    content: '\eb07';
+    position: relative;
+    bottom: 3px;
+}
+
+.icon-ditap-arrow.arrow-right:after {
+    position: relative;
+    content: '\eaf5';
+}
+
+.icon-ditap-arrow.arrow-left:after {
+    position: relative;
+    content: '\eafe';
+}
+
+.ditap-ico_cart_empty:before {
+    font-size: 1.7em;
+}
+
+.icon-ditap-phone-small {
+    font-size: 0.9em;
+    position: relative;
+    margin-right: 23px;
+    top: 3px;
+}
+
+.icon-ditap-phone-small:before {
+    font-family: ditap-icons, sans-serif;
+    content: '\e998';
+    color: rgb(34, 34, 34);
+    position: absolute;
+}
+
+.icon-ditap-phone-small:after {
+    font-family: ditap-icons, sans-serif;
+    content: '\e997';
+    color: rgb(66, 169, 18);
+    position: absolute;
+}
+
+.icon-ditap-phone-big {
+    font-size: 0.9em;
+    position: relative;
+    margin-right: 23px;
+    top: 3px;
+}
+
+.icon-ditap-phone-big:before {
+    font-family: ditap-icons, sans-serif;
+    content: '\e998';
+    color: rgb(34, 34, 34);
+    position: absolute;
+}
+
+.icon-ditap-phone-big:after {
+    font-family: ditap-icons, sans-serif;
+    content: '\e999';
+    color: rgb(66, 169, 18);
+    position: absolute;
+}
+
+.icon-ditap-facebook,
+.icon-ditap-instagram {
+    font-size: 32px;
+    margin-right: 30px;
+    position: relative;
+    top: 5px;
+}
+
+.icon-ditap-facebook:before {
+    font-family: ditap-icons, sans-serif;
+    font-weight: normal;
+    content: "\eabe";
+    color: rgb(255, 255, 255);
+    z-index: 100;
+    position: absolute;
+}
+
+.icon-ditap-facebook:after {
+    font-family: ditap-icons, sans-serif;
+    content: '\eabd';
+    color: rgb(38, 48, 112);
+    position: absolute;
+}
+
+.icon-ditap-instagram:before {
+    font-family: ditap-icons, sans-serif;
+    font-weight: normal;
+    content: '\eabc';
+    color: rgb(255, 255, 255);
+    z-index: 100;
+    position: absolute;
+}
+
+.icon-ditap-instagram:after {
+    font-family: ditap-icons, sans-serif;
+    content: '\eabb';
+    color: rgb(38, 48, 112);
+    position: absolute;
+}
+
+.icon-ditap-tv {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.icon-ditap-tv:before {
+    font-family: 'ditap-icons', sans-serif;
+    content: "\ea9a";
+    color: rgb(0, 45, 98);
+}
+
+.icon-ditap-tv:after {
+    font-family: 'ditap-icons', sans-serif;
+    content: '\ea99';
+    margin-left: -1.1em;
+    color: rgb(238, 61, 66);
+}
+
+.icon-ditap-play {
+    display: inline-block;
+    width: 56px;
+    height: 56px;
+    font-size: 56px;
+    margin-top: -28px;
+}
+
+.icon-ditap-play:before {
+    font-family: 'ditap-icons', sans-serif;
+    content: '\eac3';
+    color: rgb(255, 255, 255);
+    text-shadow: -1px 1px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.icon-ditap-play:after {
+    font-family: 'ditap-icons', sans-serif;
+    content: '\eac4';
+    color: rgb(38, 48, 112);
+    margin-left: -1em;
+    transition: color 150ms;
+}
+
+.video-card:hover .icon-ditap-play:after {
+    color: rgb(237, 28, 36);
+}
+
+/*# Rating dots */
+.icon-ditap-rating-none:after {
+    font-family: 'Arial', sans-serif;
+    content: "•••••";
+    color: #ECECEC;
+    font-size: 28px;
+    line-height: 0;
+}
+
+.icon-ditap-rating-1:before {
+    font-family: 'Arial', sans-serif;
+    content: "•";
+    color: rgb(34, 34, 34);
+    font-size: 28px;
+    line-height: 0;
+}
+
+.icon-ditap-rating-1:after {
+    font-family: 'Arial', sans-serif;
+    content: "••••";
+    color: #ECECEC;
+    font-size: 28px;
+    line-height: 0;
+}
+
+.icon-ditap-rating-2:before {
+    font-family: 'Arial', sans-serif;
+    content: "••";
+    color: rgb(34, 34, 34);
+    font-size: 28px;
+    line-height: 0;
+}
+
+.icon-ditap-rating-2:after {
+    font-family: 'Arial', sans-serif;
+    content: "•••";
+    color: #ECECEC;
+    font-size: 28px;
+    line-height: 0;
+}
+
+.icon-ditap-rating-3:before {
+    font-family: 'Arial', sans-serif;
+    content: "•••";
+    color: rgb(34, 34, 34);
+    font-size: 28px;
+    line-height: 0;
+}
+
+.icon-ditap-rating-3:after {
+    font-family: 'Arial', sans-serif;
+    content: "••";
+    color: #ECECEC;
+    font-size: 28px;
+    line-height: 0;
+}
+
+.icon-ditap-rating-4:before {
+    font-family: 'Arial', sans-serif;
+    content: "••••";
+    color: rgb(34, 34, 34);
+    font-size: 28px;
+    line-height: 0;
+}
+
+.icon-ditap-rating-4:after {
+    font-family: 'Arial', sans-serif;
+    content: "•";
+    color: #ECECEC;
+    font-size: 28px;
+    line-height: 0;
+}
+
+.icon-ditap-rating-5:after {
+    font-family: 'Arial', sans-serif;
+    content: "•••••";
+    color: rgb(34, 34, 34);
+    font-size: 28px;
+    line-height: 0;
+}
+
+.icon-quality {
+    font-size: 1.6em;
+    margin-top: 5px;
+}
+
+.ico-ditap-attr {
+    font-size: 2.5em;
+}
+
+.ditap-ico_plus {
+    font-size: 0.7em;
+}
+
+/*# Product detail attribute icons */
+.product-detail-attributes [class*='ditap-icons-product-attribute-']:before {
+    font-size: 55px;
+}
+
+.product-detail-attributes .ditap-icons-product-attribute-ico_symbol_dishwasher:before {
+    font-size: 40px;
+}
+
+/*# Badges */
+.badge.eshop-badge {
+    color: #ED1C24;
+    font-size: 60%;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    vertical-align: text-top;
+}
+
+.badge-pill-ditap-blue {
+    font-family: 'Europa Regular', sans-serif;
+    font-size: 0.8em;
+    background: #263070;
+    color: #fff;
+    font-weight: 400;
+}
+
+.services-icon {
+    font-size: 3em;
+}
+
+/*special arrows*/
+.ditap-small-arrow-sec:after {
+    font-family: 'ditap-icons', sans-serif;
+    font-size: 0.4em;
+    content: '\eab6';
+    position: absolute;
+    display: flex;
+    align-self: start;
+    left: 0;
+    top: 5px;
+    pointer-events: none;
+    transform: rotate(90deg);
+}
+
+.ditap-small-arrow:after {
+    font-family: 'ditap-icons', sans-serif;
+    font-size: 0.4em;
+    content: '\eab6';
+    position: absolute;
+    display: flex;
+    align-self: start;
+    right: 0;
+    top: 7px;
+    pointer-events: none;
+    transform: rotate(-90deg);
+}
+
+.ico-ok-green {
+    padding-left: 20px;
+    background: url("../DitaP/media/DitaP/images/ico_ok_green.png") no-repeat;
+    background-position: 1px 6px;
+}
+
+/*# Green OK icon as font */
+.ico-ok-green2 {
+    font-size: 12px;
+    padding: 0;
+}
+
+.ico-ok-green2:before {
+    font-family: 'ditap-icons', sans-serif;
+    content: '\e9a0';
+    color: rgb(66, 169, 18);
+}
+
+.ico-ok-green2:after {
+    font-family: 'ditap-icons', sans-serif;
+    content: '\e9a1';
+    margin-left: -1em;
+    color: rgb(255, 255, 255);
+}
+
+.ico-w-45 {
+    width: 45px;
+}
+
+/*# MEDIA QUERIES --------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 320px) {
+    .icon-position {
+        position: absolute;
+        top: calc(30% - 30px);
+        left: calc(50% - 30px);
+        font-size: 3.1rem;
+        text-align: center;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .icon-position {
+        position: absolute;
+        top: calc(30% - 22px);
+        left: calc(50% - 30px);
+        font-size: 3.5rem;
+        text-align: center;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 766px) {
+.icon-ditap-arrow.minus-icon:before,
+.icon-ditap-arrow.plus-icon:before {
+    top: 1px;
+    left: -3px;
+}
+}
+/*# Tablet viewport */
+@media screen and (min-width: 767px) {
+
+    .ditap-ico_cart_empty:before {
+        font-size: 1.5em;
+    }
+
+    .services-icon {
+        font-size: 4.6em;
+    }
+
+    footer .icon-ditap-facebook,
+    footer .icon-ditap-instagram {
+        top: 7px;
+    }
+
+    .icon-quality {
+        font-size: 2.5em;
+        bottom: 0;
+    }
+
+    .ico-ditap-attr {
+        font-size: 3.2em;
+    }
+
+    .ditap-ico_plus {
+        font-size: 10px;
+    }
+
+    .icon-ditap-play {
+        width: 80px;
+        height: 80px;
+        font-size: 80px;
+    }
+
+    .icon-ditap-tv {
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+    }
+
+    /*# Product detail attribute icons */
+    .product-detail-attributes [class*='ditap-icons-product-attribute-']:before {
+        font-size: 70px;
+    }
+
+    .product-detail-attributes .ditap-icons-product-attribute-ico_symbol_dishwasher:before {
+        font-size: 50px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+/*# Desktop viewport */
+@media screen and (min-width: 996px) {
+
+    .ditap-ico_cart_empty:before {
+        font-size: 40px !important;
+    }
+}

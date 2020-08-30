@@ -1,0 +1,195 @@
+/*# Custom select Bootstrap select plugin */
+.lang-select .bootstrap-select .btn {
+    font-family: 'Europa Regular', sans-serif;
+    font-size: 13px;
+    background: none;
+    border: 0;
+    padding-right: 4px;
+    outline: none !important;
+    box-shadow: none;
+    color: rgb(51, 51, 51);
+}
+
+.lang-select .bootstrap-select .dropdown-menu li a span.text {
+    display: inline;
+}
+
+.lang-select .bootstrap-select .text-muted {
+    font-family: 'Europa Bold', sans-serif !important;
+    color: rgb(0, 0, 0) !important;
+    font-size: 12px;
+    padding-left: 10px;
+    margin-top: 3px;
+    float: left;
+    position: absolute;
+}
+
+.lang-select .bootstrap-select .text-muted:after {
+    font-family: 'ditap-icons', sans-serif;
+    font-size: 10px;
+    content: '\eab6';
+    vertical-align: baseline;
+    padding-left: 10px;
+    padding-right: 15px;
+    opacity: 1;
+}
+
+.lang-select .bootstrap-select.show .text-muted {
+    right: 0;
+    margin-top: 1px;
+}
+
+.lang-select .bootstrap-select.show .text-muted:after {
+    opacity: 0;
+}
+
+.lang-select .bootstrap-select {
+    padding: 7px 7px 7px 2px;
+}
+
+.lang-select .bootstrap-select.show {
+    padding: 7px 4px 7px 2px;
+    background: #F9F9F9;
+    /*box-shadow: 0 4px 20px 0 rgba(0,0,0,0.21), 0 1px 0 0 rgba(0,0,0,0.05);*/
+    box-shadow: 0 3px 7px 2px rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.05) !important;
+    z-index: 3000;
+    position: relative;
+}
+
+.lang-select .bootstrap-select .dropdown-toggle::after {
+    font-family: 'ditap-icons', sans-serif;
+    font-size: 10px;
+    content: '\eab6';
+    border: 0;
+    vertical-align: baseline;
+    padding-left: 10px;
+    padding-right: 15px;
+    opacity: 0;
+}
+
+.lang-select .bootstrap-select.show .dropdown-toggle::after {
+    content: '\eab0';
+    padding-right: 10px;
+    opacity: 1;
+}
+
+.content-wrapper.welcome .lang-select .bootstrap-select.show .dropdown-toggle::after {
+    content: '\eab6';
+    padding-right: 10px;
+    opacity: 1;
+}
+
+.lang-select .bootstrap-select.show .dropdown-toggle .text-muted {
+    margin-right: -4px;
+    bottom: 5px;
+}
+
+.lang-select .bootstrap-select .dropdown-item {
+    padding: 12px 14px;
+    font-size: 13px;
+}
+
+.lang-select .bootstrap-select .dropdown-item.selected.active {
+    display: none;
+}
+
+.lang-select .bootstrap-select .dropdown-menu {
+    opacity: 0;
+    transition: opacity 350ms;
+}
+
+.lang-select .bootstrap-select .dropdown-menu.show {
+    top: 4px !important;
+    left: -2px !important;
+    border-radius: 0;
+    border: none;
+    box-shadow: 0 -4px 30px 1px rgba(0,0,0,0.07), 0 0 0 0 rgba(0,0,0,0.05) !important;
+    /*box-shadow: 0 3px 7px 2px rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.05) !important;*/
+    opacity: 1;
+}
+
+.welcome .lang-select .bootstrap-select .dropdown-menu.show {
+    /*box-shadow: 0 -4px 30px 1px rgba(0,0,0,0.07), 0 0 0 0 rgba(0,0,0,0.05) !important;*/
+    box-shadow: 0 7px 7px 2px rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.welcome .lang-select .bootstrap-select.show {
+    /*box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.07), 0 0 0 0 rgba(0, 0, 0, 0.05) !important;*/
+}
+
+.lang-select .bootstrap-select.dropup .dropdown-menu.show {
+    top: -4px !important;
+}
+
+.lang-select .bootstrap-select.show:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 254px;
+}
+
+/*# Mobile Language select*/
+.mobile-lang-select {
+    position: relative;
+    bottom: -50px;
+}
+
+.mobile-lang-select.lang-select .bootstrap-select .btn {
+    font-size: 13px;
+}
+
+/*# Country flags */
+.ditap-ico_flag_cz {
+    background: url("../Ditap/media/Ditap/images/ico_flag_cz.png") no-repeat;
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.ditap-ico_flag_sk {
+    background: url("../Ditap/media/Ditap/images/ico_flag_sk.png") no-repeat;
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.ditap-ico_flag_de {
+    background: url("../Ditap/media/Ditap/images/ico_flag_ger.png") no-repeat;
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/*# MEDIA QUERIES --------------------------------------------------------------------------------------------------- */
+
+/*# Tablet viewport */
+@media screen and (min-width: 767px) {
+
+    .content-wrapper.welcome .lang-select .bootstrap-select .btn,
+    footer .lang-select .bootstrap-select .btn {
+        font-size: 14px;
+    }
+
+    .content-wrapper.welcome .lang-select .bootstrap-select .text-muted,
+    footer .lang-select .bootstrap-select .text-muted {
+        font-size: 12px;
+    }
+
+    .content-wrapper.welcome .lang-select .bootstrap-select .dropdown-menu li a span.text,
+    footer .lang-select .bootstrap-select .dropdown-menu li a span.text {
+        font-size: 14px;
+    }
+
+    .content-wrapper.welcome .bootstrap-select.show .text-muted,
+    footer .lang-select .bootstrap-select.show .text-muted {
+        margin-top: 4px;
+    }
+}
+
+/*# Desktop viewport */
+@media screen and (min-width: 996px) {
+
+}

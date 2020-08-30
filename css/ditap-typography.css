@@ -1,0 +1,467 @@
+@import "ditap-fonts.css";
+
+body {
+    font-family: 'Europa Regular', sans-serif;
+    font-size: 16px;
+}
+
+/*# Typography */
+.text-ditap-h1 {
+    font-family: 'Tabac Regular', serif;
+    font-size: 3em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 70px;
+    letter-spacing: normal;
+    color: rgba(34,34,34,1);
+}
+
+.text-ditap-h2 {
+    font-family: 'Tabac Regular', serif;
+    font-size: 2.125em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 44px;
+    letter-spacing: normal;
+    color: rgba(34,34,34,1);
+}
+
+.text-ditap-h3 {
+    font-family: 'Tabac Regular', serif;
+    font-size: 1.875em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 40px;
+    letter-spacing: normal;
+    color: rgba(34,34,34,1);
+}
+
+.text-ditap-h4 {
+    font-family: 'Europa Bold', sans-serif;
+    font-size: 1.125em;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(34,34,34,1);
+}
+
+.text-ditap-h5 {
+    font-family: 'Tabac Regular', serif;
+    font-size: 1.625em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 36px;
+    letter-spacing: normal;
+    color: rgba(34,34,34,1);
+}
+
+.text-ditap-h6,
+.text-ditap-perex {
+    font-family: 'Tabac Regular', serif;
+    font-size: 1.0625em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: normal;
+    color: rgba(34,34,34,1);
+}
+
+.text-ditap-h7 {
+    font-family: 'Tabac Regular', serif;
+    font-size: 0.8125em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 22px;
+    letter-spacing: normal;
+    color: rgba(34,34,34,1);
+}
+
+.text-ditap-h8 {
+    font-family: 'Europa Bold', sans-serif;
+    font-size: 0.6875em;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(34,34,34,1);
+}
+
+.text-ditap-default,
+.text-ditap-paragraph {
+    font-family: 'Europa Regular', sans-serif;
+    font-size: 0.875em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 22px;
+    letter-spacing: normal;
+    color: rgba(34,34,34,1);
+}
+
+.text-ditap-paragraph-2 {
+    font-family: 'Europa Regular', sans-serif;
+    font-size: 0.8125em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: rgba(34,34,34,1);
+}
+
+.text-ditap-paragraph-3-serif {
+    font-family: 'Tabac Regular', serif;
+    font-size: 0.85em;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: normal;
+    color: #000;
+}
+
+.text-ditap-salutation {
+    font-family: 'Europa Bold', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 37px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(34,34,34,1);
+}
+
+.text-ditap-price-big {
+    font-family: 'Europa Bold', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: normal;
+    color: rgba(34,34,34,1);
+}
+
+.text-ditap-price-small {
+    font-family: 'Europa Bold', sans-serif;
+    font-size: 0.8125em;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: rgba(34,34,34,1);
+}
+
+.text-ditap-recipe-ingredients {
+    font-family: 'Tabac Bold', serif;
+    font-size: 0.8125em;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: normal;
+    color: rgba(34,34,34,1);
+}
+
+.text-ditap-btn-mini,
+.text-ditap-label {
+    font-family: 'Europa Regular', sans-serif;
+    font-size: 0.8125em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: rgba(153,153,153,1);
+}
+
+.text-ditap-btn-secondary {
+    font-family: 'Tabac Regular', serif;
+    font-size: 0.8125em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 25px;
+    letter-spacing: normal;
+    color: rgba(38,48,112,1)
+}
+
+.text-ditap-btn-mini:hover,
+.text-ditap-btn-secondary:hover {
+    color: rgba(34,34,34,1);
+    text-decoration: none;
+}
+
+.text-ditap-quotation {
+    font-family: 'Tabac Italic', serif;
+    font-size: 0.8125em;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 22px;
+    letter-spacing: normal;
+    color: rgba(34,34,34,1);
+}
+
+.text-ditap-tip {
+    font-family: 'Tabac Italic', serif;
+    font-size: 0.75em;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 20px;
+    letter-spacing: normal;
+    color: rgba(153,153,153,1);
+}
+
+.text-ditap-menu-item {
+    font-family: 'Europa Regular', sans-serif;
+    font-size: 0.875em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 18px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: rgba(34,34,34,1);
+}
+
+.text-ditap-serif {
+    font-family: 'Tabac Medium-Bold', serif;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 22px;
+    color: rgba(34,34,34,1);
+}
+
+.text-small {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.text-small-on-mobile {
+    font-size: 0.875em;
+}
+
+.search-item-headline {
+    font-size: 13px !important;
+}
+
+.font-weight-bold,
+.text-ditap-bold {
+    font-family: 'Europa Bold', sans-serif;
+    font-weight: 700;
+}
+
+.font-bold{
+    font-weight: 700;
+}
+
+.slick-filter-card span.badge.eshop-badge {
+    font-family: 'Europa Bold', sans-serif;
+}
+
+/*# MEDIA QUERIES --------------------------------------------------------------------------------------------------- */
+
+
+/*# Tablet viewport */
+@media screen and (min-width: 767px) {
+
+    .text-ditap-h1 {
+        font-size: 4.5em;
+        line-height: 70px;
+    }
+
+    .text-ditap-h4 {
+        font-size: 1.875em;
+        line-height: 45px;
+        letter-spacing: 6px;
+    }
+
+    .text-ditap-btn-secondary {
+        font-size: 1.0625em;
+        line-height: 25px;
+    }
+
+    .text-ditap-btn-mini {
+        font-size: 0.875em;
+        line-height: 20px;
+    }
+
+    .text-ditap-paragraph-2 {
+        font-size: 0.875em;
+        line-height: 20px;
+    }
+
+    .text-ditap-paragraph-3-serif {
+        font-size: 0.9375em;
+        line-height: 30px;
+    }
+
+    .text-ditap-h2 {
+        font-size: 3.375em;
+        line-height: 70px;
+    }
+
+    .text-ditap-h3 {
+        font-size: 2.625em;
+        line-height: 60px;
+    }
+
+    .text-ditap-h5 {
+        font-size: 2.25em;
+        line-height: 50px;
+    }
+
+    .text-ditap-h6,
+    .text-ditap-perex {
+        font-size: 1.5em;
+        line-height: 40px;
+    }
+
+    .text-ditap-h8 {
+        font-size: 0.75em;
+        line-height: 20px;
+        font-weight: 400;
+        letter-spacing: 3px;
+    }
+
+    .text-ditap-quotation {
+        font-size: 1em;
+        line-height: 25px;
+    }
+
+    .text-ditap-salutation {
+        font-size: 2.625em;
+        line-height: 65px;
+        letter-spacing: 7px;
+        color: rgba(34, 34, 34, 1);
+    }
+
+    .text-ditap-price-small {
+        font-size: 1em;
+        line-height: 30px;
+    }
+
+    .text-small {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .text-btn-facebook {
+        font-family: 'Arial', sans-serif;
+        font-size: 1em;
+        font-weight: 300;
+        color: #fff;
+    }
+
+    .text-ditap-serif {
+        font-family: 'Tabac Regular', serif;
+        font-size: 1.0625em;
+        line-height: 30px;
+    }
+
+    .text-btn-facebook {
+        font-size: 1.2em;
+        font-weight: 300;
+        color: #fff;
+    }
+
+    .text-small-on-mobile {
+        font-size: 1em;
+        line-height: 30px;
+    }
+
+    .text-ditap-recipe-ingredients {
+        font-size: 0.9375em;
+        line-height: 30px;
+    }
+
+    .text-ditap-default {
+        font-size: 1em;
+        line-height: 22px;
+    }
+
+    .search-item-headline {
+        font-size: 17px !important;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .text-ditap-tip {
+        font-size: 0.8125em;
+        line-height: 20px;
+    }
+
+    .text-ditap-label {
+        font-size: 0.875em;
+        line-height: 25px;
+    }
+
+    .text-ditap-lh-30 {
+        line-height: 30px !important;
+    }
+}
+
+/*# Desktop viewport */
+@media screen and (min-width: 996px) {
+
+    /*# Typography Desktop */
+    .text-ditap-h5 {
+        font-size: 2.25em;
+        line-height: 50px;
+    }
+
+    .text-ditap-h8 {
+        font-size: 0.75em;
+        line-height: 20px;
+        letter-spacing: 3px;
+    }
+
+    .text-ditap-paragraph {
+        font-size: 1em;
+        line-height: 30px;
+    }
+
+    .text-ditap-paragraph-2 {
+        font-size: 0.875em;
+        line-height: 20px;
+    }
+
+    .text-ditap-paragraph-3-serif {
+        font-size: 0.9375em;
+        line-height: 30px;
+    }
+
+    .text-ditap-price-big {
+        font-size: 1.5em;
+        line-height: 37px;
+    }
+
+    .text-ditap-price-small {
+        font-size: 1em;
+        line-height: 30px;
+    }
+
+    .text-ditap-btn-secondary {
+        font-size: 1.0625em;
+        line-height: 25px;
+    }
+
+    .text-ditap-btn-mini {
+        font-size: 0.875em;
+        line-height: 20px;
+    }
+
+    .text-ditap-quotation {
+        font-size: 1em;
+        line-height: 25px;
+    }
+
+    .text-small {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+
+    .text-small-desktop {
+        font-size: 14px !important;
+        line-height: 22px !important;
+    }
+}

@@ -1,0 +1,259 @@
+@import "ditap-typography.css";
+@import "ditap-helpers.css";
+@import "ditap-buttons.css";
+@import "ditap-popovers.css";
+@import "ditap-forms.css";
+@import "ditap-icons.css";
+@import "ditap-print.css";
+@import "ditap-mobile-menu.css";
+@import "ditap-language-select.css";
+@import "ditap-main-nav.css";
+@import "ditap-inpage-navs.css";
+/*@import "ditap-carousel.css";*/
+@import "ditap-carousel2.css";
+@import "ditap-sliders.css";
+@import "ditap-accordions.css";
+@import "ditap-cards.css";
+@import "ditap-modal-search.css";
+@import "ditap-eshop-cart.css";
+@import "ditap-instagram.css";
+@import "ditap-footer.css";
+
+* {
+    outline: none;
+}
+
+body {
+    font-family: 'Europa Regular', sans-serif;
+    font-size: 16px;
+    margin-top: 70px;
+    color: rgba(51, 51, 51, 1);
+    background-color: #F9F9F9;
+}
+
+header {
+    position: relative;
+}
+
+a {
+    color: rgb(51, 51, 51);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar-brand img {
+    max-height: 25px;
+}
+
+/***# Welcome screen ------------------------------------------------------------------------------------------------ */
+.content-wrapper.welcome {
+    margin-top: -85px;
+}
+
+.content-wrapper.welcome .cookie-advice p {
+    font-size: 0.875em;
+    line-height: 25px;
+}
+
+.content-wrapper.welcome .main-content {
+    background: url(../DitaP/media/DitaP/backgrounds/bg-welcome.jpg) no-repeat fixed -170px -60px;
+    background-size: auto 100vh;
+    height: 100vh;
+}
+
+.content-wrapper.welcome .main-content > div {
+    padding-top: 10rem;
+}
+
+.content-wrapper.welcome .welcome-modal {
+    max-width: 400px;
+    max-height: 330px;
+    position: absolute;
+    background: #fff;
+}
+
+.content-wrapper.welcome .welcome-modal .card-top {
+    padding: 2rem 2rem 0 2rem;
+}
+
+.content-wrapper.welcome .welcome-modal .card-bottom {
+    padding-bottom: 3rem;
+}
+
+/***# Homepage */
+.homepage .promo-stories {
+    background-color: #fff;
+    margin-top: 0;
+}
+
+/***# Contact */
+.main-contact-form .form-sent-message {
+    display: none;
+}
+
+/***# Product detail */
+.content-wrapper.product-detail .eshop-services {
+    margin-bottom: -1px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.content-wrapper.product-detail .shopping-cart-item:hover {
+    background: #fff;
+}
+
+.content-wrapper.product-detail .shopping-cart-item .stock-info {
+    width: 100%;
+}
+
+/***# Modals */
+.modal{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.modal.shopping-cart,
+.modal#searchModal{
+    background-color: transparent;
+}
+
+#modalLogin .modal-body,
+#modalRegistration .modal-body{
+    padding-top: 0!important;
+}
+
+/*# MEDIA QUERIES --------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-height: 600px) {
+
+    .content-wrapper.welcome .main-content > div {
+        padding-top: 4rem;
+    }
+}
+
+/*# Small Phone viewports */
+@media screen and (max-width: 320px) {
+
+    /***# Welcome screen */
+    .content-wrapper.welcome .main-content > div {
+        padding-top: 4rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+
+    /***# Product detail */
+    .content-wrapper.product-detail .shopping-cart-item .stock-info {
+        width: auto;
+    }
+}
+
+/*# Tablet viewport */
+@media screen and (min-width: 767px) {
+
+    body {
+        margin-top: 0;
+    }
+
+    .navbar-brand img {
+        max-height: 28px;
+    }
+
+    /***# Welcome Screen */
+    .content-wrapper.welcome {
+        margin-top: -5px;
+    }
+
+    .content-wrapper.welcome .welcome-modal .card-top {
+        padding: 3rem 3rem 0 3rem;
+    }
+
+    .content-wrapper.welcome .welcome-modal {
+        max-width: 400px;
+        max-height: 430px;
+    }
+
+    .content-wrapper.welcome .main-content > div {
+        padding-top: 0;
+    }
+
+    .content-wrapper.welcome .main-content {
+        background: url(../DitaP/media/DitaP/backgrounds/bg-welcome.jpg) no-repeat fixed -170px -40px;
+        background-size: auto 100vh;
+        height: 100vh;
+    }
+
+    /***# Product detail story */
+    .product-detail-story .img-banner.img-translate-responsive {
+        transform: translate(-25%);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /***# Order Confirmation */
+    .bg-img-box {
+        background: url("../DitaP/media/DitaP/images/coffee2.jpg") bottom right no-repeat;
+        background-size: calc(30% - -8px) auto;
+    }
+}
+
+/*# Desktop viewport */
+@media screen and (min-width: 996px) {
+
+    /***# Top Claim */
+    .top-claim {
+        background: #fff;
+        position: relative;
+        z-index: 1050;
+        padding-top: 32px;
+        padding-bottom: 1px;
+    }
+
+    /***# About */
+    .content-wrapper.about-me .banner-ditap {
+        margin-top: -10px;
+    }
+
+    /***# Diary */
+    .content-wrapper.diary-detail .banner-diary-detail {
+        margin-top: -10px;
+    }
+
+    /***# Diary detail */
+    .content-wrapper.diary-detail .img-recipe-teaser,
+    .content-wrapper.diary-detail .img-recipe-teaser.uk-sticky-fixed {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /***# Contact */
+    .content-wrapper.contact {
+        margin-top: -10px;
+    }
+
+    /***# Product detail story */
+    .product-detail-story .img-banner.img-translate-responsive {
+        transform: translate(0);
+    }
+
+    /***# Product detail */
+    .content-wrapper.product-detail .shopping-cart-item .stock-info {
+        position: absolute;
+        left: 0;
+    }
+}
+
+/*# Large Desktop viewport */
+@media screen and (min-width: 1200px) {
+
+    /***# Welcome Screen */
+    .content-wrapper.welcome .main-content {
+        background: url("../DitaP/media/DitaP/backgrounds/bg-welcome.jpg") no-repeat fixed center;
+        background-size: cover;
+        height: 100vh;
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+}

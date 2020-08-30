@@ -1,0 +1,139 @@
+/*# Stylesheet for printing */
+.only-print {
+    display: none;
+}
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    p:first-line,
+    div:first-line,
+    blockquote:first-line,
+    li:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
+    /* user order detail print*/
+    .print-right {
+        float: right;
+    }
+
+    .headline-print {
+        font-size: 18px;
+    }
+
+    .order-list > div:first-of-type {
+        border-top: 1px solid black !important;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid black !important;
+        /*margin-top: 5px;*/
+    }
+
+    ul {
+        /*list-style: none;*/
+    }
+
+    p {
+        margin: 0;
+    }
+
+    div.row.border-bottom.py-3.py-md-4 {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+
+    .color-red {
+        color: black !important;
+    }
+
+    .space-print {
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+
+    /* Additional styles to show or hide elements go here... */
+    /*
+     *Remove parts of the web that do not print
+     */
+    .recipe-print img {
+        height: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .not-print {
+        display: none;
+    }
+
+    .only-print {
+        display: block;
+    }
+}
+
+

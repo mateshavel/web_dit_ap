@@ -1,0 +1,234 @@
+#main-nav.navbar {
+    padding-top: 0;
+    height: 70px;
+}
+
+/*# Hamburger button */
+#main-nav .navbar-toggler {
+    font-size: 1em;
+    margin-top: 0.3rem;
+}
+
+#main-nav .navbar-brand img {
+    height: auto;
+    max-width: 100px;
+    margin-left: 37px;
+    margin-top: 2px;
+}
+
+#ditap-mobile-menu {
+    background-color: #fff;
+}
+
+/*# MMenu */
+.mm-menu_position-front {
+    transform: none;
+    transition: opacity 250ms;
+}
+
+.mm-navbar__title > img {
+    top: 15px;
+    left: 0;
+    position: relative;
+    max-width: 100px;
+    max-height: 25px;
+}
+
+.mm-menu a, .mm-menu a:active, .mm-menu a:hover, .mm-menu a:link, .mm-menu a:visited {
+    font-family: 'Europa Regular', sans-serif;
+    letter-spacing: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgb(51, 51, 51);
+}
+
+#mm-2 .mm-listitem a {
+    font-family: 'Europa Bold', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: rgba(34,34,34,1);
+}
+
+.mm-navbars_top > .mm-navbar {
+    justify-content: center;
+    height: 70px;
+}
+
+#mm-2 .mm-listview a {
+    height: 70px;
+    padding-left: 33px;
+    padding-right: 42px;
+    padding-top: 20px;
+}
+
+#mm-3 .mm-listview a {
+    padding: 9px 42px 10px 17px;
+}
+
+.mm-listitem:after {
+    right: 20px;
+}
+
+.mm-panels {
+    margin-top: 30px;
+}
+
+.mm-panels>.mm-panel>.mm-listview {
+    margin: 0 -20px;
+}
+
+.mm-btn.mm-btn_close.mm-navbar__btn {
+    right: 17px;
+    top: 8px;
+}
+
+.mm-navbar__btn:before {
+    position: absolute;
+    font-family: 'ditap-icons', sans-serif;
+    font-size: 1.3em;
+    font-weight: 100;
+    content: '';
+    color: rgba(34,34,34,1);
+    border: none;
+    transform: none;
+}
+
+.mm-btn.mm-btn_prev.mm-navbar__btn {
+    font-family: 'Europa Regular', sans-serif !important;
+    font-size: 13px;
+    color: rgba(34,34,34,1);
+    position: relative;
+    left: -10px;
+    top : 18px;
+}
+
+.mm-btn.mm-btn_prev.mm-navbar__btn:before {
+    content: '\eab4';
+    font-size: 0.7em;
+    top: -15px;
+    left: -7px;
+}
+
+#mm-2 .mm-btn_next:after,
+#mm-3 .mm-btn_next:after {
+    font-family: 'ditap-icons', sans-serif;
+    border: none;
+    font-size: 10px;
+    font-weight: normal;
+    content: '\eab2';
+    transform: none;
+    position: relative;
+    right: 0;
+}
+
+#mm-3 .mm-listitem .mm-btn_next {
+    top: 10px;
+    font-size: 1.4em;
+}
+
+#mm-4.categories {
+    padding-top: 30px;
+}
+
+.mm-btn.mm-btn_close.mm-navbar__btn:before {
+    content: '\ea9b';
+}
+
+.mm-listitem .mm-btn_next:before,
+.mm-btn.mm-btn_close.mm-navbar__btn:after {
+    display: none;
+}
+
+.mm-navbar a[href="#mm-2"].mm-navbar__title,
+.mm-navbar a[href="#mm-3"].mm-navbar__title {
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    font-family: 'Europa Bold',sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 3px;
+    position: relative;
+    top: 26px;
+    left: -20px;
+    padding: 0;
+}
+
+.mm-listitem .ditap-ico_search {
+    position: relative;
+    top: 1px;
+    font-size: 0.9em;
+}
+
+.mm-listitem .text-search {
+    font-family: 'Europa Regular', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+    line-height: 22px;
+    padding-left: 0 !important;
+    margin-left: -7px;
+    margin-top: 1px;
+    color: rgb(51, 51, 51);
+}
+
+.mm-panels .additional-links {
+    padding-top: 30px;
+}
+
+.mm-panels .additional-links a {
+    padding-left: 13px;
+}
+
+.mm-panel figcaption {
+    font-family: 'Tabac Regular', serif;
+    font-size: 13px;
+    color: rgba(34,34,34,1);
+}
+
+.mm-menu_theme-white .mm-listitem_selected > a:not(.mm-btn_next),
+.mm-menu_theme-white .mm-listitem_selected > span {
+    background: transparent;
+}
+
+.mobile-lang-select {
+    bottom: -60px !important;
+}
+
+/*# MEDIA QUERIES --------------------------------------------------------------------------------------------------- */
+
+/*# Small Phone viewports */
+@media screen and (max-width: 320px) {
+
+    .mm-navbar__title > img {
+        left: -7px;
+    }
+
+    #main-nav .navbar-brand img {
+        margin-left: 15px;
+    }
+
+}
+
+/*# Tablet viewport */
+@media screen and (min-width: 767px) {
+
+    /*# Hide mobile menu on tablets and desktops */
+    #mm-ditap-mobile-menu {
+        display: none !important;
+    }
+
+    .mm-menu_offcanvas.mm-menu_opened {
+        display: none !important;
+    }
+}
+
+/*# Desktop viewport */
+@media screen and (min-width: 996px) {
+
+}

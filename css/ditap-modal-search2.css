@@ -1,0 +1,405 @@
+/*# Search Modal */
+#searchModal {
+    top: 83px;
+    z-index: 2000;
+}
+
+#searchModal .modal-dialog {
+    max-width: 780px;
+    height: 100%;
+    background: #fff;
+}
+
+#searchModal .modal-body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#searchModal .modal-header {
+    padding: 0 15px 7px 3px;
+    background: #fff;
+}
+
+#searchModal .modal-footer {
+    background: #fff;
+}
+
+#searchModal .modal-header .ditap-ico_close_mob {
+    font-size: 1.3em;
+    padding-top: 5px;
+}
+
+#searchModal .modal-header button.close {
+    margin-top: -10px;
+    right: -5px;
+}
+
+#searchModal .modal-header .btn-ditap-mini {
+    margin-top: 5px;
+    display: none;
+    visibility: hidden;
+    width: 0;
+}
+
+#searchModal .modal-content {
+    border: none;
+    border-radius: 0;
+    padding-right: 12px;
+    padding-left: 12px;
+}
+
+#searchModal .modal-content .ditap-ico_search {
+    font-size: 1em;
+    margin-top: -4px;
+    margin-left: -2px;
+}
+
+#searchModal .modal-content .input-group-text {
+    background: none;
+    border: none;
+    padding-right: 0;
+}
+
+#searchModal #ditapSearchInput {
+    border-radius: 0;
+    border: none;
+    outline: none;
+}
+
+#searchModal .search-intro {
+    border-bottom: 1px solid #e9ecef;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+}
+#searchModal .search-intro > span {
+    font-size: 0.8125em;
+}
+
+#searchModal .search-tips-ditap {
+    list-style: none;
+    padding: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 0;
+}
+
+#searchModal .search-tips-ditap li {
+    border-bottom: 1px solid #e9ecef;
+    padding-left: 0;
+    padding-top: 0;
+}
+
+#searchModal .search-tips-item {
+    padding-left: 15px;
+    color: #222;
+    text-decoration: none;
+    padding-top: 16px;
+}
+
+.search-modal-backdrop.show {
+    transition: none;
+    opacity: 0;
+    display: none;
+}
+
+.search-results-list .search-tips-item:hover {
+    text-decoration: none;
+    color: #222;
+}
+
+#searchModal .search-tips-item > div > p {
+    margin-top: -5px;
+    text-overflow: ellipsis;
+    width: 285px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#searchModal .modal-footer {
+    border: none;
+    padding-left: 17px;
+    display: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.content-wrapper.search-results {
+    background: #fff;
+}
+
+
+.content-wrapper.search-results h2 {
+    margin-top: -15px;
+}
+
+#searchModal #ditapSearchInput::placeholder {
+    font-size: 14px;
+}
+
+#searchModal #ditapSearchInput::-moz-placeholder { /* Firefox 19+ */
+    font-size: 14px;
+}
+#searchModal #ditapSearchInput:-ms-input-placeholder { /* IE 10+ */
+    font-size: 14px;
+}
+
+/*# Search results */
+.search-results-list .search-tips-item-m {
+    max-width: 920px;
+    position: relative;
+    margin-top: -1px;
+}
+
+.search-results-list .search-tips-item-m p.paragraph-2 {
+    font-size: 0.85em;
+}
+
+.search-results-list li.card {
+    box-shadow: none;
+    margin-top: 0;
+}
+
+.search-results-list img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.search-results-list .search-item-headline {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+
+/*# MEDIA QUERIES --------------------------------------------------------------------------------------------------- */
+
+/*# Small Phone viewports */
+@media screen and (max-width: 320px) {
+
+    #searchModal #ditapSearchInput {
+        max-width: 165px;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    #searchModal .search-tips-item-m > div > p {
+        width: 185px;
+    }
+}
+
+/*# Tablet viewport */
+@media screen and (min-width: 767px) {
+
+    #searchModal {
+        top: 0;
+        z-index: 2000;
+        overflow: hidden;
+    }
+
+    #searchModal .modal-dialog {
+        max-width: 996px;
+    }
+
+    #searchModal .modal-content {
+        padding-left: 0;
+        padding-right: 0;
+        /*box-shadow: 0 10px 13px -2px rgba(0,0,0,0.05);*/
+    }
+
+    #searchModal .modal-header {
+        padding: 12px 15px 12px 25px;
+    }
+
+    #searchModal .modal-footer {
+        background: #fff;
+        padding-top: 23px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #e9ecef;
+    }
+
+    #searchModal .modal-footer {
+        padding-left: 33px;
+    }
+
+    #searchModal .search-tips-item-m > div > p {
+        width: 590px;
+    }
+
+    #searchModal .modal-header .btn-ditap-mini {
+        visibility: visible;
+        display: inline;
+        width: auto;
+        position: relative;
+        top: -5px;
+    }
+
+    #searchModal .search-tips-ditap .search-tips-item-m:before,
+    #searchModal .modal-footer a:before {
+        font-family: 'ditap-icons', sans-serif;
+        font-size: 0.6em;
+        content: '\eab2';
+        position: absolute;
+        right: 33px;
+        margin-top: 20px;
+    }
+
+    #searchModal .modal-footer a:before {
+        margin-top: 0;
+    }
+
+    #searchModal .modal-content .ditap-ico_search {
+        font-size: 16px;
+        margin-top: 0;
+    }
+
+    #searchModal .search-intro {
+        padding-left: 33px;
+        padding-top: 17px !important;
+        padding-bottom: 17px !important;
+    }
+
+    #searchModal .modal-dialog {
+        height: auto;
+    }
+
+    #searchModal .search-tips-item-m {
+        padding-left: 33px;
+        padding-top: 20px;
+        padding-bottom: 3px;
+    }
+
+    #searchModal .modal-header button.close {
+        margin-right: 8px;
+        margin-top: -8px;
+    }
+
+    #searchModal #ditapSearchInput {
+        font-size: 14px;
+    }
+
+    #searchModal #ditapSearchInput::placeholder {
+        font-size: 14px;
+    }
+
+    #searchModal #ditapSearchInput::-moz-placeholder { /* Firefox 19+ */
+        font-size: 14px;
+    }
+    #searchModal #ditapSearchInput:-ms-input-placeholder { /* IE 10+ */
+        font-size: 14px;
+    }
+
+    #searchModal .search-input {
+        top: -1px;
+    }
+}
+
+/*# Desktop viewport */
+@media screen and (min-width: 996px) {
+
+    #searchModal {
+        top: 52px;
+        pointer-events: none;
+    }
+
+    #searchModal .modal-dialog {
+        max-width: 780px;
+    }
+
+    #searchModal .modal-content {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    #searchModal .modal-header {
+        padding: 19px 21px 14px 19px
+    }
+
+    #searchModal .modal-body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #searchModal .modal-content {
+        box-shadow: 0 4px 20px 0 rgba(0,0,0,0.21), 0 1px 0 0 rgba(0,0,0,0.05);
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #searchModal .modal-content .ditap-ico_search {
+        font-size: 16px;
+        margin-top: -1px;
+    }
+
+    #searchModal .search-tips-ditap {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #searchModal .search-tips-ditap li {
+        border-bottom: 1px solid #e9ecef;
+        cursor: pointer;
+    }
+
+    #searchModal .search-tips-ditap li:hover {
+        background-color: #F9F9F9;
+    }
+
+    #searchModal .search-intro {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 30px;
+    }
+
+    #searchModal .search-tips-item-m {
+        padding-left: 30px;
+        padding-top: 16px;
+    }
+
+    #searchModal .search-tips-item-m > div > p {
+        width: 640px;
+    }
+
+    #searchModal .modal-header button.close {
+        margin-right: -3px;
+    }
+
+    #searchModal .modal-footer {
+        padding-left: 33px;
+    }
+
+    #searchModal .modal-footer a:before {
+        right: 29px;
+    }
+
+    #searchModal .modal-header .btn-ditap-mini {
+        visibility: visible;
+        width: auto;
+    }
+
+    .search-modal-backdrop.show {
+        transition: initial;
+        opacity: 1;
+        display: block;
+    }
+
+    .content-wrapper.search-results h2 {
+        margin-top: 0;
+    }
+
+    .twitter-typeahead {
+        width: 90%;
+    }
+
+    .btn-search {
+        position: relative;
+        left: 0;
+    }
+
+    #searchModal .search-tips-ditap .search-tips-item-m:before {
+        right: 30px;
+    }
+}

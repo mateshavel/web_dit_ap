@@ -1,0 +1,266 @@
+.accordion {
+    /*margin-top: 10vh;*/
+    overflow: hidden;
+}
+
+.card-header {
+    border-bottom: none;
+}
+
+.accordion .accord:last-child .card-header[aria-expanded="false"] {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.accord {
+    margin-bottom: 1px;
+}
+
+/*#bh5 > a,*/
+.accordion .accord:last-child {
+    margin-bottom: 3px;
+}
+
+.accordion a.card-header[aria-expanded="true"] {
+    border-top: 2px solid #ED1C24;
+    border-bottom: 0;
+    margin-top: -2px;
+}
+
+.accordion div.accord:first-of-type a.card-header[aria-expanded="true"] {
+    margin-top: -1px;
+}
+
+.accordion-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.accordion .card-header {
+    padding: 1.59rem 1.5rem;
+    position: relative;
+    background-color: white;
+    border-top: 1px solid rgba(0, 0, 0, .15);
+    /*border-bottom: 1px solid rgba(0, 0, 0, .125);*/
+    margin-bottom: -3px;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.accordion .collapse.show {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    margin-bottom: -3px;
+}
+
+.accord a.card-header {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-align: center !important;
+    align-items: center !important
+}
+
+.accord a.card-header:after {
+    display: flex;
+    align-items: center;
+    position: relative;
+    float: right;
+    font-family: 'ditap-icons', sans-serif;
+    content: "\eab6";
+    color: rgb(0, 0, 0);
+    font-size: 9px;
+    transform: rotate(0deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    margin-left: 1.2rem;
+
+}
+
+.accord a.card-header[aria-expanded="true"]:after {
+    transform: rotate(180deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.accord a.card-header:hover {
+    color: #222;
+    text-decoration: none;
+}
+
+/*# Recipe accordion */
+#recipe-accordion .recipe-register-header > a {
+    border-top: 1px solid #E8E8E8;
+    padding: 15px 0;
+}
+
+#recipe-accordion .recipe-register-header > a.last {
+    border-bottom: 1px solid #E8E8E8;
+}
+
+#recipe-accordion .recipe-register-header > a:after {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    right: 30px;
+    font-family: 'ditap-icons', sans-serif;
+    content: "\eab6";
+    color: rgb(0, 0, 0);
+    font-size: 9px;
+    transition: transform 200ms ease-in-out;
+}
+
+#recipe-accordion .recipe-register-header > a[aria-expanded=true]:after {
+    transform: rotate(180deg);
+}
+
+#recipe-accordion .recipe-register-header .badge {
+    position: absolute;
+    right: 50px;
+    top: 37%;
+    color: #999;
+    border: 1px solid #999;
+    padding: 0.23rem 0.43rem 0.2rem 0.4rem;
+}
+
+/*# Shop checkout accordion */
+.accord-checkout a.card-header {
+    background-color: #F9F9F9;
+    border-bottom: 0;
+}
+
+.accord-checkout .card-header.active {
+    background-color: #F9F9F9;
+    border-bottom: none;
+}
+
+.accord-checkout .card-header .step-change {
+    right: 20px;
+    top: 6px;
+}
+
+.accord-checkout .card-header a > span.ico-ok-green {
+    top: -5px;
+    right: -35px;
+}
+
+.accord-checkout a.card-header.collapsed {
+    /*background-color: white;*/
+}
+
+.accord-checkout .card-header a[aria-expanded=false]:first-of-type {
+    color: #999;
+    pointer-events: none;
+}
+
+.accord-checkout .card-header a[aria-expanded=true]:first-of-type {
+    color: #222;
+    pointer-events: none;
+}
+
+.accord-checkout.step-complete .card-header a[aria-expanded=false]:first-of-type {
+    color: #222;
+}
+
+.accord-checkout a.card-header[aria-expanded="true"] {
+    border-top: 1px solid rgba(0, 0, 0, .125);
+    /*border-bottom: 0;*/
+    /*margin-top: -2px;*/
+    color: #222;
+    background-color: #F9F9F9 !important;
+}
+
+/*# MEDIA QUERIES --------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 405px) {
+
+    .accord a.card-header {
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-align: center !important;
+        align-items: center !important
+    }
+}
+
+@media screen and (min-width: 767px) {
+
+    #recipe-accordion .recipe-register-header .badge {
+        right: 65px;
+    }
+
+    .accord-checkout .card-header a > span.ico-ok-green {
+        right: -60px;
+    }
+
+    .accord-checkout .card-header a > span.ico-ok-green {
+        top: -5px;
+        right: -58px;
+    }
+
+    .accord-checkout .card-header .step-change {
+        top: 11px;
+    }
+
+    .accord > div > a,
+    .accord div.card-body {
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+    }
+
+    .accordion .accord .card-body {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (min-width: 996px) {
+
+    /*# Recipe accordion */
+    #recipe-accordion .recipe-register-header > a {
+        pointer-events: none;
+        cursor: default;
+        padding: auto;
+        border: none;
+    }
+
+    #recipe-accordion .recipe-register-header > a:after {
+        content: none;
+    }
+
+    #recipe-accordion .recipe-register-header h5 {
+        font-size: 42px;
+    }
+
+    #recipe-accordion .collapse:not(.show) {
+        display: flex;
+    }
+
+    .accord-checkout .card-header a > span.ico-ok-green {
+        top: 0;
+    }
+
+    .accord-checkout .card-header .step-change {
+        top: 1px;
+        right: 40px;
+    }
+
+    .accord > div > a,
+    .accord div.card-body {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .accord-checkout .card-header .step-change {
+        top: 5px;
+        right: 0px;
+    }
+}

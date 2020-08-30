@@ -1,0 +1,682 @@
+/*# Forms */
+.form-group {
+    margin-bottom: 0;
+}
+
+.form-control:disabled, .form-control[readonly] {
+    background: #fff;
+    color: #999;
+}
+
+input.form-control {
+    font-family: 'Europa Regular', sans-serif;
+    font-weight: 400;
+    font-size: 0.875em;
+    color: rgb(51, 51, 51);
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+    box-shadow: none;
+    border-color: #E8E8E8;
+}
+
+input.form-control::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: 'Europa Regular', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: #999;
+}
+input.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: 'Europa Regular', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: #999;
+}
+input.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    font-family: 'Europa Regular', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    color: #999;
+}
+
+input.form-control.variant-2::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #222;
+}
+input.form-control.variant-2:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #222;
+}
+input.form-control.variant2::-ms-input-placeholder { /* Microsoft Edge */
+    color: #222;
+}
+
+.input-ditap-lg {
+    border: 1px solid #E8E8E8;
+    border-radius: 0;
+    height: 45px;
+}
+
+.input-ditap-xl {
+    border: 1px solid #E8E8E8;
+    border-radius: 0;
+    height: 80px;
+}
+
+.textarea-ditap {
+    border: 1px solid #E8E8E8;
+    border-radius: 0;
+}
+
+input.form-control:focus::-webkit-input-placeholder { color:transparent; }
+input.form-control:focus:-moz-placeholder { color:transparent; }      /* FF 4-18 */
+input.form-control:focus::-moz-placeholder { color:transparent; }     /* FF 19+ */
+input.form-control:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+.info-span {
+    padding: 15px 10px;
+    color: #999999;
+    background-color: #ECECEC;
+    margin-top: 9px;
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.info-span:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom-color: #ECECEC;
+    top: -17px;
+    left: 7px;
+}
+
+.add-to-cart-alert .info-span:before {
+    left: 70%;
+}
+
+/*# Custom checkbox */
+.custom-control-input.is-invalid~.custom-control-label::before, .was-validated .custom-control-input:invalid~.custom-control-label::before {
+    background-color: transparent !important;
+}
+
+
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: none;
+    outline: none;
+}
+
+
+.checkbox-ditap .custom-control-input:active~.custom-control-label::before,
+.checkbox-ditap .custom-control-label::before {
+    font-family: 'ditap-icons', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    content: '\eaba';
+    color: #E8E8E8;
+    background: #fff;
+    top: 1px;
+}
+
+
+.checkbox-ditap .custom-control-input:checked~.custom-control-label::before {
+    font-family: 'ditap-icons', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    content: '\eaba';
+    color: #E8E8E8;
+    background: #fff;
+    top: 1px;
+}
+
+
+.checkbox-ditap .custom-control-input:checked~.custom-control-label::after {
+    font-family: 'ditap-icons', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    content: '\eab9';
+    color: rgb(38, 48, 112);
+    background: transparent;
+    border: none !important;
+    top: 1px;
+}
+
+/*# Rating select with bootstrap-select library */
+.select-ditap-rating {
+    height: 70px;
+}
+
+.select-ditap-rating .select-icon:before {
+    font-family: 'ditap-icons', sans-serif;
+    font-size: 0.65em;
+    content: '\eab6';
+    position: relative;
+    top: 1rem;
+    right: 1.3rem;
+}
+
+.dropdown-newsletter .select-ditap-rating .select-icon:before {
+    font-family: 'ditap-icons', sans-serif;
+    font-size: 0.65em;
+    content: '\eab6';
+    position: absolute;
+    top: 60px;
+    right: 1.2rem;
+}
+
+label.w-100 div.dropdown.bootstrap-select{
+    width: 100%!important;
+}
+
+.select-ditap-rating .dropdown-toggle {
+    background: none;
+    color: #222;
+    border: none;
+    border-radius: 0;
+    outline: none !important;
+    white-space: nowrap;
+}
+
+.select-ditap-rating .dropdown-toggle[aria-expanded="true"] {
+    background-color: transparent;
+    border: none;
+}
+
+.select-ditap-rating .dropdown-toggle:focus {
+    outline: none !important;
+}
+
+.select-ditap-rating .dropdown-toggle:after {
+    opacity: 0;
+}
+
+.select-ditap-rating .dropdown-menu {
+    top: 67px !important;
+    border: none;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: 0 3px 7px 2px rgba(0,0,0,0.07), 0 1px 0 0 rgba(0,0,0,0.05);
+    width: 100%;
+    transform: none !important;
+}
+
+.select-ditap-rating .dropdown-menu .dropdown-item {
+    padding: .25rem 0.7rem;
+}
+
+.select-ditap-rating .dropdown-menu .dropdown-item.active, .dropdown-item:active {
+    background: transparent;
+    color: #222;
+}
+
+/*# Pattern select dropdown */
+.select-ditap-vzor {
+    padding: 3px 0;
+}
+
+.select-ditap-vzor .dropdown-toggle {
+    background: none;
+    color: #222;
+    border: none;
+    border-radius: 0;
+    outline: none !important;
+    white-space: nowrap;
+}
+
+.select-ditap-vzor .dropdown-toggle:after {
+    opacity: 0;
+}
+
+.select-ditap-vzor .dropdown-menu {
+    top: 39px !important;
+    width: 100%;
+    border: none !important;
+    border-radius: 0 !important;
+    background: #fff;
+    padding: 0;
+    /*box-shadow: 0 3px 7px 2px rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.05) !important;*/
+    box-shadow: 0 3px 7px 7px rgba(255, 255, 255, 1), 0 1px 0 0 rgba(255, 255, 255, 1) !important;
+    transform: none !important;
+}
+
+.dropup .dropdown-menu {
+    /*margin-top: 2px;*/
+    margin-top: 17px;
+    padding: 0;
+}
+
+.select-ditap-vzor .dropdown-menu .inner.show {
+    border: 1px solid #E8E8E8;
+}
+
+.select-ditap-vzor .dropdown-menu .dropdown-item {
+    padding: 8px 0 11px 11px;
+}
+
+.select-ditap-vzor .dropdown-menu .dropdown-item.active {
+    background: transparent;
+    color: #222;
+}
+
+.select-ditap-vzor .dropdown-menu .dropdown-item.selected.active {
+    display: none;
+}
+
+.select-ditap-vzor .bootstrap-select .dropdown-toggle:focus {
+    outline: none !important;
+}
+
+.select-ditap-vzor .select-icon:before {
+    font-family: 'ditap-icons', sans-serif;
+    font-size: 0.65em;
+    content: '\eab6';
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
+
+.btn-light:not(:disabled):not(.disabled).active,
+.btn-light:not(:disabled):not(.disabled):active,
+.show>.btn-light.dropdown-toggle {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+/*# Product category filter*/
+/*#category-filter .lang-select .bootstrap-select .dropdown-menu.show {
+    box-shadow: 0 3px 7px 2px rgba(0,0,0,0.07), 0 1px 0 0 rgba(0,0,0,0.05) !important;
+}
+
+#category-filter .filter-select.lang-select .bootstrap-select .dropdown-menu {
+    padding: 0 !important;
+}
+
+#category-filter > .filter-select > .mb-0 .filter-option-inner-inner {
+    text-align: center;
+}
+
+.mobile-sticky-filter.uk-sticky.uk-active.uk-sticky-fixed #category-filter {
+    justify-content: center !important;
+}
+
+#category-filter .filter-select.lang-select .bootstrap-select.show .filter-option-inner-inner {
+    text-align: left;
+}*/
+
+/*# Form validation*/
+input:required {
+    box-shadow:none;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+}
+
+.form-control.is-invalid {
+    border-color: #ED1C24;
+}
+
+.form-group.is-invalid span.info-span {
+    display: none;
+}
+
+.invalid-feedback {
+    font-family: 'Tabac Italic', serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-style: italic;
+    color: #ED1C24;
+    position: relative;
+    bottom: 10px;
+}
+
+.custom-select.is-invalid:focus,
+.form-control.is-invalid:focus,
+.was-validated .custom-select:invalid:focus,
+.was-validated .form-control:invalid:focus {
+    border-color: #ED1C24;
+    box-shadow: none;
+}
+
+.custom-control-input.is-invalid~.custom-control-label::before,
+.was-validated .custom-control-input:invalid~.custom-control-label::before {
+    background: transparent;
+    box-shadow: none;
+}
+
+.custom-control-input.is-invalid~.custom-control-label::after,
+.was-validated .custom-control-input:invalid~.custom-control-label::after {
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid #ED1C24;
+    border-radius: 0;
+    position: absolute;
+    top: 1px !important;
+}
+
+.custom-control-input.is-invalid:checked~.custom-control-label::before,
+.was-validated .custom-control-input:invalid:checked~.custom-control-label::before {
+    background: transparent;
+    box-shadow: none;
+    outline: none;
+    position: absolute;
+    top: 1px;
+}
+
+.custom-control-input.is-invalid~.custom-control-label::before,
+.was-validated .custom-control-input:invalid~.custom-control-label::before,
+.custom-control-input.is-invalid:focus~.custom-control-label::before,
+.was-validated .custom-control-input:invalid:focus~.custom-control-label::before {
+    background-color: transparent !important;
+}
+
+/*# Input */
+.input-btn {
+    padding: 10px 15px;
+}
+
+.input-border {
+    border: 2px solid #222222;
+    border-radius: 0;
+}
+
+/*# Radio btn */
+.input-box p.text-ditap-tip,
+.radio-btn span.text-ditap-tip {
+    padding-left: 45px;
+    white-space: initial;
+}
+
+.radio-btn.active .bold-active {
+    font-family: 'Europa Bold', sans-serif;
+    font-weight: 700;
+}
+
+/*# Category filter */
+#category-filter .filter-select.lang-select .bootstrap-select.show {
+    background: #fff;
+}
+
+#category-filter .filter-select.lang-select .bootstrap-select button {
+    vertical-align: middle;
+    font-size: 14px;
+    color: #999;
+}
+
+#category-filter .filter-select.lang-select .bootstrap-select.show button {
+    background: #fff;
+}
+
+#category-filter .filter-select.lang-select .bootstrap-select > .dropdown-menu.show {
+    border-top: 1px solid rgba(0,0,0,0.09) !important;
+}
+
+#category-filter .filter-select.lang-select .bootstrap-select .dropdown-item {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+#category-filter .filter-select.lang-select .bootstrap-select .dropdown-item.selected.active {
+    display: none;
+}
+
+#category-filter .filter-select.lang-select .bootstrap-select button i {
+    position: relative;
+    top: -2px;
+}
+
+#category-filter .filter-select.lang-select .bootstrap-select button i,
+#category-filter .filter-select.lang-select .bootstrap-select .dropdown-item .filter-icon {
+    font-size: 16px;
+    display: inline;
+    vertical-align: middle;
+    padding-right: 6px;
+}
+
+#category-filter .filter-select.lang-select .bootstrap-select .dropdown-item span:nth-last-of-type(1):after {
+    font-size: 13px;
+}
+
+#category-filter .filter-select.lang-select .bootstrap-select .dropdown-menu li a span.text {
+    vertical-align: middle;
+}
+
+#category-filter .filter-select.lang-select .bootstrap-select:not(.show) .dropdown-toggle .filter-option-inner-inner:after {
+    font-family: 'ditap-icons', sans-serif;
+    font-size: 0.65em;
+    content: '\eab6';
+    position: relative;
+    padding-left: 8px;
+}
+
+#category-filter .filter-select.lang-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn),
+#category-filter .filter-select.lang-select .bootstrap-select.show:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100%;
+}
+
+#category-filter .filter-select.lang-select:nth-of-type(1) .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn),
+#category-filter .filter-select.lang-select:nth-of-type(1) .bootstrap-select.show:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    min-width: 110px;
+}
+
+#category-filter .filter-select.lang-select:nth-of-type(2) .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn),
+#category-filter .filter-select.lang-select:nth-of-type(2) .bootstrap-select.show:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    min-width: 75px;
+}
+
+#category-filter .filter-select.lang-select:nth-of-type(3) .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn),
+#category-filter .filter-select.lang-select:nth-of-type(3) .bootstrap-select.show:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    min-width: 90px;
+}
+
+.shop-login-card .form-control{
+    padding: .375rem .8rem;
+}
+
+/*# MEDIA QUERIES --------------------------------------------------------------------------------------------------- */
+
+/*# Small phone viewport */
+@media screen and (max-width: 320px) {
+
+    .form-group {
+        width: 90% !important;
+    }
+}
+
+/*# Phone viewport */
+@media screen and (max-width: 374px) {
+
+    #voucherValue label {
+        padding-left: 0.30rem;
+        padding-right: 0.30rem;
+    }
+}
+
+/*# Phone viewport */
+@media screen and (max-width: 426px) {
+
+    #category-filter .filter-select.lang-select .bootstrap-select.show .filter-option-inner-inner {
+        margin-left: 8px;
+    }
+
+    #category-filter .filter-select.lang-select .bootstrap-select.show .dropdown-toggle .filter-option-inner-inner:after {
+        font-family: 'ditap-icons', sans-serif;
+        font-size: 0.65em;
+        content: '\eab0';
+        position: relative;
+        padding-left: 8px;
+        opacity: 0;
+    }
+
+    .mobile-sticky-filter #category-filter .bootstrap-select .dropdown-toggle .filter-option {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    #category-filter {
+        display: table !important;
+        table-layout: fixed;
+        padding: 0;
+    }
+
+    #category-filter > .category-selector {
+        display: table-cell;
+    }
+
+    #category-filter > .filter-select > .mb-0 {
+        width: 100%;
+    }
+
+    #category-filter > .filter-select > .mb-0 > .dropdown {
+        min-width: 100% !important;
+    }
+
+    #category-filter {
+        padding-right: 8px !important;
+    }
+
+    .mobile-sticky-filter.uk-active > #category-filter {
+        padding-right: 0 !important;
+    }
+
+    .mobile-sticky-filter.uk-active > #category-filter {
+        padding-left: 0 !important;
+        padding-right: 0;
+    }
+}
+
+/*# Mobile and Tablet viewport */
+
+/*@media screen and (max-width: 768px) {
+
+    .mobile-sticky-filter #category-filter .bootstrap-select {
+        padding: 7px 4px 7px 2px !important;
+    }
+}​*/
+
+/*# Tablet viewport */
+@media screen and (min-width: 767px) {
+
+    input.form-control {
+        font-size: 1em;
+    }
+
+    .input-ditap-lg {
+        height: 55px;
+    }
+
+    input.form-control::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        font-size: 16px;
+    }
+    input.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        font-size: 16px;
+    }
+    input.form-control::-ms-input-placeholder { /* Microsoft Edge */
+        font-size: 16px;
+    }
+
+    /*# Category filter */
+    #category-filter .filter-select.lang-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn),
+    #category-filter .filter-select.lang-select .bootstrap-select.show:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+        width: 164px;
+    }
+
+    /*# Shop checkout validation */
+    #accordionCheckout .custom-control-input.is-invalid~.custom-control-label::after,
+    #accordionCheckout .was-validated .custom-control-input:invalid~.custom-control-label::after {
+        background: transparent;
+        box-shadow: none;
+        border: 1px solid #ED1C24;
+        border-radius: 0;
+        position: absolute;
+        top: 7px !important;
+    }
+
+    /*# Rating select with bootstrap-select library */
+    .select-ditap-rating {
+        height: 80px;
+    }
+
+    .dropdown-newsletter .select-ditap-rating .select-icon:before {
+        top: 67px;
+        right: 23px;
+    }
+
+    .select-ditap-rating .dropdown-menu {
+        top: 77px !important;
+        width: 100%;
+    }
+
+    .select-ditap-rating .dropdown-menu .dropdown-item {
+        padding: .25rem 1rem;
+    }
+
+    .select-ditap-rating .dropdown-toggle {
+        padding: 0.6rem 1rem;
+    }
+
+    /*# Pattern select dropdown */
+    .select-ditap-vzor {
+        padding: 6px 0;
+    }
+
+    .select-ditap-vzor button span.text-ditap-default {
+        font-family: 'Europa Bold', sans-serif !important;
+        font-weight: 700 !important;
+    }
+
+    .select-ditap-vzor .select-icon:before {
+        top: 50px;
+        right: 32px;
+    }
+
+    .select-ditap-vzor .dropdown-menu {
+        top: 45px !important;
+    }
+
+    .select-ditap-vzor .dropdown-menu .dropdown-item {
+        padding: 13px 0 15px 11px;
+    }
+
+    .checkbox-ditap .custom-control-input:active~.custom-control-label::before,
+    .checkbox-ditap .custom-control-label::before {
+        top: 2px;
+    }
+
+
+    .checkbox-ditap .custom-control-input:checked~.custom-control-label::before {
+        top: 2px;
+    }
+
+
+    .checkbox-ditap .custom-control-input:checked~.custom-control-label::after {
+        top: 2px;
+    }
+}
+
+/*# Desktop viewport */
+@media screen and (min-width: 996px) {
+
+    .form-group {
+        margin-bottom: 0.6rem;
+    }
+}
+
+/*# only tablet*/
+/*
+@media (min-width: 768px) and (max-width: 996px) {
+    .input-tablet-size-50{
+        width: 50%!important;
+    }
+    .input-tablet-size-50.input-btn {
+        padding: 15px 15px;
+    }
+    .radio-btn{
+        height: 52px;
+        padding: 0.8rem!important;
+    }
+}*/

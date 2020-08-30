@@ -1,0 +1,213 @@
+.tile-margin {
+    margin-right: 12px;
+}
+
+.recipe-collection-card {
+    cursor: default !important;
+    height: 330px;
+}
+
+.recipe-detail-card {
+    min-height: 220px;
+    height: auto;
+}
+
+.medium-cta-card .medium-card-text-box {
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.medium-cta-card {
+    max-width: 100% !important;
+    width: 100%;
+    height: 357px;
+}
+
+.medium-cta-card,
+.medium-cta-card:hover {
+    cursor: default;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,0.05);
+}
+
+.medium-cta-card .medium-card-text-box {
+    top: 25px;
+    left: 35px;
+}
+
+.medium-cta-card .medium-card-text-box > p {
+    max-width: 250px;
+}
+
+.tile.medium-card.medium-cta-card img {
+    position: relative;
+    height: auto;
+    bottom: -194px;
+    float: right;
+}
+
+.recipe-collection-card .small-card-text-box,
+.recipe-detail-card .small-card-text-box {
+    padding: 12px 15px;
+}
+
+.recipe-collection-card .small-card-text-box ul {
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.recipe-collection-card .small-card-text-box ul li {
+    line-height: 25px;
+    text-indent: -16px;
+    padding-left: 15px;
+    margin-left: -15px;
+}
+
+.recipe-collection-card .small-card-text-box ul li:before {
+    content: none;
+}
+
+.recipe-collection-card .small-card-text-box ul li a:before {
+    content: '•';
+    margin-right: 10px;
+    display: inline;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+@media screen and (min-width: 375px) {
+
+    .recipe-collection-card {
+        height: 350px;
+    }
+
+    .recipe-detail-card {
+        min-height: 240px;
+    }
+
+    .tile.medium-card.medium-cta-card img {
+        bottom: -156px;
+    }
+}
+
+
+@media screen and (min-width: 484px) {
+
+    .recipe-collection-card {
+        height: 400px;
+    }
+
+    .recipe-detail-card {
+        min-height: 317px;
+        height: auto;
+    }
+
+    .tile.medium-card.medium-cta-card img {
+        position: relative;
+        bottom: -100px;
+    }
+}
+
+@media screen and (min-width: 767px) {
+
+    .tile-margin {
+        margin-right: 20px;
+    }
+
+    .recipe-collection-card .small-card-text-box,
+    .recipe-detail-card .small-card-text-box {
+        padding: 15px 20px;
+    }
+
+    .medium-cta-card {
+        max-width: 100% !important;
+        width: 100%;
+        height: 392px;
+    }
+
+    .medium-cta-card,
+    .medium-cta-card:hover {
+        box-shadow: none;
+    }
+
+    .tile.medium-card.medium-cta-card img {
+        max-width: 768px;
+        max-height: 392px;
+        bottom: 0;
+        width: 100%;
+        float: right;
+    }
+
+    .medium-cta-card .medium-card-text-box {
+        top: 40px;
+        left: 60px;
+    }
+
+    .medium-cta-card .medium-card-text-box > p {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .tile.medium-card.medium-cta-card img {
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .tile-margin {
+        margin-right: 0;
+    }
+
+    .recipe-collection-card {
+        height: 470px;
+    }
+
+    .recipe-detail-card {
+        height: 400px;
+    }
+
+    .medium-cta-card {
+        position: relative;
+        width: 580px;
+        height: 440px;
+        overflow: hidden;
+    }
+
+    .medium-cta-card{
+        cursor: default;
+        /*box-shadow: 0 1px 0 0 rgba(0,0,0,0.05);*/
+    }
+    .medium-cta-card:hover {
+        cursor: default;
+        /*box-shadow: 0 1px 0 0 rgba(0,0,0,0.05);*/
+        box-shadow: 0 3px 7px 2px rgba(0,0,0,0.07), 0 1px 0 0 rgba(0,0,0,0.05);
+    }
+
+    .recipe-collection-card .small-card-text-box,
+    .recipe-detail-card .small-card-text-box {
+        padding: 20px 30px;
+    }
+
+    .recipe-collection-card .small-card-text-box ul li {
+        max-width: 215px;
+    }
+
+    .tile.medium-card.medium-cta-card img {
+        position: relative;
+        bottom: -15px;
+        width: 768px;
+        height: auto;
+    }
+
+    .medium-cta-card .medium-card-text-box {
+        top: 40px;
+        left: 50px;
+        padding-left: 0;
+    }
+
+    .medium-cta-card .medium-card-text-box > p {
+        max-width: 300px;
+    }
+}

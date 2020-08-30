@@ -1,0 +1,505 @@
+@import "icomoon-icons-ditap.css";
+
+/*# Buttons */
+button:focus,
+select:focus,
+.custom-select:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+button.close {
+    position: relative;
+    z-index: 3000;
+    opacity: 1;
+    /*font-size: 0.7em;*/
+    font-size: 21px;
+}
+
+#modalSet .close {
+    position: absolute !important;
+    right: 20px !important;
+    top: 20px !important;
+    text-shadow: none !important;
+}
+
+input[type=button],
+input[type=submit] {
+    cursor: pointer;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-max-h-55 {
+    padding: 19px 20px !important;
+    height: 55px;
+}
+
+.btn-ditap {
+    font-family: 'Tabac Regular', serif;
+    font-size: 0.625em;
+    text-transform: uppercase;
+    font-weight: lighter !important;
+    font-style: normal;
+    border-radius: 27px;
+    line-height: 12px;
+    transition: background-color 250ms;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    border: none;
+}
+
+.btn-ditap-large {
+    font-size: 0.75em;
+    line-height: 15px;
+    padding: 15px 20px;
+    letter-spacing: 3px;
+}
+
+.btn-ditap-small {
+    font-family: 'Europa Light', sans-serif;
+    font-size: 0.875em;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: normal;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.btn-ditap-blue {
+    background: #263070;
+    color: #fff;
+}
+
+.btn-ditap-blue:hover {
+    background: #1E2659;
+    color: #fff;
+}
+
+.btn-ditap-red {
+    background: #ED1C24;
+    color: #fff;
+}
+
+.btn-ditap-red:hover {
+    background: #BD161C;
+    color: #fff;
+}
+
+.btn-ditap-outline {
+    font-family: 'Tabac Bold', sans-serif;
+    /*font-weight: 600 !important;*/
+    color: #263070;
+    background: #F9F9F9;
+    border: 2px solid #263070;
+    padding: 13px 18px !important;
+}
+
+.btn-ditap-outline:hover {
+    color: #1E2659;
+    border-color: #1E2659;
+}
+
+.btn-ditap-outline-mini {
+    padding: 9px 20px !important;
+}
+
+.btn-ditap:disabled,
+.btn-ditap-disabled {
+    background: rgba(0, 0, 0, 0.25);
+    color: #fff;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.btn-ditap-outline:disabled,
+.btn-ditap-outline.btn-ditap-disabled {
+    background: #F9F9F9;
+    color: #B9B9B9;
+    border-color: #B9B9B9;
+}
+
+.btn-ditap-mini {
+    background: transparent;
+    border: none;
+}
+
+.btn-ditap-mini span {
+    vertical-align: middle;
+}
+
+.btn-ditap-mini:hover span,
+.btn-ditap-mini:hover span:before {
+    color: #222;
+}
+
+.btn-ditap-show-more {
+    padding: 12px 20px !important;
+}
+
+.btn-ditap-show-more > span.badge-pill {
+    font-family: 'Europa Regular', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    border: 1px solid #fff;
+    padding: 4px 6px 3px 7px;
+    letter-spacing: 1px;
+}
+
+.btn-ditap-teaser-cart-big {
+    background-color: #ED1C24;
+    color: #fff;
+    display: block;
+    border-radius: 50%;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
+    position: absolute;
+    right: 25px;
+    bottom: -25px;
+    width: 60px;
+    height: 60px;
+    z-index: 2000;
+    margin-top: -7rem;
+}
+
+.btn-ditap-teaser-cart-big.active {
+    background-color: #fff;
+}
+
+.btn-ditap-teaser-cart-big.active span:before {
+    font-size: 18px !important;
+    content: '\ea9b';
+    top: 21px;
+    left: 21px;
+    color: #222;
+    position: absolute;
+}
+
+.btn-ditap-teaser-cart-big span {
+    color: #fff;
+}
+
+.btn-ditap-teaser-cart-big span:before {
+    font-size: 40px !important;
+    top: 7px;
+    left: 18px;
+    position: absolute;
+}
+
+.btn-ditap-price {
+    font-family: 'Europa Regular', sans-serif;
+    text-transform: none;
+    letter-spacing: 1px !important;
+    font-size: 16px !important;
+    padding-top: 6px !important;
+    padding-right: 10px !important;
+}
+
+.btn-ditap-price:after {
+    font-family: 'ditap-icons', sans-serif;
+    content: '\eaa5';
+    font-size: 30px;
+    position: relative;
+    top: 3px;
+    right: -7px;
+}
+
+a.arrow-scroll-down {
+    color: transparent;
+}
+
+/*# Facebook button*/
+.facebookLoginBtnMain {
+    background-color: #4267b2;
+    margin: 8px;
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-family: sans-serif;
+    outline: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.facebookLoginBtnMain:hover {
+    background: #5979d1;
+}
+
+.facebookLoginBtnMain span {
+    float: right;
+}
+
+.xLargeFacebookBtn.facebookLoginBtnMain {
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.xLargeFacebookBtn.facebookLoginBtnMain img {
+    height: 28px;
+    width: 28px;
+}
+
+.xLargeFacebookBtn.facebookLoginBtnMain span {
+    height: 28px;
+    line-height: 28px;
+    padding: 0 16px;
+}
+
+.btn-dropdown-arrow-down-filter button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-dropdown-arrow-down-filter .select-icon::after {
+    font-family: 'ditap-icons', sans-serif;
+    font-size: 0.65em;
+    content: '\eab6' !important;
+    position: relative;
+    top: 0;
+    right: -5px;
+}
+
+.dropdown-arrow-down .select-icon::after {
+    font-family: 'ditap-icons', sans-serif;
+    font-size: 0.65em;
+    content: '\eab6' !important;
+    position: absolute;
+    top: 14px;
+    right: 16px;
+}
+
+/*# Radio btn*/
+.radio-btn {
+    border: 1px solid #E8E8E8;
+    border-radius: 0;
+}
+
+.radio-btn.active {
+    border: 1px solid #222222;
+    box-shadow: 0 0 0 1px #222;
+    border-radius: 0;
+}
+
+.radio-btn.active:hover {
+    z-index: 1 !important;
+}
+
+.radio-btn:hover {
+    z-index: 0 !important;
+}
+
+/*# Links */
+.link-fb,
+.link-in {
+    padding-left: 0;
+}
+
+a.link-grey {
+    color: #999;
+    text-decoration: none;
+}
+
+a.link-grey:hover {
+    color: #222;
+    text-decoration: none;
+}
+
+a.link-blue {
+    color: rgba(38, 48, 112, 1);
+    text-decoration: none;
+}
+
+a.link-black {
+    color: #222;
+}
+
+a.link-black:hover,
+a.link-black:hover span {
+    color: #ED1C24;
+}
+
+.is-invalid a.link-blue,
+a.link-blue:hover {
+    color: #ED1C24;
+    text-decoration: none;
+}
+
+.link-grey:hover span:before {
+    color: #222;
+}
+
+.icon-link-border {
+    padding: 0;
+    display: inline-block;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.btn-cart {
+    position: relative;
+}
+
+.btn-ditap-cart-item-delete {
+    position: absolute;
+    right: -6px;
+    top: 0;
+}
+
+.btn-ditap-cart-item-delete > span {
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    padding: 5px;
+    color: #999;
+}
+
+/*# MEDIA QUERIES --------------------------------------------------------------------------------------------------- */
+
+/*# Small mobiles viewport */
+@media screen and (max-width: 374px) {
+
+    .add-to-cart-bar .btn-ditap {
+        padding: 10px 15px;
+        font-size: 0.625em;
+        line-height: 12px;
+    }
+}
+
+/*# Tablet viewport */
+@media screen and (min-width: 767px) {
+
+    #modalSet .close {
+        position: absolute !important;
+        right: 30px !important;
+        top: 30px !important;
+        text-shadow: none !important;
+    }
+
+    .link-fb,
+    .link-in {
+        padding-left: 1rem;
+    }
+
+    .btn-ditap-medium {
+        font-size: 0.75em;
+        line-height: 15px;
+        padding: 15px 20px;
+        letter-spacing: 3px;
+    }
+
+    .btn-ditap-medium {
+        height: 45px;
+        padding: 15px 20px !important;
+        margin-bottom: 5px;
+    }
+
+    .btn-ditap-large {
+        font-size: 0.875em;
+        line-height: 17px;
+        padding: 20px 30px;
+        letter-spacing: 3px;
+    }
+
+    .btn-ditap-teaser-cart-big {
+        background-color: #ED1C24;
+        color: #fff;
+        display: block;
+        border-radius: 50%;
+        /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
+        position: absolute;
+        left: 45%;
+        bottom: 40px;
+        width: 60px;
+        height: 60px;
+        z-index: 2000;
+    }
+
+    .btn-ditap-outline-mini {
+        padding: 13px 18px !important;
+    }
+
+    .btn-account.nav-link {
+        padding: .4rem 1rem;
+        /*margin-top: 7px;*/
+        margin-top: 0;
+    }
+
+    .btn-ditap-price {
+        font-family: 'Europa Regular', sans-serif;
+        text-transform: none;
+        letter-spacing: 1px !important;
+        font-size: 16px !important;
+        padding-top: 6px !important;
+        padding-right: 10px !important;
+    }
+
+    .btn-ditap-price:after {
+        font-family: 'ditap-icons', sans-serif;
+        content: '\eaa5';
+        font-size: 30px;
+        position: relative;
+        top: 3px;
+        right: -7px;
+    }
+}
+
+/*# Desktop viewport */
+@media screen and (min-width: 996px) {
+
+    /*# Buttons Desktop */
+    .btn-account {
+        font-size: 14px;
+    }
+
+    .btn-ditap {
+        font-size: 0.75em;
+        line-height: 15px;
+        padding: 15px 20px;
+        letter-spacing: 3px;
+    }
+
+    .btn-ditap-small {
+        font-family: 'Europa Light', sans-serif;
+        font-size: 0.875em;
+        font-weight: 300;
+        line-height: 12px;
+        padding: 11px 19px;
+        letter-spacing: normal;
+        text-transform: none;
+    }
+
+    .btn-ditap-large {
+        font-size: 0.875em;
+        line-height: 17px;
+        padding: 20px 30px;
+        letter-spacing: 3px;
+    }
+
+    .btn-cart:hover span,
+    .btn-account:hover span,
+    .btn-search:hover span {
+        color: #ED1C24 !important;
+    }
+
+    .btn-account.nav-link {
+        /*padding: .7rem 1rem;*/
+        margin-top: 0;
+    }
+
+    /*# links */
+    a.link-grey:hover,
+    .link-grey:hover {
+        color: #222;
+        text-decoration: none;
+    }
+
+    .btn-ditap-price {
+        padding-top: 10px !important;
+    }
+}

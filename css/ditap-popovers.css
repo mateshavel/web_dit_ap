@@ -1,0 +1,157 @@
+/*# Common popover */
+.popover {
+    border: none;
+    border-radius: 0;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.21), 0 1px 0 0 rgba(0,0,0,0.05);
+}
+
+/*# Bugfix popover jumping while scrolling */
+.vkpopup {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    /*-khtml-user-select: none;*/
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+    width: 60px;
+    height: 60px;
+}
+
+.vkpopup > div {
+    position: absolute;
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
+    padding: 16px 24px;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    bottom: calc(100% + 8px);
+}
+
+.vkpopup > div::after {
+    content: "";
+    position: absolute;
+    left: calc(50% - 14px);
+    bottom: -19px;
+    border: 10px solid #fff;
+    transform-origin: 0 0;
+    transform: rotate(-45deg);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.vkpopup > .btn-ditap-teaser-cart-big {
+    bottom: 0 !important;
+    left: 50% !important;
+    transform: translate3d(-50%, 0, 0);
+    transition: background 0.35s;
+    z-index: 0;
+}
+
+.vkpopup div.popover-intro {
+    padding-top: 7px;
+    padding-left: 10px;
+    padding-right: 7px;
+}
+
+.vkpopup .slider-product-popover {
+    height: 490px;
+    padding-top: 0;
+}
+
+.vkpopup .card-wrapper-small > .card{
+    position: relative;
+    left: -14px;
+}
+
+.vkpopup .btn-ditap-price {
+    padding-top: 10px !important;
+    padding-bottom: 15px !important;
+}
+
+@media screen and (max-width: 767px) {
+
+    .vkpopup {
+        right: -10px;
+        left: auto;
+    }
+
+    .vkpopup > .btn-ditap-teaser-cart-big {
+        width: 50px;
+        height: 50px;
+        bottom: -65px !important;
+    }
+
+    .vkpopup > .btn-ditap-teaser-cart-big span:before {
+        font-size: 34px !important;
+        top: 5px;
+        left: 14px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .recipe-img-wrapper > .teaser-card-big > .img-recipe-teaser {
+        position:  relative;
+        min-height: 100vh;
+        min-width: 100%;
+        width: auto !important;
+        max-width: none !important;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .recipe-img-wrapper > .teaser-card-big {
+        height: 100vh;
+        overflow:  hidden;
+    }
+
+    .recipe-detail-wrapper  .recipe-img-wrapper > .teaser-card-big {
+        /*height: calc(100vh - 150px);*/
+        height:100vh;
+        overflow:  hidden;
+    }
+
+    .slider-product-popover .slick-dots {
+        left: 5px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+
+    .vkpopup .slider-product-popover {
+        width: 240px;
+        height: 410px;
+    }
+
+    .vkpopup .card-wrapper-small > .card > .small-card-img-box, .vkpopup .card-wrapper-small > .card > .small-card-text-box {
+        width: 220px;
+    }
+
+    .slider-product-popover .slick-dots {
+        top: -15px !important;
+        left: 5px;
+    }
+
+    .vkpopup div.popover-intro {
+        width: 240px;
+        height: 160px;
+        padding: 10px 7px 7px 7px;
+    }
+
+    .recipe-img-wrapper > .teaser-card-big {
+        height: 100vh;
+        overflow:  hidden;
+    }
+
+    .recipe-detail-wrapper  .recipe-img-wrapper > .teaser-card-big {
+        height: calc(100vh - 130px);
+        overflow:  hidden;
+    }
+}​
