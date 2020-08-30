@@ -1,0 +1,286 @@
+<!--Modal Multi-Steps-->
+<div class="modal multi-step" id="demo-modal-3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <!--title STEP 1-->
+                <div class="modal-title step-1" data-step="1"></div>
+                <!--title STEP 2-->
+                <div class="step-2" data-step="2">
+                    <a href="#" class="ditap-ico_arrow_tiny_left fs-15 step step-2" data-step="2"
+                       onclick="sendEvent('#demo-modal-3', 1)">Zpět</a>
+                </div>
+                <!--title STEP 3-->
+                <div class="modal-title step-3" data-step="3"></div>
+                <!--close btn-->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="fs-15 ditap-ico_close_mob" aria-hidden="true"></span>
+                </button>
+                <!--STEPS NUMBER 1/3 2/3 3/3-->
+                <!--<div class="m-progress">-->
+                <!--<div class="m-progress-bar-wrapper">-->
+                <!--<div class="m-progress-bar" style="width: 66.6667%;">-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="m-progress-stats">-->
+                <!--<span class="m-progress-current">2</span>-->
+                <!--/-->
+                <!--<span class="m-progress-total">3</span>-->
+                <!--</div>-->
+                <!--<div class="m-progress-complete" style="display: none;">-->
+                <!--Completed-->
+                <!--</div>-->
+                <!--</div>-->
+            </div>
+            <!--BODY STEP 1-->
+            <div class="modal-body text-center step-1" data-step="1">
+                <h5 class="modal-title">Registrace</h5>
+                <p class="quotation">Buďte jedni z mých nejbližších, má to spoustu výhod</p>
+                <div class="modal-center">
+
+                    <ul class="list-unstyled text-left bt-line bb-line">
+                        <li>
+                                <span class="ditap-ico_ok_green fs-14">
+                                    <span class="path1"></span><span class="path2"></span>
+                                    </span>
+                            <span class="mls"> Exklusivní recepty pro registrované</span>
+                        </li>
+                        <li>
+                                <span class="ditap-ico_ok_green fs-14">
+                                    <span class="path1"></span><span class="path2"></span>
+                                    </span>
+                            <span class="mls"> Všechny objednávky na jednom místě</span>
+                        </li>
+                        <li>
+                                <span class="ditap-ico_ok_green fs-14">
+                                    <span class="path1"></span><span class="path2"></span>
+                                    </span>
+                            <span class="mls"> Pohodlnější nákupy</span>
+                        </li>
+                    </ul>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1">
+                        <label class="form-check-label" for="inlineCheckbox1">Chci také rovnou odebírat
+                            newsletter</label>
+                    </div>
+                    <!-- Facebook button -->
+                    <button class="facebookLoginBtnMain xLargeFacebookBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 216" class="_55a2">
+                            <path fill="white" d="
+		M204.1 0H11.9C5.3 0 0 5.3 0 11.9v192.2c0 6.6 5.3 11.9 11.9
+		11.9h103.5v-83.6H87.2V99.8h28.1v-24c0-27.9 17-43.1 41.9-43.1
+		11.9 0 22.2.9 25.2 1.3v29.2h-17.3c-13.5 0-16.2 6.4-16.2
+		15.9v20.8h32.3l-4.2 32.6h-28V216h55c6.6 0 11.9-5.3
+		11.9-11.9V11.9C216 5.3 210.7 0 204.1 0z"></path>
+                        </svg>
+                        <span>Přihlásit se přes Facebook</span>
+                    </button>
+                    <p>Nebo</p>
+                    <input type="button" class="btn-ditap btn-ditap-size-change btn-ditap-blue step step-1"
+                           data-step="1"
+                           onclick="sendEvent('#demo-modal-3', 2)" value="ZADAT E-MAIL"/>
+                    <!--<a href="#" class="btn btn-ditap-blue step step-1" data-step="1"-->
+                    <!--onclick="sendEvent('#demo-modal-3', 2)">ZADAT E-MAIL</a>-->
+                </div>
+
+            </div>
+            <!--BODY STEP 2-->
+            <div class="modal-body step-2" data-step="2">
+                <div class="modal-center">
+                    <h5 class="modal-title">Registrovat pomocí e-mailu</h5>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Vaše jméno a příjmení">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="E-mailová adresa">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Heslo">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Potvrzení hesla">
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox">
+                        <label class="form-check-label" for="inlineCheckbox">Souhlasím s <a href="#">podmínkami
+                            užití</a> eshopu Ditap.cz</label>
+                    </div>
+                    <input type="button"
+                           class="btn-ditap btn-ditap-size-change btn-ditap-blue step step-2 mt-3"
+                           data-step="2"
+                           onclick="sendEvent('#demo-modal-3', 3)" value="REGISTROVAT"/>
+                    <!--<a href="#" class="btn btn-ditap-blue step step-2" data-step="2"-->
+                    <!--onclick="sendEvent('#demo-modal-3', 3)">REGISTROVAT</a>-->
+                </div>
+            </div>
+            <!--BODY STEP 3-->
+            <div class="modal-body step-3 text-center" data-step="3">
+                <img src="DitaP/media/DitaP/images/img_dita_face.png">
+                <h6>Tak a je to,</h6>
+                <p class="salutation">MARCELO</p>
+                <div class="final-step-p">
+                    <div class="modal-center bb-line bt-line">
+                        <span class="ditap-ico_mail_small fs-14"></span>
+                        <p class="quotation">Mrkněte do e-mailu, poslala jsem Vám potvrzení registrace</p>
+                    </div>
+                </div>
+                <input type="button" class="btn-ditap btn-ditap-size-change btn-ditap-blue mt-3"
+                       value="ROVNOU PŘIHLÁSIT"/>
+                <!--<a href="#" class="btn btn-ditap-blue mt-3">ROVNOU PŘIHLÁSIT</a>-->
+            </div>
+            <!--FOOTER-->
+            <!--<div class="modal-footer">-->
+            <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+            <!--<button type="button" class="btn btn-primary step step-2" data-step="2"-->
+            <!--onclick="sendEvent('#demo-modal-3', 1)">Back-->
+            <!--</button>-->
+            <!--<button type="button" class="btn btn-primary step step-1" data-step="1"-->
+            <!--onclick="sendEvent('#demo-modal-3', 2)">Continue-->
+            <!--</button>-->
+            <!--<button type="button" class="btn btn-primary step step-3" data-step="3"-->
+            <!--onclick="sendEvent('#demo-modal-3', 2)">Back-->
+            <!--</button>-->
+            <!--<button type="button" class="btn btn-primary step step-2" data-step="2"-->
+            <!--onclick="sendEvent('#demo-modal-3', 3)">Continue-->
+            <!--</button>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+
+<script>
+    // register modal
+    +function($) {
+        'use strict';
+
+        var modals = $('.modal.multi-step');
+
+        modals.each(function(idx, modal) {
+            var $modal = $(modal);
+            var $bodies = $modal.find('div.modal-body');
+            var total_num_steps = $bodies.length;
+            var $progress = $modal.find('.m-progress');
+            var $progress_bar = $modal.find('.m-progress-bar');
+            var $progress_stats = $modal.find('.m-progress-stats');
+            var $progress_current = $modal.find('.m-progress-current');
+            var $progress_total = $modal.find('.m-progress-total');
+            var $progress_complete  = $modal.find('.m-progress-complete');
+            var reset_on_close = $modal.attr('reset-on-close') === 'true';
+
+            function reset() {
+                $modal.find('.step').hide();
+                $modal.find('[data-step]').hide();
+            }
+
+            function completeSteps() {
+                $progress_stats.hide();
+                $progress_complete.show();
+                $modal.find('.progress-text').animate({
+                    top: '-2em'
+                });
+                $modal.find('.complete-indicator').animate({
+                    top: '-2em'
+                });
+                $progress_bar.addClass('completed');
+            }
+
+            function getPercentComplete(current_step, total_steps) {
+                return Math.min(current_step / total_steps * 100, 100) + '%';
+            }
+
+            function updateProgress(current, total) {
+                $progress_bar.animate({
+                    width: getPercentComplete(current, total)
+                });
+                if (current - 1 >= total_num_steps) {
+                    completeSteps();
+                } else {
+                    $progress_current.text(current);
+                }
+
+                $progress.find('[data-progress]').each(function() {
+                    var dp = $(this);
+                    if (dp.data().progress <= current - 1) {
+                        dp.addClass('completed');
+                    } else {
+                        dp.removeClass('completed');
+                    }
+                });
+            }
+
+            function goToStep(step) {
+                reset();
+                var to_show = $modal.find('.step-' + step);
+                if (to_show.length === 0) {
+                    // at the last step, nothing else to show
+                    return;
+                }
+                to_show.show();
+                var current = parseInt(step, 10);
+                updateProgress(current, total_num_steps);
+                findFirstFocusableInput(to_show).focus();
+            }
+
+            function findFirstFocusableInput(parent) {
+                var candidates = [parent.find('input'), parent.find('select'),
+                        parent.find('textarea'),parent.find('button')],
+                    winner = parent;
+                $.each(candidates, function() {
+                    if (this.length > 0) {
+                        winner = this[0];
+                        return false;
+                    }
+                });
+                return $(winner);
+            }
+
+            function bindEventsToModal($modal) {
+                var data_steps = [];
+                $('[data-step]').each(function() {
+                    var step = $(this).data().step;
+                    if (step && $.inArray(step, data_steps) === -1) {
+                        data_steps.push(step);
+                    }
+                });
+
+                $.each(data_steps, function(i, v) {
+                    $modal.on('next.m.' + v, {step: v}, function(e) {
+                        goToStep(e.data.step);
+                    });
+                });
+            }
+
+            function initialize() {
+                reset();
+                updateProgress(1, total_num_steps);
+                $modal.find('.step-1').show();
+                $progress_complete.hide();
+                $progress_total.text(total_num_steps);
+                bindEventsToModal($modal, total_num_steps);
+                $modal.data({
+                    total_num_steps: $bodies.length
+                });
+                if (reset_on_close){
+                    //Bootstrap 2.3.2
+                    $modal.on('hidden', function () {
+                        reset();
+                        $modal.find('.step-1').show();
+                    });
+                    //Bootstrap 3
+                    $modal.on('hidden.bs.modal', function () {
+                        reset();
+                        $modal.find('.step-1').show();
+                    })
+                }
+            }
+
+            initialize();
+        })
+    }(jQuery);
+</script>
+<script>
+    sendEvent = function (sel, step) {
+        $(sel).trigger('next.m.' + step);
+    }
+</script>
+

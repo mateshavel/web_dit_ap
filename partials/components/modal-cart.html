@@ -1,0 +1,325 @@
+<!--Shopping cart-->
+<!-- Uses custom scrollbar plugin: http://grsmto.github.io/simplebar -->
+<!-- Important: SimpleBar can't be used on the body, textarea or iframe elements -->
+<style>
+
+    [class*=' ditap-ico_vzor_'] {
+        font-size: 12px;
+        padding-right: 5px;
+    }
+
+    .simplebar-scrollbar:before {
+        background: rgba(0,0,0, 0.25);
+        opacity: 1 !important;
+        border-radius: 5px;
+        left: -2px;
+        right: 4px;
+    }
+
+    .btn-ditap-medium {
+        height: 35px;
+        padding: 11px 28px;
+    }
+
+    .btn-ditap-outline-mini {
+        padding: 9px 30px !important;
+    }
+
+    #modalCart {
+        top: 100px;
+    }
+
+    #modalCart button.close {
+        font-size: 8px;
+        padding-right: 20px;
+    }
+
+    #modalCart .modal-header {
+        height: 60px;
+        text-align: center;
+    }
+
+    .shopping-cart-scroll {
+        min-height: 109px;
+        max-height: 293px;
+        height: 100%;
+        z-index: 3000;
+    }
+
+    #modalCart .item-cart {
+        padding: 20px 30px 20px 20px;
+        box-shadow: 0 1px 0 0 rgba(0,0,0,0.05);
+    }
+
+    #modalCart .item-cart:last-of-type {
+        border-bottom: none;
+    }
+
+    #modalCart .item-cart-description {
+        padding-left: 14px;
+        width: 236px;
+    }
+
+    #modalCart .shopping-cart-headline {
+        margin-left: -1rem;
+        top: 21px;
+    }
+
+    #modalCart .shopping-cart-footer {
+        padding: 25px 20px 30px 20px;
+    }
+
+    #modalCart .shopping-cart-footer .cart-total-sum {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    @media screen and (max-width: 335px) {
+
+        .btn-ditap-medium {
+            padding: 11px 24px;
+        }
+
+        .btn-ditap-outline-mini {
+            padding: 9px 24px !important;
+        }
+
+        #modalCart {
+            top: 84px;
+        }
+
+        #modalCart .modal-dialog {
+            max-width: 310px;
+        }
+
+        #modalCart .item-cart-description {
+            width: 210px;
+        }
+
+        .shopping-cart-scroll {
+            max-height: 178px;
+        }
+    }
+
+    @media screen and (min-width: 767px) {
+
+        body.modal-open {
+            overflow: hidden;
+            position:fixed;
+            width: 100%;
+        }
+
+        [class*=' ditap-ico_vzor_'] {
+            font-size: 16px;
+        }
+
+        .simplebar-scrollbar:before {
+            left: 0;
+            right: 2px;
+        }
+
+        .btn-ditap-medium {
+            height: 45px;
+            padding: 10px 20px;
+            margin-bottom: 5px;
+        }
+
+        .btn-ditap-outline-mini {
+            padding: 13px 30px !important;
+        }
+
+        .btn-cart.active span.ditap-ico_cart_empty {
+            color: #ED1C24;
+        }
+
+        #modalCart .btn-ditap-cart-item-delete {
+            visibility: hidden;
+            transition: visibility 150ms;
+        }
+
+        #modalCart .item-cart:hover .btn-ditap-cart-item-delete {
+            visibility: visible;
+        }
+
+        .shopping-cart-scroll {
+            max-height: calc(50vh - 160px);
+        }
+
+        #modalCart {
+            top: 72px;
+            right: 15px;
+        }
+
+        #modalCart .item-cart-description {
+            width: 178px;
+        }
+
+        #modalCart .shopping-cart-buttons {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+
+        #modalCart {
+            top: 155px;
+            right: 40px;
+        }
+
+        #modalCart .item-cart {
+            padding: 20px;
+            box-shadow: 0 1px 0 0 rgba(0,0,0,0.05);
+        }
+
+        #modalCart .item-cart-description {
+            width: 179px;
+        }
+    }
+
+    @media screen and (min-width: 1400px) {
+        .shopping-cart-scroll {
+            max-height: calc(60vh - 130px);
+        }
+
+        #modalCart {
+            top: 155px;
+            right: 40px;
+        }
+
+        #modalCart {
+            right: 40px;
+            margin-right: auto;
+            max-width: 1420px;
+            width: auto;
+        }
+
+    }
+
+    .pl-10{
+        padding-left: 10px;
+    }
+    .pr-10{
+        padding-right: 10px;
+    }
+</style>
+
+<div class="modal fade2 shopping-cart" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="modalCart" aria-hidden="true">
+    <div class="modal-dialog border-top" role="document">
+        <div class="modal-content border-0 rounded-0 shadow">
+            <!-- Cart modal header -->
+            <div class="modal-header border-bottom bg-gray d-flex justify-content-between align-items-center position-relative">
+                <span class="active-line d-none d-md-inline"></span>
+                <div class="shopping-cart-headline d-flex justify-content-center align-items-center position-absolute mr-1 w-100">
+                    <span class="text-ditap-h8">košík</span>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="ditap-ico_close_mob" aria-hidden="true"></span>
+                </button>
+            </div>
+            <!-- Scrollable part with shopping cart items -->
+            <div class="modal-body shopping-cart-scroll bg-white px-0 py-0" data-simplebar data-simplebar-auto-hide="false">
+
+                <!-- item 1 -->
+                <div class="item-cart row no-gutters">
+                    <div class="col-auto">
+                        <img class="img50x50" src="DitaP/media/DitaP/images/50x50/Sada_snidane_mak.jpg" alt=""/>
+                    </div>
+                    <div class="col-auto item-cart-description">
+                        <p class="text-ditap-paragraph-3-serif mb-0">Sada snídaně</p>
+                        <p class="mb-2 d-inline-block">
+                            <span class="d-inline align-middle ditap-ico_vzor_mak_mob"></span>
+                            <span class="align-middle text-ditap-paragraph-2">Mák</span>
+                        </p>
+                        <a href="#" class="btn-ditap-cart-item-delete">
+                            <span class="fs-9 ditap-ico_close_mob" aria-hidden="true"></span>
+                        </a>
+                        <p class="mb-0 w-100">
+                            <span class="text-ditap-paragraph-2 float-left">1 ks</span>
+                            <span class="text-ditap-paragraph-2 float-right">8 289 Kč</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- item 2 -->
+                <div class="item-cart row no-gutters">
+                    <div class="col-auto">
+                        <img class="img50x50" src="DitaP/media/DitaP/images/50x50/denik.jpg" alt=""/>
+                    </div>
+                    <div class="col-auto item-cart-description">
+                        <p class="text-ditap-paragraph-3-serif mb-0">Kuchařka Deník Dity P.</p>
+                        <p class="mb-2 d-inline-block">
+                            <span class="align-middle text-ditap-paragraph-2">I. Díl</span>
+                        </p>
+                        <a href="#" class="btn-ditap-cart-item-delete">
+                            <span class="fs-9 ditap-ico_close_mob" aria-hidden="true"></span>
+                        </a>
+                        <p class="mb-0 w-100">
+                            <span class="text-ditap-paragraph-2 float-left">1 ks</span>
+                            <span class="text-ditap-paragraph-2 float-right">425 Kč</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- item 3 -->
+                <div class="item-cart row no-gutters">
+                    <div class="col-auto">
+                        <img class="img50x50" src="DitaP/media/DitaP/images/50x50/Velky_servirovaci_talir_len.jpg" alt=""/>
+                    </div>
+                    <div class="col-auto item-cart-description">
+                        <p class="text-ditap-paragraph-3-serif mb-0">Velký servírovací talíř</p>
+                        <p class="mb-2 d-inline-block">
+                            <span class="d-inline align-middle ditap-ico_vzor_len_mob"></span>
+                            <span class="align-middle text-ditap-paragraph-2">Len</span>
+                        </p>
+                        <a href="#" class="btn-ditap-cart-item-delete">
+                            <span class="fs-9 ditap-ico_close_mob" aria-hidden="true"></span>
+                        </a>
+                        <p class="mb-0 w-100">
+                            <span class="text-ditap-paragraph-2 float-left">4 ks</span>
+                            <span class="text-ditap-paragraph-2 float-right">8 289 Kč</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- item 4 -->
+                <div class="item-cart row no-gutters">
+                    <div class="col-auto">
+                        <img class="img50x50" src="DitaP/media/DitaP/images/50x50/Sada_snidane_mak.jpg" alt=""/>
+                    </div>
+                    <div class="col-auto item-cart-description">
+                        <p class="text-ditap-paragraph-3-serif mb-0">Sada snídaně</p>
+                        <p class="mb-2 d-inline-block">
+                            <span class="d-inline align-middle ditap-ico_vzor_mak_mob"></span>
+                            <span class="align-middle text-ditap-paragraph-2">Mák</span>
+                        </p>
+                        <a href="#" class="btn-ditap-cart-item-delete">
+                            <span class="fs-9 ditap-ico_close_mob" aria-hidden="true"></span>
+                        </a>
+                        <p class="mb-0 w-100">
+                            <span class="text-ditap-paragraph-2 float-left">1 ks</span>
+                            <span class="text-ditap-paragraph-2 float-right">8 289 Kč</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Bottom part with sum calculations and buttons -->
+            <div class="shopping-cart-footer bg-gray border-top">
+                <div class="cart-total-sum d-flex justify-content-between align-items-baseline">
+                    <span class="text-ditap-paragraph-2">Celkem s DPH</span>
+                    <span class="text-ditap-price-small fs-17">15 480 Kč</span>
+                </div>
+                <p class="text-ditap-tip color-red pl-10 pr-10 pt-1">Hodnota objednávky musí být vyšší, než hodnota poukazu.</p>
+
+
+                <p class="shopping-cart-buttons mt-3 mb-0">
+                    <a href="shop-checkout3.html" class="btn btn-ditap btn-ditap-medium btn-ditap-blue d-md-block py-md-3">K pokladně</a>
+                    <a href="shop-cart3.html" class="float-right float-md-none btn btn-ditap btn-ditap-medium btn-ditap-outline btn-ditap-outline-mini d-md-block py-md-3">
+                        Do košíku
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

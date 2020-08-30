@@ -1,0 +1,176 @@
+<style>
+    [class*=' ditap-ico_vzor_'] {
+        font-size: 12px;
+        padding-right: 5px;
+    }
+
+    .form-select-ditap.form-control {
+        border-radius: 0 !important;
+    }
+
+    .form-select-ditap .dropdown-toggle:focus {
+        outline: none !important;
+        border: 1px solid transparent;
+    }
+
+    .form-select-ditap.show > .dropdown-toggle {
+        box-shadow: 0 3px 15px 0 rgba(0,0,0,0.07), 0 1px 0 0 rgba(0,0,0,0.05) !important;
+        border-radius: 0;
+    }
+
+    .form-select-ditap .dropdown-menu.show {
+        top: 47px !important;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        background: #fff;
+        box-shadow: 0 8px 10px 0 rgba(0,0,0,0.07), 0 1px 0 0 rgba(0,0,0,0.05) !important;
+        /* Prevent auto dropup */
+        transform: none !important;
+    }
+
+    .form-select-ditap .dropdown-menu.show .inner.show {
+        overflow-y: visible !important;
+    }
+
+    .form-select-ditap .dropdown-menu.show li a.dropdown-item {
+        padding: 8px 0 0 18px;
+        height: 45px;
+    }
+
+    .form-select-ditap .dropdown-menu.show li a.dropdown-item p {
+        margin: 0;
+    }
+
+    .form-select-ditap .dropdown-menu .dropdown-item.selected.active {
+        display: none;
+    }
+
+    .form-select-ditap button {
+        height: 47px;
+        background: #fff;
+        border-radius: 0;
+        border-color: #e8e8e8;
+        padding-top: 9px;
+        padding-left: 17px;
+    }
+
+    .form-select-ditap button:hover {
+        background: #fff;
+    }
+
+    .form-select-ditap button:after,
+    .form-select-ditap.dropup button:after {
+        border: none;
+        font-family: 'ditap-icons', sans-serif;
+        font-size: 10px;
+        font-weight: 500;
+        content: '\eab6';
+        position: relative;
+        right: 17px;
+        top: 1px;
+    }
+
+    .form-select-ditap button[aria-expanded=false]:focus {
+        border-color: #e8e8e8;
+    }
+
+    .form-select-ditap button[aria-expanded=true]:after {
+        transform: rotate(180deg);
+        top: 13px;
+        right: 7px;
+    }
+
+    .select-ditap-patterns {
+        /*max-width: 306px;*/
+        /*width: 100%;*/
+        height: 45px;
+    }
+
+
+    @media screen and (min-width: 767px) {
+
+        [class*=' ditap-ico_vzor_'] {
+            font-size: 16px;
+        }
+
+        .form-select-ditap button {
+            height: 57px;
+            padding-top: 14px;
+        }
+
+        .form-select-ditap button:after {
+            top: -2px;
+        }
+
+        .form-select-ditap button[aria-expanded=true]:after {
+            top: 9px;
+        }
+
+        .select-ditap-patterns {
+            /*max-width: 640px;*/
+            /*width: 100%;*/
+            height: 55px;
+        }
+
+        .select-ditap-patterns button span.text-ditap-default {
+            font-family: 'Europa Bold', sans-serif !important;
+            font-weight: 700 !important;
+        }
+
+        .form-select-ditap .dropdown-menu.show {
+            top: 55px !important;
+        }
+
+        .form-select-ditap .dropdown-menu.show li a.dropdown-item {
+            height: 55px;
+            padding: 12px 0 0 18px;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+
+        .select-ditap-patterns {
+            /*width: 380px;*/
+        }
+    }
+</style>
+<!-- Needs Bootstrap-select plugin, see https://developer.snapappointments.com/bootstrap-select -->
+<div class="col-auto">
+    <span class="text-ditap-label">Vzor</span>
+    <div class="select-ditap-patterns">
+        <select class="selectpicker form-control form-select-ditap" name="vzor">
+            <option data-content='
+                    <p class="d-inline-block">
+                        <span class="d-inline align-middle ditap-ico_vzor_steh_mob"></span>
+                        <span class="align-middle text-ditap-default">Steh</span>
+                    </p>' value="5">
+            </option>
+            <option data-content='
+                    <p class="d-inline-block">
+                        <span class="d-inline align-middle ditap-ico_vzor_mak_mob"></span>
+                        <span class="align-middle text-ditap-default">Mák</span>
+                    </p>' value="4" selected>
+            </option>
+            <option data-content='
+                    <p class="d-inline-block">
+                        <span class="d-inline align-middle ditap-ico_vzor_lodicky_mob"></span>
+                        <span class="align-middle text-ditap-default">Lodičky</span>
+                    </p>' value="3">
+            </option>
+            <option data-content='
+                    <p class="d-inline-block">
+                    <span class="d-inline align-middle ditap-ico_vzor_len_mob"></span>
+                    <span class="align-middle text-ditap-default">Len</span>
+                    </p>' value="2">
+            </option>
+            <option data-content='
+                    <p class="d-inline-block">
+                        <span class="d-inline align-middle ditap-ico_vzor_pruh_mob"></span>
+                        <span class="align-middle text-ditap-default">Pruh</span>
+                    </p>' value="1">
+            </option>
+        </select>
+        <span class="select-icon"></span>
+    </div>
+</div>

@@ -1,0 +1,118 @@
+<!-- Modal REGISTRATION -->
+<div class="modal multi-step needs-form-validation" id="modalRegistration" data-reset-on-close="true">
+    <div class="modal-dialog">
+        <div class="modal-content border-0 rounded-0 shadow">
+            <div class="modal-header border-0 pb-0">
+                <!--title STEP 1-->
+                <div class="modal-title step-1" data-step="1"></div>
+                <!--title STEP 2-->
+                <div class="step-2" data-step="2">
+                    <a href="#" class="btn btn-modal-next-step step step-2" data-step="1" data-next-step="1" data-modal="#modalRegistration">
+                        <span class="ditap-ico_arrow_tiny_left fs-9"></span>
+                       <span class="text-ditap-paragraph-2">Zpět</span>
+                    </a>
+                </div>
+                <!--title STEP 3-->
+                <div class="modal-title step-3" data-step="3"></div>
+                <!--close btn-->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="fs-14 ditap-ico_close_mob" aria-hidden="true"></span>
+                </button>
+            </div>
+            <!-- STEP 1 ----------------------------------------------------------------------------------------------->
+            <div class="modal-body text-center step-1 p-4" data-step="1">
+                <h5 class="text-center text-ditap-h5">Registrace</h5>
+                <p class="text-ditap-quotation">Buďte jedni z mých nejbližších, má to spoustu výhod</p>
+                <div class="pl-md-4 pr-md-4 pt-2">
+                    <hr/>
+                    <ul class="list-unstyled bullet-list text-left mb-4 mx-auto d-inline-block">
+                        <li class="mb-2">
+                            <span class="ditap-ico_ok_green fs-14 mr-2">
+                                <span class="path1"></span><span class="path2"></span>
+                            </span>
+                            <span class="text-ditap-paragraph">Exklusivní recepty pro registrované</span>
+                        </li>
+                        <li class="mb-2">
+                            <span class="ditap-ico_ok_green fs-14 mr-2">
+                                <span class="path1"></span><span class="path2"></span>
+                            </span>
+                            <span class="text-ditap-paragraph">Všechny objednávky na jednom místě</span>
+                        </li>
+                        <li>
+                            <span class="ditap-ico_ok_green fs-14 mr-2">
+                                <span class="path1"></span><span class="path2"></span>
+                            </span>
+                            <span class="text-ditap-paragraph">Pohodlnější nákupy</span>
+                        </li>
+                    </ul>
+                    <hr class="mt-0"/>
+                    <div class="custom-control custom-checkbox checkbox-ditap custom-control-inline">
+                        <input type="checkbox" id="checkNewsletter" name="newsletter-abo" class="custom-control-input" checked>
+                        <label class="custom-control-label text-ditap-paragraph-2" for="checkNewsletter">Chci také rovnou odebírat newsletter</label>
+                    </div>
+                    <!-- Facebook button -->
+                    <button class="facebookLoginBtnMain xLargeFacebookBtn mt-3 mb-4">
+                        <img src="DitaP/media/DitaP/logos/facebook.svg" alt="Login facebook" />
+                        <span class="text-btn-facebook">Registrovat přes Facebook</span>
+                    </button>
+                    <p class="text-ditap-paragraph-2">Nebo</p>
+                    <input type="submit" class="btn-modal-next-step btn btn-ditap btn-ditap-blue step step-1 mb-5" value="ZADAT E-MAIL"
+                           data-step="1" data-next-step="2" data-modal="#modalRegistration"/>
+                </div>
+            </div>
+            <!-- STEP 2 ----------------------------------------------------------------------------------------------->
+            <div class="modal-body text-center step-2 p-4" data-step="2">
+                <div class="modal-center">
+                    <h5 class="text-center text-ditap-h5 mb-4">Registrovat<br/>pomocí e-mailu</h5>
+                    <div class="form-group position-relative mx-auto w-75">
+                        <input type="text" class="form-control input-ditap-lg mb-3" name="username" placeholder="Vaše jméno a příjmení" required/>
+                        <div class="text-left invalid-feedback">
+                            Chybová hláška
+                        </div>
+                    </div>
+                    <div class="form-group position-relative mx-auto w-75">
+                        <input type="email" class="form-control input-ditap-lg mb-3" name="email" placeholder="E-mailová adresa" required/>
+                        <div class="text-left invalid-feedback">
+                            Chybová hláška
+                        </div>
+                    </div>
+                    <div class="form-group position-relative mx-auto w-75">
+                        <input type="password" class="form-control input-ditap-lg mb-3" name="password" placeholder="Heslo" required/>
+                        <div class="text-left invalid-feedback">
+                            Chybová hláška
+                        </div>
+                    </div>
+                    <div class="form-group position-relative mx-auto w-75">
+                        <input type="password" class="form-control input-ditap-lg mb-3" name="pw-repeat" placeholder="Potvrzení hesla" required/>
+                        <div class="text-left invalid-feedback">
+                            Chybová hláška
+                        </div>
+                    </div>
+
+                    <div class="form-group custom-control custom-checkbox checkbox-ditap custom-control-inline mt-4">
+                        <input type="checkbox" id="agreeTOS" name="agree-tos" class="custom-control-input" required>
+                        <label class="custom-control-label text-ditap-paragraph-2" for="agreeTOS">
+                            Souhlasím s <a href="#" class="link-blue">podmínkami užití</a> eshopu Ditap.cz
+                        </label>
+                    </div>
+                    <input type="submit" class="btn btn-modal-next-step btn-ditap btn-ditap-large btn-ditap-blue step step-2 mt-3 mb-md-5"
+                           data-step="2" data-next-step="3" data-modal="#modalRegistration" value="REGISTROVAT"/>
+                </div>
+            </div>
+            <!-- STEP 3 ----------------------------------------------------------------------------------------------->
+            <div class="modal-body pl-md-4 pr-md-4 step-3 text-center" data-step="3">
+                <img src="DitaP/media/DitaP/images/img_dita_face.png">
+                <h6 class="text-ditap-h6 mt-2">Tak a je to,</h6>
+                <p class="text-ditap-salutation">MARCELO</p>
+                <div class="pl-5 pr-5">
+                    <hr class="mb-md-4"/>
+                    <span class="ditap-ico_mail_small fs-14"></span>
+                    <p class="text-ditap-quotation pl-3 pr-3">Mrkněte do e-mailu, poslala jsem Vám potvrzení registrace</p>
+                    <hr class="mt-md-4"/>
+                </div>
+                <a href="#" class="btn btn btn-ditap btn-ditap-large btn-ditap-blue mt-3 mb-5"
+                   data-toggle="modal" data-target="#modalLogin">ROVNOU PŘIHLÁSIT</a>
+            </div>
+        </div>
+    </div>
+</div>
